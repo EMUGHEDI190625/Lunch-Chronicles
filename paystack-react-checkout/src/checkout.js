@@ -80,24 +80,24 @@ const Checkout = () => {
             <span>Lunch Chronicles</span>
           </div>
           <ul className="top_navbar nav-links" id="navlinks">
-            <li><a href="/E-Commerce/HTML/main.html" className="nav-link home" style={{color : "white"}}>Home</a></li>
+            <li><a href="../../index.html" className="nav-link home" style={{color : "white"}}>Home</a></li>
             <div className="dropdown">
-              <a href="/E-Commerce/HTML/about_us.html" className="nav-link checkout">About Us 
+              <a href="../about_us.html" className="nav-link checkout">About Us 
               <i className="fa-solid fa-caret-down"></i></a>
               <div className="dropdown_content">
                 <li>
-                    <a href="/E-Commerce/HTML/how_it_work.html">How It Work</a>
+                    <a href="../how_it_work.html">How It Work</a>
                     </li>
                 <li>
-                    <a href="/E-Commerce/HTML/frequently_asked_questions.html" className="nav-link checkout">FAQ</a>
+                    <a href="../frequently_asked_questions.html" className="nav-link checkout">FAQ</a>
                     </li>
                 <li>
-                    <a href="/E-Commerce/HTML/contact.html" className="nav-link order_history">Contact Us</a>
+                    <a href="../contact.html" className="nav-link order_history">Contact Us</a>
                     </li>
               </div>
             </div>
             <li>
-                <a href="/E-Commerce/HTML/product.html" className="nav-link product">Restaurants</a>
+                <a href="../product.html" className="nav-link product">Restaurants</a>
                 </li>
             {/* <div className="dropdown">
               <a href="our_service.html" className="nav-link service">Services <i className="fa-solid fa-caret-down"></i></a>
@@ -109,10 +109,10 @@ const Checkout = () => {
               </div>
             </div> */}
             <li>
-                <a href="/E-Commerce/HTML/checkout/index.html" className="nav-link checkout">Checkout</a>
+                <a href="./checkout/index.html" className="nav-link checkout">Checkout</a>
                 </li>
             <li>
-                <a href="/E-Commerce/HTML/custmoer_order_history.html" className="nav-link checkout">Customer view</a>
+                <a href="../custmoer_order_history.html" className="nav-link checkout">Customer view</a>
                 </li>
           </ul>
         </nav>
@@ -489,28 +489,28 @@ const Checkout = () => {
                 <strong class="strong">Quick Links</strong>
                 <ul class="top_navbar">
                     <li>
-                        <a href="/E-Commerce/HTML/main.html">Home</a>
+                        <a href="../../index.html">Home</a>
                     </li>
                     <li>
-                        <a href="/E-Commerce/HTML/about_us.html">About Us</a>
+                        <a href="../about_us.html">About Us</a>
                     </li>
                     <li>
-                        <a href="/E-Commerce/HTML/how_it_work.html">How It Work</a>
+                        <a href="../how_it_work.html">How It Work</a>
                     </li>
                     <li>
-                        <a href="/E-Commerce/HTML/frequently_asked_questions.html">FAQ</a>
+                        <a href="../frequently_asked_questions.html">FAQ</a>
                     </li>
                     <li>
-                        <a href="/E-Commerce/HTML/customer_support.html">Customer Support</a>
+                        <a href="../customer_support.html">Customer Support</a>
                     </li>
                     <li>
-                        <a href="/E-Commerce/HTML/careers.html">Careers</a>
+                        <a href="../careers.html">Careers</a>
                     </li>
                     <li class="size">
-                        <a href="/E-Commerce/HTML/term_conditions.html">Terms & Conditions</a>
+                        <a href="../term_conditions.html">Terms & Conditions</a>
                     </li>
                      <li id="size">
-                         <a href="/E-Commerce/HTML/privacy_policy.html">Privacy Policy</a>
+                         <a href="../privacy_policy.html">Privacy Policy</a>
                     </li>
                 </ul>
             </div>
