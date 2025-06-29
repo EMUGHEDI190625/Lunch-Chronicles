@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <main>
+        <div class="parent-calcutor">
+            <strong>CASIO</strong>
+            <div class="child-calcutor">
+                <input type="text" name="output" id="display" value="0." size="39" class="display" disabled>
+                <table>
+                    <tr>
+                            <td>
+                                <button type="button" onclick="toggleShift()" class="off">SHIFT</button>
+                            </td>
+                            <td colspan="2">
+                                <button type="button" class="replay">REPLAY</button>
+                            </td>
+                            <td>
+                                <button type="button">MODE/SET UP</button>
+                            </td>
+                            <td id="row">
+                                <button type="button" onclick="powerOn()" class="power">ON</button>
+                                <button type="button" onclick="powerOff()" class="power">OFF</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button">dx</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="operationSign('**')">x^2</button>
+                            </td>
+                            <td >
+                                <button type="button" onclick="math('sqrt')">Sqrt</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="math('log')" id="log">log</button>
+                            </td>
+                            <td>
+                                <button type="button" class="button">In</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button">hyp</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="math('sin')" id="sin">sin</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="math('cos')" id="cos">cos</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="math('tan')" id="tan">tan</button><br>
+                            </td>
+                            <td>
+                                <button type="button">Mathfuns</button><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button">RCL</button>
+                            </td>
+                            <td>
+                                    <select name="lanaguages" id="lang">
+                                        <button type="button">
+                                        <option value="English">English</option>
+                                        <option value="Spanish">Spanish</option>
+                                        <option value="French">French</option>
+                                        <option value="Portuguese">Portuguese</option>
+                                        <option value="German">German</option>
+                                        <option value="Italian">Italian</option>
+                                        <option value="Russian">Russian</option>
+                                        <option value="Abic">Abic</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="Hindi">Hindi</option>
+                                        Lanaguages</button>
+                                    </select>    
+                            </td>
+                            <td>
+                                <button type="button" onclick="operationSign('(')">(</button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="operationSign(')')">)</button>
+                            </td>
+                            <td>                                
+                                    <button type="button">CACL</button>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="fun('7')">7</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="fun('8')">8</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="fun('9')">9</button><br>
+                        </td>
+                        <td>
+                            <button type="button" onclick="clearDisplay('DEL')">DEL</button>
+                        </td>
+                        <td>
+                            <button type="button">AC</button><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="fun('4')">4</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="fun('5')">5</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="fun('6')">6</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operationSign('*')">*</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operationSign('/')">/</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="fun('1')">1</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="fun(2)">2</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="fun(3)">3</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operationSign('+')">+</button>
+                        </td>
+                        <td>
+                            <button type="button "onclick="operationSign('-')"><b>-</b></button>
+                        </td>
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="fun(0)">0</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="fun('.')"><b>.</b></button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operationSign('pow')">x^x</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="calculate('Ans')">Ans</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="operationSign('=')">=</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <p class="inline">&#169
+                <span id="year" class="inline">2025</span>
+                <h5 class="inline">Ikata Kenoye Emughedi</h5>
+                All Rights Reserved
+            </p>
+        </section>
+        <section>
+            <a href="https:www.linkedin.com/in/kenoye-ikata-28554228b"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="github.com/190625"><i class="fa-brands fa-github"></i></a>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <div class="dropdown_container">
+                    <button type="submit" class="dropdown-btn">Works/Projects <i class="fa-solid fa-arrow-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="work.html">Works</a>
+                        <a href="project.html">Projects</a>
+                    </div>
+                </div>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

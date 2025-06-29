@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lunch Chronicles E-Commerce Site</title>
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="/E-Commerce/CSS/index.css">
+    <link rel="stylesheet" href="/E-Commerce/CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+    <ul class="top_navbar">
+        <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles">
+        <li>
+            <a href="index.html" class="nav-link home">Home</a>
+        </li>
+        <li>
+            <a href="about_us.html" class="nav-link checkout">About Us</a>
+        </li> 
+        <li>
+            <a href="product.html" class="nav-link product">Products</a>
+        </li>
+        <!-- <li>
+            <a href="cart_checkout.html" class="nav-link checkout">Checkout</a>
+        </li> -->
+        <li id="order_history">
+            <a href="order_history.html" class="nav-link order_history">Order History</a>
+        </li>
+        <li id="order_history">
+            <a href="contact.html" class="nav-link contact">Contact Us</a>
+        </li>
+    </ul>
+
+    <header>
+        <h1>Welcome to Lunch Chronicles</h1>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h1 style="padding-top: 2%;">Delicious Meals delivered To You</h1>
+            <p>Pick a restaurant, place your orders and enjoy fresh at your doorstep</p>
+            <a href="product.html">Browse Product</a>
+        </section>
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants_cards">
+                <div class="card">
+                    <img src="../HTML/Product/Spaghettiexpress/Images/Spaghettiexpress restaurant.jpg" 
+                    alt="Spaghettiexpress restaurant">
+                    <div class="container">
+                        <h3><a href="product.html">Spaghettiexpress</a></h3>
+                        <p>Hot Pasta, fast delivery.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../HTML/Product/Paparimz's/images/Paprimz Pizza.jpg" alt="Paparimz pizza restaurant" width="250" 
+                    height="190">
+                    <div class="container">
+                        <h3><a href="paprimz.html">Paprimz Pizza</a></h3>
+                        <p>Crusty, cheesy goodness.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../HTML/Product/Maubbys/Image/Maubbys Salad Bar.jpg" alt="Maubby's salad restaurant">
+                    <div class="container">
+                        <h3><a href="maubbys.html">Maubbys Salad Bar</a></h3>
+                        <p>Health salads, tasty.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/E-Commerce/HTML/Product/Bole/Images/Screenshot_2025-04-24-12-15-19-01_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                    alt="Bole Abuja restaurant" width="250">
+                    <div class="container">
+                        <h3><a href="product.html">Bole Abuja </a></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/E-Commerce/HTML/Product/Tulip Bistro/Images/Screenshot_2025-04-24-11-01-50-54_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                    alt="Tulip Bistro restaurant" width="250">
+                    <div class="container">
+                        <h3><a href="product.html">Tulip Bistro </a></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button">
+                    <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" title="Note: Do not delete the defualt message.">
+                    Chat with Us on WhatsApp</a>
+                </button>
+                <button type="button" id="toggleBtn">Show More</button>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Custmoers Say About Us</h2>
+            <div class="testimonial_slider">
+                <div class="testimonial active">
+                    <p><strong>"A brilliant bussinesses solution!"</strong></p>
+                    <p>I Love how seamless Lunch Chronicles makes ordering luch</p>
+                    <img src="/images/my-picture.jpg" alt="Tolu A">
+                    <p> <em>Tolu A.</em></p>
+                </div>
+                <div class="testimonial">
+                    <p><strong>"Top-notch Custmoer experience!"</strong></p>
+                    <p>This isn't just about food- it's about convenience and care</p>
+                    <img src="../Images/Customers (2).jpg" alt="Grace E">
+                    <p> <em>Grace E.</em></p>
+                </div>
+                <div class="testimonial">
+                    <p><strong>"Perfect for busy workdays!"</strong></p>
+                    <p> <em>The Lunch Chronicles takes the stress out of deciding where to eat</em></p>
+                    <img src="../Images/Customers.jpg" alt="Kenny O">
+                    <p> <em>Kenny O.</em></p>
+                </div>
+                <div class="testimonial">
+                    <p><strong>luch planning has never been easier</strong></p>
+                    <p>From browsing menus to placing and order, everything is just a few click</p>
+                    <img src="../Images/miracle.jpg" alt="Chiamaka U">
+                    <p> <em>Chiamaka U.</em></p>
+                </div>
+                <div class="testimonial_control">
+                    <button onclick="prevTestimonial()" class="left" id="prevButton"><</button>
+                    <button onclick="nextTestimonial()" class="right" id="nextButton">></button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+
+        <section class="copyright-inform">
+            <p class="inline">
+                <span>&#169</span>
+                <span id="year" class="inline">2025</span>
+                <h4 class="inline">Lunch Chronicles</h4> 
+                All Rights Reserved
+            </p>
+        </section>
+
+        <section class="display_flex">
+
+            <div id="app">
+                <button type="button" class="app">
+                    <p class="download">Download on 
+                        <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" alt="App Store">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </p>
+                </button> 
+                <button type="button" class="app">
+                    <p class="download">Download on 
+                        <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </p>
+                </button>   
+            </div>
+
+            <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            <ul class="top_navbar">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about_us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="product.html">Products</a>
+                </li>
+                <!-- <li>
+                    <a href="cart_checkout.html">Checkout</a>
+                </li> -->
+                <li id="order_history">
+                    <a href="order_history.html">Order History</a>
+                </li>
+                <li id="order_history">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </section>
+
+    </footer>
+
+    <script src="/E-Commerce/JS/main.js"></script>
+</body>
+</html>

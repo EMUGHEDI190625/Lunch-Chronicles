@@ -1,0 +1,327 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Restaurant Cart System</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #menu {
+      display: flex;
+      background-color: tan;
+    }
+    h1 { text-align: center; }
+    h2 { margin-top: 40px; }
+    .restaurant { margin-bottom: 40px; }
+    .category-title {
+      text-align: center;
+      font-size: 1.3em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333;
+      border-bottom: 1px dashed #aaa;
+      padding-bottom: 5px;
+    }
+    .food-card {
+      border: 1px solid #ccc; padding: 10px; margin: 10px 0; display: flex;
+      align-items: center; gap: 10px;
+    }
+    .food-card img {
+      width: 80px; height: 80px; object-fit: cover;
+    }
+    .food-info { flex: 1; }
+    .cart {
+      border-top: 2px solid #000;
+      margin-top: 40px;
+      padding-top: 20px;
+    }
+    .cart-item { margin: 10px 0; }
+    button {
+      padding: 6px 12px;
+      background-color: #008cba;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005f7f;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🛍️ Food Ordering Platform</h1>
+
+<div id="menu"></div>
+
+<div class="cart">
+  <h2>🛒 Your Cart</h2>
+  <div id="cartDisplay"></div>
+</div>
+
+<script>
+const restaurants = [
+  {
+    name: "Spaghetti Express",
+    items: {
+      "Spaghetti": [
+        {
+          name: "Spaghetti (Chicken/Panla Fish)",
+          description: "Classic spaghetti with chicken or panla fish.",
+          price: 6500,
+          image: "https://via.placeholder.com/80?text=Spaghetti"
+        },
+        {
+          name: "Spaghetti (Turkey)",
+          description: "Classic spaghetti with turkey.",
+          price: 8000,
+          image: "https://via.placeholder.com/80?text=Turkey"
+        }
+      ],
+      "Fried Rice": [
+        {
+          name: "Fried Rice (Asun/Croaker)",
+          description: "Fried rice with asun or croaker fish.",
+          price: 8500,
+          image: "https://via.placeholder.com/80?text=FriedRice"
+        }
+      ],
+      "Drinks": [
+        {
+          name: "Zobo Drink",
+          description: "Refreshing zobo drink.",
+          price: 1000,
+          image: "https://via.placeholder.com/80?text=Zobo"
+        },
+        {
+          name: "Water",
+          description: "Bottled water.",
+          price: 500,
+          image: "https://via.placeholder.com/80?text=Water"
+        }
+      ]
+    }
+  },
+  {
+    name: "Bole Abuja",
+    items: {
+      "Bole Specials": [
+        {
+          name: "Bole with Fish",
+          description: "Roasted plantain served with spicy pepper fish.",
+          price: 3500,
+          image: "https://via.placeholder.com/80?text=Bole"
+        },
+        {
+          name: "Bole with Groundnut",
+          description: "Traditional roasted plantain with groundnut.",
+          price: 1500,
+          image: "https://via.placeholder.com/80?text=Groundnut"
+        }
+      ]
+    }
+  }
+];
+
+let cart = {};
+
+function renderMenu() {
+  const menuDiv = document.getElementById('menu');
+  menuDiv.innerHTML = '';
+
+  restaurants.forEach(restaurant => {
+    const section = document.createElement('div');
+    section.className = 'restaurant';
+    section.innerHTML = `<h2>${restaurant.name}</h2>`;
+
+    for (const category in restaurant.items) {
+      section.innerHTML += `<h3 class="category-title">${category}</h3>`;
+      restaurant.items[category].forEach(item => {
+        const itemHTML = `
+          <div class="food-card">
+            <img src="${item.image}" alt="${item.name}">
+            <div class="food-info">
+              <strong>${item.name}</strong><br>
+              ${item.description}<br>
+              <strong>₦${item.price}</strong>
+            </div>
+            <button onclick="addToCart('${restaurant.name}', ${JSON.stringify(item).replace(/"/g, '&quot;')})">Add</button>
+          </div>
+        `;
+        section.innerHTML += itemHTML;
+      });
+    }
+
+    menuDiv.appendChild(section);
+  });
+}
+
+function addToCart(restaurantName, item) {
+  if (!cart[restaurantName]) cart[restaurantName] = [];
+  cart[restaurantName].push(item);
+  updateCartDisplay();
+}
+
+function updateCartDisplay() {
+  const cartDiv = document.getElementById('cartDisplay');
+  cartDiv.innerHTML = '';
+  let total = 0;
+
+  for (const restaurant in cart) {
+    cartDiv.innerHTML += `<h3>📌 ${restaurant}</h3>`;
+    cart[restaurant].forEach(item => {
+      total += item.price;
+      cartDiv.innerHTML += `
+        <div class="cart-item">
+          <strong>${item.name}</strong> - ₦${item.price}<br>
+          ${item.description}<br>
+          <img src="${item.image}" style="width:50px;height:50px;margin-top:5px;"><br><br>
+        </div>
+      `;
+    });
+  }
+
+  if (total > 0) {
+    cartDiv.innerHTML += `<h3>Total: ₦${total}</h3>`;
+  } else {
+    cartDiv.innerHTML = "<p>Your cart is empty.</p>";
+  }
+}
+
+renderMenu();
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti Express</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .meals_children {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .meals_children img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .text.container {
+            display: flex;
+            flex-direction: column;
+        }
+        .add-to-cart {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spaghetti Express Menu</h1>
+
+    <div class="meals_children">
+        <img src="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+        <div class="text container">
+            N' Chicken/pania fish <br>
+            ₦6500
+            <button class="add-to-cart"
+                    data-restaurant="Spaghettiexpress"
+                    data-name="Spaghetti - N' Chicken/pania fish"
+                    data-price="6500"
+                    data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <div class="meals_children">
+        <img src="/E-Commerce/HTML/Product/Spaghettiexpress/Images/IMG-20240418-WA0008.jpg" alt="">
+        <div class="text container">
+            Jollof rice and plantain with fried turkey <br>
+            ₦4500
+            <button class="add-to-cart"
+                    data-restaurant="Spaghettiexpress"
+                    data-name="Jollof rice and plantain with fried turkey"
+                    data-price="4500"
+                    >
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <div class="meals_children">
+        <img src="/E-Commerce/HTML/Product/Spaghettiexpress/Images/IMG-20240418-WA0006.jpg" alt="">
+        <div class="text container">
+            Spaghetti with fried chicken <br>
+            ₦4000
+            <button class="add-to-cart"
+                    data-restaurant="Spaghettiexpress"
+                    data-name="Spaghetti with fried chicken"
+                    data-price="4000"
+                    >
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <div class="meals_children">
+        <img src="/E-Commerce/HTML/Product/Spaghettiexpress/Images/IMG-20240418-WA0009.jpg" alt="">
+        <div class="text container">
+            Fried Rice with plantain and fried turkey <br>
+            ₦4500
+            <button class="add-to-cart"
+                    data-restaurant="Spaghettiexpress"
+                    data-name="Fried Rice with plantain and fried turkey"
+                    data-price="4500"
+                    >
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    <a href="/E-Commerce/HTML/text2.html" style="float:right; font-size:18px; margin-bottom:20px;">🛒 View Cart</a>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cartButtons = document.querySelectorAll('.add-to-cart');
+
+            cartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const item = {
+                        restaurant: button.dataset.restaurant,
+                        name: button.dataset.name,
+                        price: parseInt(button.dataset.price),
+                        image: button.dataset.image,
+                        quantity: 1
+                    };
+
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    const existingIndex = cart.findIndex(i => i.name === item.name && i.restaurant === item.restaurant);
+
+                    if (existingIndex >= 0) {
+                        cart[existingIndex].quantity += 1;
+                    } else {
+                        cart.push(item);
+                    }
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    alert(`${item.name} added to cart!`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

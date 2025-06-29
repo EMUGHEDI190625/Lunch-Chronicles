@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="/E-Commerce/CSS/index.css">
+    <link rel="stylesheet" href="/E-Commerce/CSS/contact.css">
+    <link rel="stylesheet" href="/E-Commerce/CSS/checkout.css">
+    <link rel="stylesheet" href="/E-Commerce/CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+    <style>
+
+        header {
+            background-image: url("/E-Commerce/Images/Checkout.jpg");
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .cart-details {
+            flex: 1;
+        }
+        .total {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .clear-cart {
+            margin-top: 20px;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cart_button {
+            display: flex;
+            width: 75%;
+            flex-wrap: wrap;
+            padding: 5%;
+        }
+
+        .cart_button button {
+            display: inline-block;
+            width: auto;
+            margin: 3% auto;
+        }
+
+        a[href="tulip.html"] {
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+<body class="checkout">
+
+    <div class="navbar">
+        <div class="container_button">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="/E-Commerce site/Images/Lunch Chronicles.jpg" alt="">
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="/E-Commerce site/Images/Lunch Chronicles.jpg" alt="">
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li>
+                <a href="index.html" class="nav-link home" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="how_it_work.html">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="frequently_asked_questions.html" class="nav-link checkout">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="our_service.html" class="nav-link service">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="frequently_asked_questions.html" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="cart_checkout.html" class="nav-link checkout">Checkout</a>
+                    
+                </li>
+                <li>
+                    <a href="custmoer_order_history.html" class="nav-link checkout">Customer view</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div>
+                </div> -->
+            </ul>
+        </nav>
+        <header>
+            <h1>Checkout</h1>
+            <!-- <button class="strong cta-button"><a href="#app">Get Our App</a></button> -->
+        </header>
+    </div>
+
+    <main id="checkout">
+
+        <div class="cart_checkout">
+            <section class="main" id="form">
+               
+                <section class="parent">
+                    <h1>Your Order Details</h1>
+                    <div id="cart-container"></div>
+                    <div class="total" id="total-price"></div>
+                   <div class="cart_button">
+                     <button class="clear-cart button" onclick="clearCart()">Clear Cart</button>
+                      <button class="clear-cart button" ><a href="tulip.html">Previous</a></button>
+                       <button class="clear-cart button">Add My Order Details to the form</button>
+                   </div>
+                    <!-- <div class="cart-child child">
+                        <h1>Your Cart</h1>
+                        <div id="cart-container"></div>
+                        <div class="total" id="total-price"></div>
+                        <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+                    </div> -->
+                </section>
+
+                  <section class="parent">
+
+                        <div class="child">
+                            <div id="topform">
+                                <section>
+                                    <p>The puropse for this form is to collect your details for processing your order and to 
+                                        store it in our 
+                                        <strong>Data Base</strong>
+                                        also for you to check your order in 
+                                        <strong>Customer view.</strong>
+                                        <br>
+                                        <b>Note:</b> your answer based on the following questions are between you and us.
+                                    </p>
+                                </section>
+                            </div>
+                            
+                            <form action="https://script.google.com/macros/s/AKfycbxW2mK6qGmTcXXkgelxVwfkAAoLUnG84w7rJxAE1sml-IrcuLdL3BM6-t4rULpLWS_M0Q/exec" 
+                                method="post">
+            
+                                <h2>Checkout</h2>
+            
+                                <section>
+                                    <h3>Customer Status</h3>                         
+                                    <p>The radio input field that have the text 
+                                        <b>Other</b>
+                                        is for those that do not want to specify if you are <strong>New Custmoer</strong> or
+                                        <strong>Returning Custmoer</strong> from the below 
+                                        <b>Custmoer Status</b>
+                                        question. <br>
+                                        <strong class="strong">Note: Select your custmoer status. This will determine which 
+                                            section is show next.
+                                        </strong><br>
+                                        We make the below questions mandating because we want to know your
+                                            <strong>Status</strong>
+                                            at a customer.
+                                    </p>
+                                    <label for="new_customer">New Customer</label>
+                                    <span>*</span>
+                                    <input type="radio" name="customer_status" value="new" onclick="showCustomerSection()" 
+                                    id="new_customer">
+                                    <label for="returning_customer">Returning Customer</label>
+                                    <span>*</span>
+                                    <input type="radio"name="customer_status" value="returning" onclick="showCustomerSection()" 
+                                    id="returning_customer">
+                                    <label for="Other">Other</label>
+                                    <input type="radio" name="customer_status" value="others" onclick="showCustomerSection()"
+                                    id="other"><br>
+                                </section>
+            
+                                <section id="newCustomerSection" style="display:none;">
+                                    <h3>New Custmoer</h3>
+                                    <p>Note this section is not mandating but we love you to fill this to know if we are 
+                                        lacking in anyway after rating us and give your comment. Thank you.
+                                   </p>
+                                    <p>How did you come across this bussiness and Please why?</p>
+                                    <label for="instagram">Instagram</label>
+                                    <input type="checkbox" name="instagram">
+                                    <label for="facebook">Facebook</label>
+                                    <input type="checkbox" name="source" value="facebook">
+                                    <label for="word_of_mouth">Word of Mouth</label>
+                                    <input type="checkbox" name="source" value="Word of Mouth">
+                                    <label for="google_search">Google Search</label>
+                                    <input type="checkbox" name="source" value="Google Search">
+                                    <label for="past_customer">Past Custmoer</label>
+                                    <input type="checkbox" name="source" value="Past Custmoer">
+                                    <label for="event_market_stall">Event or Market Stall</label>
+                                    <input type="checkbox" name="source" value="facebook"><br>
+                                    <label for="bussiness_recommendation">Recommendation From Another Bussiness</label>
+                                    <input type="checkbox" name="source" value="Recommendation From Another Bussiness"><br>
+                                    <label for="youtube_tiktok_video">YouTube or TikTok Video</label>
+                                    <input type="checkbox" name="source" value="YouTube or TikTok Video">
+                                    <label for="flyer_poster_brochure">flyer/poster/brochure</label>
+                                    <input type="checkbox" name="source" value="flyer/poster/brochure" id="">
+                                    <label for="other">Others</label>
+                                    <input type="checkbox"  name="source" value="other"><br>
+                                    <p>Please if you select other from the previous question can you specify and from the 
+                                        options about can you give reason/reasons why do you come to use our service based on 
+                                        your ansnwer above?
+                                    </p>
+                                    <textarea  name="newCustomerOtherReason" placeholder="Leave your comment here..."></textarea>
+                                    <p>
+                                        kindly rate our UI (<strong class="strong">Lunch Chronicles</strong> design). 1:  Poor 
+                                        (1 star) 2: Fair (2 stars) 3: Good (3 stars) 4: very Good (4 stars)  5: Excellent 
+                                        (5 stars)
+                                    </p>
+                                    <select name="experience_rating">
+                                        <option value="1">1 - Poor</option>
+                                        <option value="2">2 - Fair</option>
+                                        <option value="3">3 - Good</option>
+                                        <option value="4">4 - Very Good</option>
+                                        <option value="5">5 - Excellent</option>
+                                    </select><br>
+                                    <p>kindly leave why you rate us form the previous question.</p>
+                                    <textarea name="UI rate" id="rate"></textarea>
+
+                                    <section>
+                                        <h3>Personal Order Details</h3>
+                                        <label for="first_name" class="label"> First Name </label>
+                                        <span>*</span>
+                                        <label for="surname" class="label second">Surname</label>
+                                        <span>*</span>
+                                        <div class="row">
+                                            <input type="text" name="first_name" id="first_name" required>
+                                            <input type="text" name="surname" id="surname" required>
+                                        </div>
+                                        <label for="phone_number" class="label">Phone Number</label>
+                                        <span>*</span>
+                                        <label for="address" class=" second label">Address</label>
+                                        <span>*</span>
+                                        <div class="row">
+                                                <input type="tel" name="phone_number" class="contact_form" required 
+                                                pattern="[0-9\s\-\(\) {6, 15}]" title="Format: 123-45-678">
+                                                <input type="email" name="e-mail" class="contact_form" id="e-mail"
+                                                required>
+                                        </div>
+                                        <p>Note from the below two fields (Choose restaurant or restaurants and Name Of Order) is 
+                                            if the dishes you want is not display for each restaurant page but you saw it in the 
+                                            menus displays that is why is not required lisk the other
+                                            <strong class="strong">Personal Order Details.</strong>
+                                        </p>
+                                        <label for="select">Choose restaurant or restaurants</label>
+                                        <label for="address" class="label second">Name Of Order</label>
+                                        <div class="row">
+                                                <select name="customer choose:" id="">
+                                                    <option value="Spaghettiexpress">Spaghettiexpress</option>
+                                                    <option value="Paprimz Pizza">Paprimz Pizza</option>
+                                                    <option value="Maubbys Salad Bar">Maubbys Salad Bar</option>
+                                                    <option value="Bole Abuja">Bole Abuja</option>
+                                                    <option value="Tulip Bistro">Tulip Bistro</option>
+                                                </select>
+                                                <textarea name="name of order" id="text" class="contact_form"></textarea><br>
+                                        </div>
+                                        <label for="price-order" class="label">Price Order</label>
+                                        <!-- <label for="payment_method" class="label">Payment Method</label>
+                                        <span>*</span><br><br>
+                                        <div class="row">
+                                            <label for="payment_method">Bank Transfer</label>
+                                            <input type="radio" name="payment_method" id="bank_transfer">
+                                            <label for="Pay_on_delivery">Pay on delivery (Cash)</label>
+                                            <input type="radio" name="payment_method" id="Pay_on_delivery">
+                                        </div> -->
+                                        <label for="e-mail" class="label second">E-mail</label>
+                                        <span>*</span><br><br>
+                                        <div class="row">
+                                            <input type="number" name="price-order" class="contact_form" 
+                                            id="price-orde">
+                                            <input type="email" name="e-mail" class="contact_form" 
+                                            id="e-mail"
+                                            required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\[a-zA-Z]{2, }" 
+                                            title="Enter a vaild email (e.g., example@gmail.com)"><br>
+                                        </div>
+                                        <button type="submit" class="cta-button">Send</button>
+                                    </section>
+                                    
+                                </section>
+
+                                <section id="returningCustomerSection" style="display:none;">
+                                    <h3>Returning Customer</h3>
+                                    <p>Please Note this section is not mandating but we love you to fill this to know if we are
+                                         lacking in anyway. Thank you.
+                                    </p>
+                                    <p>
+                                        kindly rate your previous delivery experience. 1:  Poor (1 star) 2: Fair (2 stars) 3: 
+                                        Good (3 stars) 4: very Good (4 stars)  5: Excellent (5 stars)
+                                    </p>
+                                    <select name="experience_rating">
+                                        <option value="1">1 - Poor</option>
+                                        <option value="2">2 - Fair</option>
+                                        <option value="3">3 - Good</option>
+                                        <option value="4">4 - Very Good</option>
+                                        <option value="5">5 - Excellent</option>
+                                    </select><br>
+                                    <p>
+                                        Would you like to leave any comment or suggestion based on your experience with our 
+                                        service? E.g. you can start with why you rate us based on the above question.
+                                    </p>
+                                    <textarea name="returningComment" placeholder="Leave your comment here..."></textarea>
+
+                                    <section>
+                                        <h3>Personal Order Details</h3>
+                                        <label for="first_name" class="label"> First Name </label>
+                                        <span>*</span>
+                                        <label for="surname" class="second" class="label">Surname</label>
+                                        <span>*</span>
+                                        <div class="row">
+                                            <input type="text" name="first_name" id="first_name" required>
+                                            <input type="text" name="surname" id="surname" required>
+                                        </div>
+                                        <label for="phone_number" class="label">Phone Number</label>
+                                        <span>*</span>
+                                        <label for="address" class=" second label">Address</label>
+                                        <span>*</span>
+                                        <div class="row">
+                                                <input type="tel" name="phone_number" class="contact_form" required 
+                                                pattern="[0-9\s\-\(\) {6, 15}]" title="Format: 123-45-678">
+                                                <input type="email" name="e-mail" class="contact_form" id="e-mail"
+                                                required>
+                                        </div>
+                                        <p>Note from the below two fields (Choose restaurant or restaurants and Name Of Order) is 
+                                            if the dishes you want is not display for each restaurant page but you saw it in the 
+                                            menus displays that is why is not required lisk the other
+                                            <strong class="strong">Personal Order Details.</strong>
+                                        </p>
+                                        <div class="row">
+                                            <label for="select">Choose restaurant or restaurants</label><br>
+                                                <select name="customer choose:" id="">
+                                                    <option value="Spaghettiexpress">Spaghettiexpress</option>
+                                                    <option value="Paprimz Pizza">Paprimz Pizza</option>
+                                                    <option value="Maubbys Salad Bar">Maubbys Salad Bar</option>
+                                                    <option value="Bole Abuja">Bole Abuja</option>
+                                                    <option value="Tulip Bistro">Tulip Bistro</option>
+                                                </select>
+                                        </div>
+                                        <label for="address" class="label">Name Of Order</label><br><br>
+                                        <textarea name="name of order" id="text" class="contact_form"></textarea><br>
+                                        <label for="payment_method" class="label">Payment Method</label>
+                                        <span>*</span><br><br>
+                                        <div class="row">
+                                            <label for="payment_method">Bank Transfer</label>
+                                            <input type="radio" name="payment_method" id="bank_transfer">
+                                            <label for="Pay_on_delivery">Pay on delivery (Cash)</label>
+                                            <input type="radio" name="payment_method" id="Pay_on_delivery">
+                                        </div>
+                                        <label for="e-mail" class="label">E-mail</label>
+                                        <span>*</span><br><br>
+                                        <input type="email" name="e-mail" class="contact_form" id="e-mail"
+                                            required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\[a-zA-Z]{2, }" 
+                                            title="Enter a vaild email (e.g., example@gmail.com)"><br>
+                                        <button type="submit" class="cta-button">Send</button>
+                                    </section>
+
+                                </section>
+
+                                <section id="otherSection" style="display: none;">
+
+                                    <section>
+                                        <h3>Personal Order Details</h3>
+                                        <label for="first_name" class="label"> First Name </label>
+                                        <span>*</span>
+                                        <label for="surname" class="second" class="label">Surname</label>
+                                        <span>*</span>
+                                        <div class="row">
+                                            <input type="text" name="first_name" id="first_name" required>
+                                            <input type="text" name="surname" id="surname" required>
+                                        </div>
+                                        <label for="phone_number" class="label">Phone Number</label>
+                                        <span>*</span>
+                                        <label for="address" class=" second label">Address</label>
+                                        <span>*</span>
+                                        <div class="row">
+                                                <input type="tel" name="phone_number" class="contact_form" required 
+                                                pattern="[0-9\s\-\(\) {6, 15}]" title="Format: 123-45-678">
+                                                <input type="email" name="e-mail" class="contact_form" id="e-mail"
+                                                required>
+                                        </div>
+                                        <p>Note from the below two fields (Choose restaurant or restaurants and Name Of Order) is 
+                                            if the dishes you want is not display for each restaurant page but you saw it in the 
+                                            menus displays that is why is not required lisk the other
+                                            <strong class="strong">Personal Order Details.</strong>
+                                        </p>
+                                        <div class="row">
+                                            <label for="select">Choose restaurant or restaurants</label><br>
+                                                <select name="customer choose:" id="">
+                                                    <option value="Spaghettiexpress">Spaghettiexpress</option>
+                                                    <option value="Paprimz Pizza">Paprimz Pizza</option>
+                                                    <option value="Maubbys Salad Bar">Maubbys Salad Bar</option>
+                                                    <option value="Bole Abuja">Bole Abuja</option>
+                                                    <option value="Tulip Bistro">Tulip Bistro</option>
+                                                </select>
+                                        </div>
+                                        <label for="address" class="label">Name Of Order</label><br><br>
+                                        <textarea name="name of order" id="text" class="contact_form"></textarea><br>
+                                        <label for="payment_method" class="label">Payment Method</label>
+                                        <span>*</span><br><br>
+                                        <div class="row">
+                                            <label for="payment_method">Bank Transfer</label>
+                                            <input type="radio" name="payment_method" id="bank_transfer">
+                                            <label for="Pay_on_delivery">Pay on delivery (Cash)</label>
+                                            <input type="radio" name="payment_method" id="Pay_on_delivery">
+                                        </div>
+                                        <label for="e-mail" class="label">E-mail</label>
+                                        <span>*</span><br><br>
+                                        <input type="email" name="e-mail" class="contact_form" id="e-mail"
+                                            required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\[a-zA-Z]{2, }" 
+                                            title="Enter a vaild email (e.g., example@gmail.com)"><br>
+                                        <button type="submit" class="cta-button">Send</button>
+                                    </section>
+
+                                </section>
+    
+                            </form>
+                        </div>
+                           
+                    </section>
+    
+                  </section>  
+
+                </div> 
+
+            </section>
+
+        </div> 
+
+    </main>
+
+    <footer>
+
+        <div class="logo">
+            <img src="/E-Commerce site/Images/Lunch Chronicles.jpg" alt="">
+            <span>Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong">Quick Links</strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="customer_support.html">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="careers.html">Careers</a>
+                    </li>
+                    <li class="size">
+                        <a href="term_conditions.html">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <strong class="contact">Contact Us</strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="">08102764355</a>
+                    <a href="">kenoyeikata@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Stay in Touch with us</strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="App Store">
+                    <button type="button" class="app ">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </button> 
+                </section>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                    <button type="button" class="app">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </button>
+                </section>
+            </div> -->
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span>&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+    </footer>
+
+    <script src="/E-Commerce/JS/main.js"></script>
+    <script src="/E-Commerce/JS/order_history.js"></script>
+    
+    <script>
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const container = document.getElementById('cart-container');
+            const totalDisplay = document.getElementById('total-price');
+            container.innerHTML = '';
+
+            if (cart.length === 0) {
+                container.innerHTML = '<p>Your cart is empty.</p>';
+                totalDisplay.textContent = '';
+                return;
+            }
+
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                const subtotal = item.price * item.quantity;
+                total += subtotal;
+
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="cart-details">
+                        <strong>${index + 1}. ${item.name}</strong><br>
+                        ₦${item.price.toLocaleString()} x ${item.quantity} = <strong>₦${subtotal.toLocaleString()}</strong><br>
+                        <small>From: ${item.restaurant}</small>
+                    </div>
+                `;
+                container.appendChild(cartItem);
+            });
+
+            totalDisplay.textContent = `Total Amount: ₦${total.toLocaleString()}`;
+        }
+
+        function clearCart() {
+            localStorage.removeItem('cart');
+            loadCart();
+        }
+
+        loadCart();
+    </script>
+
+    <script>
+        function showCustomerSection() {
+          const status = document.querySelector('input[name="customer_status"]:checked').value;
+      
+          document.getElementById('newCustomerSection').style.display = (status === 'new') ? 'block' : 'none';
+          document.getElementById('returningCustomerSection').style.display = (status === 'returning') ? 'block' : 'none';
+          document.getElementById('otherSection').style.display = (status === 'others') ? 'block' : 'none';
+        }
+      </script>
+    <!-- <script src="/E-Commerce/JS/cart_checkout.js"></script> -->
+</body>
+</html>

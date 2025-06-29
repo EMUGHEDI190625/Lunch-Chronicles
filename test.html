@@ -1,0 +1,347 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Order Platform</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+        padding: 0.5%;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .top_navbar {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top_navbar li {
+      position: relative;
+    }
+
+    .top_navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      display: inline-block;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown_content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      color: black;
+      min-width: 160px;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .dropdown_content li {
+      list-style: none;
+    }
+
+    .dropdown_content a {
+      color: black;
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown_content {
+      display: block;
+    }
+
+    .header {
+      background-image: url('/E-Commerce/Images/LC_Business_image.jpg'); /* Use your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 15%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      text-align: center;
+    }
+
+    .header-content h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    .header-content p {
+      font-size: 1.2em;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .btn:hover {
+      background-color: #e55a00;
+    }
+
+    .cta-button {
+        margin: 2% 30%;
+        display: inline-block;
+        background-color: #ff6600;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 14px rgb(0,0,0,0.1);
+        animation: pulse 2s infinite;
+    }
+
+    .cta-button:hover {
+        background-color: #e65c00;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgb(0,0,0,0.2);
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 6px 20px rgb(255,102,0,0.4);
+        }
+        70% {
+            transform: scale(1.03);
+            box-shadow: 0 0 0 10px rgb(255,102,0,0);
+        }
+
+        100% {
+            transform: scale(1);
+            box-shadow: 0 6px 20px rgb(255,102,0,0);
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Updated Navbar with Dropdowns -->
+  <!-- <div class="logo">
+    <img src="/E-Commerce/Images/Lunch Chronicles.jpg" alt="" style="width: 5%;">
+</div> -->
+  <div class="navbar">
+    <div class="logo">
+        <img src="/E-Commerce/Images/Lunch Chronicles.jpg" alt="" style="width: 20%;">
+    </div>
+    <div class="nav-links">
+      <ul class="top_navbar nav-links" id="navlinks">
+        <li>
+          <a href="index.html" class="nav-link home" style="color: white;">Home</a>
+        </li>
+        <div class="dropdown">
+          <a href="about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropdown_content">
+            <li><a href="how_it_work.html">How It Work</a></li>
+            <li><a href="frequently_asked_questions.html" class="nav-link checkout">FAQ</a></li>
+            <li><a href="contact.html" class="nav-link order_history">Contact Us</a></li>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropdown_content">
+            <li><a href="product.html" class="nav-link product">Restaurants</a></li>
+            <li><a href="#" class="nav-link order_history">Order</a></li>
+            <li><a href="#" class="nav-link checkout">Delivery</a></li>
+            <li><a href="contact.html" class="nav-link order_history">Contact Us</a></li>
+          </div>
+        </div>
+        <li><a href="cart_checkout.html">Checkout</a></li>
+        <li><a href="custmoer_order_history.html" class="nav-link checkout">Customer view</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="overlay"></div>
+    <!-- Add content inside header if needed -->
+  </div>
+  <!-- <main id="home">
+    <div id="celebration_message" style="text-align: center; margin-top: 40px; font-weight: bold; color: green;"></div>
+    <section class="hero">
+        <h1 style="padding-top: 2%;">Delicious Meals delivered To You</h1>
+        <p>Pick a restaurant, place your orders and enjoy fresh at your doorstep</p>
+        <a href="product.html" class="link visited active">Browse Restaurants</a>
+    </section>
+    <section class="restaurants">
+        <h2>Restaurants</h2>
+        <div class="restaurants_cards">
+            <div class="card">
+                <img src="../HTML/Product/Spaghettiexpress/Images/Spaghettiexpress_restaurant.jpg" 
+                alt="Spaghettiexpress restaurant">
+                <div class="container">
+                    <h3>
+                        <a href="product.html" class="link visited active">Spaghettiexpress</a>
+                    </h3>
+                    <p>Hot Pasta, fast delivery.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../HTML/Product/Paparimz's/images/Paprimz Pizza.jpg" alt="Paparimz pizza restaurant" width="250" 
+                height="190">
+                <div class="container">
+                    <h3>
+                        <a href="paprimz.html" class="link visited active">Paprimz Pizza</a>
+                    </h3>
+                    <p>Crusty, cheesy goodness.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../HTML/Product/Maubbys/Image/Maubbys Salad Bar.jpg" alt="Maubby's salad restaurant">
+                <div class="container">
+                    <h3>
+                        <a href="maubbys.html" class="link visited active">Maubbys Salad Bar</a>
+                    </h3>
+                    <p>Health salads, tasty.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/E-Commerce/HTML/Product/Bole/Images/Screenshot_2025-04-24-12-15-19-01_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                alt="Bole Abuja restaurant" width="250" height="190">
+                <div class="container">
+                    <h3>
+                        <a href="product.html" class="link visited active">Bole Abuja</a>
+                    </h3>
+                    <p>From Our Kitchen to your heart</p>
+                </div>
+            </div>
+            <div class="card" style="margin-right: 100%;">
+                <img src="/E-Commerce/HTML/Product/Tulip Bistro/Images/Screenshot_2025-04-24-11-01-50-54_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                alt="Tulip Bistro restaurant" width="250">
+                <div class="container" style="width: 83%; margin-left: 1%">
+                    <h3>
+                        <a href="product.html" class="link visited active">Tulip Bistro</a>
+                    </h3>
+                    <p>Made with love and the freshest ingredients</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="button" class="button">
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                title="Note: Before clicking the checkout button explore other restaurants on this site." 
+                class="link visited active" aria-label="Checkout">
+                Checkout
+                </a>
+            </button>
+            <button type="button" id="toggleBtn" class="button">Show More</button>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>What Our Custmoers Say About Us</h2>
+        <div class="testimonial_slider">
+            <div class="testimonial active">
+                <p><strong>"A brilliant bussinesses solution!"</strong></p>
+                <p>I Love how seamless 
+                    <strong>Lunch Chronicles</strong>
+                     makes ordering luch
+                    </p>
+                <img src="/images/my-picture.jpg" alt="Tolu A">
+                <p> 
+                    <em>Tolu A.</em>
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>
+                    <strong>"Top-notch Custmoer experience!"</strong>
+                </p>
+                <p>This isn't just about food- it's about convenience and care</p>
+                <img src="../Images/Customers (2).jpg" alt="Grace E">
+                <p> 
+                    <em>Grace E.</em>
+                </p>
+            </div>
+            <div class="testimonial">
+                <p><strong>"Perfect for busy workdays!"</strong></p>
+                <p> 
+                    <em>
+                            The 
+                        <strong>Lunch Chronicles</strong> 
+                        takes the stress out of deciding where to eat
+                    </em>
+                </p>
+                <img src="../Images/Customers.jpg" alt="Kenny O">
+                <p> 
+                    <em>Kenny O.</em>
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>
+                    <strong>Lunch planning has never been easier</strong>
+                </p>
+                <p>From browsing menus to placing and order, everything is just a few click</p>
+                <img src="../Images/miracle.jpg" alt="Chiamaka U">
+                <p> 
+                    <em>Chiamaka U.</em>
+                </p>
+            </div>
+            <div class="testimonial_control">
+                <button onclick="prevTestimonial()" class="left" id="prevButton"><</button>
+                <button onclick="nextTestimonial()" class="right" id="nextButton">></button>
+            </div>
+        </div>
+    </section>
+    
+</main> -->
+<button type="button" class="cta-button">Clear Cart</button>
+</body>
+</html>

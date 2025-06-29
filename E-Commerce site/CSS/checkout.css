@@ -1,0 +1,25 @@
+form {
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 25%;
+}
+
+form input {
+    width: 79%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    width: 20%;
+    position: absolute;
+    right: 70%;
+}
+
+form span {
+    color: red;
+}

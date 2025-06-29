@@ -1,0 +1,15 @@
+#home .section {
+    width: 80%;
+    margin: 10% auto;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.section {
+    margin-bottom: 40px;
+  }
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}

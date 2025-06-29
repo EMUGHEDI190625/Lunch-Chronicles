@@ -1,0 +1,73 @@
+#main {
+    padding: 5% 0;
+    position: relative;
+    z-index: -1;
+}
+
+.main div {
+    width: 30%;
+    padding-left: 5%;
+}
+
+main {
+    position: relative; 
+    margin-top: 2%;
+}
+
+#topform {
+    position: absolute;
+    top: 1%;
+    margin-left: 5%;
+    padding: 2%;
+}
+
+form {
+    margin-left: 5%;
+    padding: 3% 2%;
+    margin-top: 3%;
+    width: 25%;
+}
+
+form input {
+    width: 79%;
+    margin-top: 100%;
+}
+
+form .contact_form {
+    margin: 10px 0 10px 0;
+    display: block;
+}
+
+form textarea {
+    width: 258px;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    width: 20%;
+    position: absolute;
+    right: 73%;
+}
+
+form span {
+    color: red;
+}
+
+mark {
+    background-color: white;
+    color: green;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.Social_media_handles {
+    position: absolute;
+    bottom: 90%;
+    padding: 1%;
+    right: 42%;
+}

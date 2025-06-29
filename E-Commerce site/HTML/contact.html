@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Lunch Chronicles</title>
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="/E-Commerce/CSS/index.css">
+    <link rel="stylesheet" href="/E-Commerce/CSS/contact.css">
+    <link rel="stylesheet" href="/E-Commerce/CSS/responsive.css">
+    <link rel="icon" type="fulllink/x-icon" href="">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="contact">
+
+    <ul class="top_navbar">
+        <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles">
+        <li>
+            <a href="index.html" class="nav-link home-page">Home</a>
+        </li>
+        <li>
+            <a href="about_us.html" class="nav-link checkout">About Us</a>
+        </li>
+        <li>
+            <a href="product.html" class="nav-link product">Products</a>
+        </li>
+        <!-- <li>
+            <a href="cart_checkout.html" class="nav-link order_history-page">Checkout</a>
+        </li> -->
+        <li id="order_history">
+            <a href="order_history.html" class="nav-link order_history-page">Order History</a>
+        </li>
+        <li>
+            <a href="contact.html" class="nav-link contact">Contact Us</a>
+        </li>
+    </ul>
+
+    <main id="main">
+
+        <section class="main" id="form">
+            <div id="topform">
+                <strong>The form below is for you to reach out to me.</strong>
+                <span>
+                    <br>
+                    <b>Note:</b>
+                    The red * asterist show that these below fields are mandated and there are patterns that you must follow in 
+                    the phone number and E-mail fields once hover on them.
+                </span>
+            </div>
+            
+            <form action="https://formsubmit.co/jos350295@gmail.com" method="post">
+                First Name <span>*</span> 
+                <input type="text" name="first_name" class="contact_form" required>
+                Last Name <span>*</span> 
+                <input type="text" name="last_name" class="contact_form" required>
+                Phone Number <span>*</span>
+                <input type="tel" name="mobile_number" class="contact_form" required pattern="[0-9\s\-\(\) {6, 15}]" 
+                title="Format: 123-45-678">
+                E-mail<span>*</span> 
+                <input type="email" name="e-mail" class="contact_form" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\
+                [a-zA-Z]{2, }" title="Enter a vaild email (e.g., example@gmail.com)">
+                Subject <span>*</span> 
+                <input type="text" name="subject" class="contact_form" required>
+                Meassage <span>*</span> 
+                <textarea name="meassage" id="meassage" class="contact_form" required title="Please include the country from 
+                where you are reaching out to us to eanable to us serve you better and let us work/communicate in different 
+                timezones." placeholder="E.g. I love what you are doing and I am reaching out to you from USA">
+            </textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="main Social_media_handles">
+            <p>Social media handles:</p>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message.">
+                <i class="fa-brands fa-whatsapp"></i>
+                </a>
+        </section>
+        
+    </main>
+
+    <p id="length"></p>
+    
+    <footer>
+
+        <section class="copyright-inform">
+            <p class="inline">&#169
+                <span id="year" class="inline">2025</span>
+                <h4 class="inline">Lunch Chronicles</h4> All Rights Reserved
+            </p>
+        </section>
+
+        <section class="display_flex">
+
+            <div id="app">
+                <button type="button" class="app">
+                    <p class="download">Download on 
+                        <img src="../Images/app_store.png" alt="App Store">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </p>
+                </button> 
+                <button type="button" class="app">
+                    <p class="download">Download on 
+                        <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </p>
+                </button>   
+            </div>
+            <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            <ul class="top_navbar">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about_us.html" class="nav-link checkout">About Us</a>
+                </li>
+                <li>
+                    <a href="product.html">Products</a>
+                </li>
+                <!-- <li>
+                    <a href="cart_checkout.html">Checkout</a>
+                </li> -->
+                <li id="order_history">
+                    <a href="order_history.html">Order History</a>
+                </li>
+                <li id="order_history">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </section>
+
+    </footer>
+
+    <script src="/JS/index.js"></script>
+
+</body>
+</html>

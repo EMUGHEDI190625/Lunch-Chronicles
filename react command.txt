@@ -1,0 +1,1 @@
+xcopy build\* "C:\Users\HP\Desktop\Software Development\E-Commerce\HTML\checkout" /E /I /Y
