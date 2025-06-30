@@ -561,9 +561,9 @@ footer {
     height: auto;
 }
 
-/* footer .logo span {
-    margin-top: 1%;
-} */
+footer .logo span {
+    margin-top: 0.5%;
+}
 
 footer .logo img {
     display: inline-block;
