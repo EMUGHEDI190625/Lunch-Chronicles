@@ -1,7 +1,9 @@
+/* Mobile view start */
 @media only screen and (max-width:576px) {
     body {
-        background-color: turquoise;
+        /* background-color: turquoise; */
         overflow-x: hidden;
+        position: relative;
     }
 
     .nav_bar {
@@ -12,7 +14,7 @@
         display: none;
         flex-direction: row;
         width: 100%;
-        background-color: white;
+        background-color: 
         
     }
     
@@ -21,9 +23,9 @@
     }
 
     .container_button {
-        background-color: white;
+        background-color: #1e3a8a;
         position: sticky;
-        padding-bottom: 10%;
+        padding-bottom: 1.5%;
         margin-bottom: 5%;
         top: 0;
     }
@@ -40,13 +42,52 @@
     }
 
     .nav {
-        background-color: white;
+        background-color: #1e3a8a;
         position: relative;
         margin: 0;
     }
 
     .logo img {
         display: none;
+    }
+
+    nav .logo span {
+        display: none;
+    }
+
+    header h1 {
+        font-size: large;
+        margin-bottom: 4%;
+        width: 60%;
+        margin-left: 13%;
+    }
+
+     header p {
+        margin-top: 5%;
+        margin-bottom: 6%;
+        width: 75%;
+        height: 10%;
+        margin-left: 5%;
+    }
+
+    header:hover #hover-message{
+        display: block;
+        position: sticky;
+        width: 80%;
+        height: 8%;
+        top: 46.5%;
+        left: 0;
+        padding-top: 2%;
+    }
+
+    header:hover h1 {
+        position: sticky;
+        top: 40%;
+        left: 20%;
+    }
+
+    header {
+        padding-bottom: 10%;
     }
 
     .container_button img {
@@ -66,27 +107,38 @@
     }
 
     #home {
-        margin-top: 15%;
+        margin-top: 20%;
     }
 
     nav .top_navbar {
-        padding: 5%;
-        background-color: white;  
+        display: flex;
+        flex-direction: row;
+        padding-left: 5%;
+        background-color:#1e3a8a;  
         position: relative;
-        right: 1%;
         flex-wrap: wrap;
     }
 
-    nav .top_navbar li {
-        width: 20%;
-        margin: 3% auto;
-        margin-right: 5%;
+    nav .top_navbar li,nav .dropdown {
+        width: 35%;
+        /* background-color: red; */
     }
 
     nav .top_navbar li a {
         display: inline-block;
-        width: 50%;
-        padding-top: 20%;
+        width: 70%;
+        padding-top: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+        /* background-color: tan; */
+    } 
+
+    nav .top_navbar li:first-child {
+        margin-left: 1%;
+    }
+
+    nav .top_navbar li:last-child {
+        width: 35%;
     }
 
    nav #order_history a {
@@ -96,12 +148,110 @@
     }
 
     .home .nav-link[href="index.html"], .Product .nav-link[href="product.html"], 
-    .order_history .nav-link[href="order_history.html"],  .cart_checkout .nav-link[href="cart_checkout.html"], 
-    .contact .nav-link[href="contact.html"] {
+    .order_history .nav-link[href="order_history.html"],  .cart_checkout .nav-link[href="cart_checkout.html"]
+     {
         height: 40%;
         padding: 15%;
         width: auto;
     }
+
+    .about_us .nav-link[href="about_us.html"] {
+        width: 80%;
+    }
+
+    nav .dropdown {
+    cursor: pointer;
+    margin-top: 7%;
+    /* background-color: red; */
+    padding: 1%;
+    width: 33%;
+    position: absolute;
+    bottom: 62%;
+    left: 39%;
+}
+
+nav .dropdown span {
+    display: block;
+    text-align: center;
+}
+
+nav .dropdown a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 5%;
+    width: 70%;
+    position: absolute;
+    bottom: 0.1%;
+    
+}
+
+nav .dropdown_content {
+    display: none;
+    position: absolute;
+    left: 0.1%;
+    width: 80%;
+    background-color: var(--color-white);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    margin: 1% auto;
+    margin-top: 15%;
+    z-index: 1;
+}
+
+nav .dropdown_content li:first-child {
+    position: relative;
+    right: 3%;
+}
+
+nav .dropdown_content li {
+    width: 65%;
+    display: block;
+    margin: 5% auto;
+    padding: 12%;
+    padding-bottom: 20%;
+    position: relative;
+    border-bottom: 4px solid var(--color-primary);
+}
+
+/* .dropdown_content li:last-child {
+    margin-top: 1%;
+} */
+
+nav .dropdown_content li a {
+    width: 82%;
+    position: absolute;
+    bottom: 80%;
+    display: block;
+    top: 5%;
+    right: 4%;
+    height: 50%;
+    text-align: center;
+    padding-bottom: 8%;
+}
+
+nav .dropdown_content li:first-child {
+    margin: 0;
+    margin-left: 8%;
+}
+
+nav .dropdown_content li:last-child {
+    color: white;
+    width: 65%;
+    margin: 0;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+nav .dropdown:hover .dropdown_content {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,1),0 17px 50px 0 rgba(0,0,0,1); 
+}
+
+.hero {
+    text-align: center;
+}
 
     .image h3 {
         bottom: 70%;
@@ -111,10 +261,17 @@
         padding: 5%;
     }
 
+    .hero a {
+        display: block;
+        margin: 1% auto;
+        width: 34%;
+        text-align: center;
+    }
+
     .restaurants h2 {
         text-align: center;
         width: 58%;
-        margin: 5% 15%;
+        margin: 5% auto;
     }
 
     .restaurants .restaurants_cards {
@@ -128,9 +285,9 @@
         width: 68%;
     }
 
-    .card:last-child {
+    .restaurants .card {
         position: relative;
-        left: 10%;
+        left: 12%;
     }
 
     .restaurants button {
@@ -142,19 +299,18 @@
         width: 45%;
         margin: 0 auto;
         flex-wrap: wrap;
-        margin-right: 26%;
+        margin-right: 28%;
+    }
+
+    .btn button:first-child {
+        width: 105%;
+        padding: 2%;
     }
 
     .btn button {
         margin: 4% 0;
-        width: 80%;
-        padding: 5%;
+        width: 105%;
     }
-
-    .btn button a {
-        padding: 10%;
-    }
-
     .meal_cards {
         display: flex;
         flex-wrap: wrap;
@@ -255,6 +411,10 @@
         margin: 40% 0;
     }
 
+    .checkbutton {
+        background-color:#1e3a8a;
+    }
+
     #orderform #btn {
         display: block;
         width: 20%;
@@ -262,14 +422,17 @@
     }
 
     #topform {
-        width: 26.5%;
+        width: 95%;
         padding: 7%;
     }
 
     .searchClass {
-        margin: 10%;
+        margin-top: 13%;
+        margin-bottom: 5%;
         padding-left: 4%;
-        width: 40%;
+        width: 70%;
+        position: relative;
+        right: 15%;
     }
 
     .Social_media_handles {
@@ -282,25 +445,27 @@
     }
 
     form {
-        margin-top: 78%;
+        margin-top: 5%;
         margin-bottom: 30%;
-        width: 30%;
+        width: 100%;
         padding: 5%;
-        padding-bottom: 10%;
+        padding-bottom: 20%;
     }
 
     form input {
         width: 100%;
     }
 
-    form textarea {
-        width: 100%;
-    }
+    /* form textarea {
+        width: 205%;
+        margin-left:5%;
+        background-color:red;
+    } */
 
     form button {
         position: absolute;
-        left: 10%;
-        width: 30%;
+        left: 18%;
+        width: 68.5%;
     }
 
     #app {
@@ -365,8 +530,35 @@
         height: 40%;
         text-align: center; */
     }
-}
 
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: red;
+    }
+
+    footer .logo span {
+        display: block;
+        position: absolute;
+        top: 7%;
+    }
+
+    .footer_section {
+        width: 38%;
+        margin: 1%;
+        padding: 1% 0
+    }
+
+    .copyright-inform {
+        width: 70%;
+        padding: 1%;
+        color: black;
+        margin-left: 2%;
+        margin: 1% auto;
+    }
+}
+/* Mobile view end */
 @media only screen and (min-width:576px) and (max-width:768px) {
     body {
         background-color: rosybrown;
