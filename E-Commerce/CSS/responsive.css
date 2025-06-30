@@ -281,6 +281,10 @@ nav .dropdown:hover .dropdown_content {
         padding-bottom: 5%;
     }
 
+    .cards img {
+        max-width:fit-content;
+    }
+    
     .restaurants .card .container {
         width: 68%;
     }
