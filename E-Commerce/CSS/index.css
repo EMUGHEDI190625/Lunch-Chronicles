@@ -379,6 +379,10 @@ nav ul .home-link a {
     margin: 1%;
 }
 
+.card {
+    max-width: max-content;
+}
+
 .card a {
     text-decoration: none
 }
