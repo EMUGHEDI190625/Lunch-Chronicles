@@ -565,7 +565,8 @@ footer {
 footer .logo span {
     display: block;
     position: absolute;
-    top: 25%;
+    top: 27%;
+    left: 15%
     background-color: red
 }
 
