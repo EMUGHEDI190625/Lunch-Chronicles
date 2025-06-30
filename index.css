@@ -134,7 +134,7 @@ main {
     padding: 5% 0;
 }
 
-.logo span { 
+nav .logo span { 
     display: inline-block;
     position: absolute;
     top: 35%;
@@ -562,8 +562,7 @@ footer {
 }
 
 footer .logo span {
-    position: absolute;
-    background-color: red;
+   margin-top:1%
 }
 
 footer .logo img {
