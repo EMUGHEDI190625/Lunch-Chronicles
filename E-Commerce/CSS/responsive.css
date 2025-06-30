@@ -2,7 +2,7 @@
 @media only screen and (max-width:576px) {
     body {
         /* background-color: turquoise; */
-        overflow-x: auto;
+        overflow-x:hidden;
         position: relative;
     }
 
@@ -104,6 +104,7 @@
         top: 18%;
         width: 100%;
         height: 13%;
+        overflow-x:hidden;
     }
 
     #home {
