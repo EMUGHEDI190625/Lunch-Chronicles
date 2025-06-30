@@ -134,7 +134,7 @@ main {
     padding: 5% 0;
 }
 
-nav .logo span { 
+.logo span { 
     display: inline-block;
     position: absolute;
     top: 35%;
