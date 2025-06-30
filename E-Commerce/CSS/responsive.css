@@ -2,7 +2,7 @@
 @media only screen and (max-width:576px) {
     body {
         /* background-color: turquoise; */
-        overflow-x: hidden;
+        overflow-x: auto;
         position: relative;
     }
 
