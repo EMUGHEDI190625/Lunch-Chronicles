@@ -563,7 +563,9 @@ footer {
 }
 
 footer .logo span {
-   margin-top:10%
+    display: block;
+    position: absolute;
+    top: 25%;
 }
 
 footer .logo img {
