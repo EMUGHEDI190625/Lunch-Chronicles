@@ -281,10 +281,6 @@ nav .dropdown:hover .dropdown_content {
         padding-bottom: 5%;
     }
 
-    .cards img {
-        max-width:fit-content;
-    }
-    
     .restaurants .card .container {
         width: 68%;
     }
@@ -325,14 +321,12 @@ nav .dropdown:hover .dropdown_content {
     }
 
     .card {
-        width: 70%;
-        margin-left: 10%;
-        margin-top: 2%;
-        padding: 2%;
+        margin-left: 2%;
+        min-width: 70%;
     }
 
-    .card:last-child {
-        margin-left: 10%;
+    .card img {
+        width: 50vw;
     }
 
     .card img,.container {
@@ -341,10 +335,18 @@ nav .dropdown:hover .dropdown_content {
     }
 
     .card .container {
-        width: 44%;
-        background-color: #f3f3f3;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 25px;
+    }
+
+    .card:last-child .container {
+        width: 45vw;
+    }
+
+    .card:last-child img {
+        position: relative;
+        left:8%;
+        margin-left: 5%;
     }
 
     #testimonials h2 {
@@ -561,7 +563,7 @@ nav .dropdown:hover .dropdown_content {
         margin-left: 2%;
         margin: 1% auto;
     }
-}
+
 /* Mobile view end */
 @media only screen and (min-width:576px) and (max-width:768px) {
     body {
