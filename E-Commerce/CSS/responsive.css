@@ -2,7 +2,7 @@
 @media only screen and (max-width:576px) {
     body {
         /* background-color: turquoise; */
-        overflow-x:hidden;
+        overflow-x:auto;
         position: relative;
     }
 
@@ -23,11 +23,11 @@
     }
 
     .container_button {
-        background-color: #1e3a8a;
+        background-color:#1e3a8a;
         position: sticky;
         padding-bottom: 1.5%;
-        margin-bottom: 5%;
         top: 0;
+        width: 100%
     }
     
     .container_button button {
@@ -100,15 +100,10 @@
     }
 
     header {
-        position: fixed;
-        top: 18%;
-        width: 100%;
-        height: 13%;
-        overflow-x:hidden;
-    }
-
-    #home {
-        margin-top: 20%;
+        position: sticky;
+        top: 18.5%;
+        width: 94%;
+        height: 10vh;
     }
 
     nav .top_navbar {
@@ -564,6 +559,7 @@ nav .dropdown:hover .dropdown_content {
         margin-left: 2%;
         margin: 1% auto;
     }
+}
 
 /* Mobile view end */
 @media only screen and (min-width:576px) and (max-width:768px) {
