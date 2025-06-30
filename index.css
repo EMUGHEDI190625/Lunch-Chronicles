@@ -566,6 +566,7 @@ footer .logo span {
     display: block;
     position: absolute;
     top: 25%;
+    background-color: red
 }
 
 footer .logo img {
