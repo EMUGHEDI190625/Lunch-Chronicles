@@ -1,5 +1,5 @@
 /* Mobile view start */
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:480px) {
     body {
         /* background-color: turquoise; */
         overflow-x:auto;
