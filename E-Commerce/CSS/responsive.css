@@ -7,8 +7,7 @@
 
   /* NAVIGATION */
   .nav_bar,
-  .logo img,
-  nav .logo span {
+  .logo img {
     display: none;
   }
 
@@ -30,7 +29,13 @@
   .container_button img {
     display: block;
     width: 30%;
-    margin: 0 auto;
+    margin: 7% auto;
+    margin-right: 60%;
+  }
+
+  nav .logo span {
+    margin-left: 33%;
+    position: fixed;
   }
 
   .nav {
@@ -111,7 +116,7 @@
 
   nav .dropdown_content li a {
     display: block;
-    width: 50%;
+    width: 90%;
     margin: 2% auto;
     text-align: center;
   }
@@ -279,9 +284,13 @@ header:hover p {
     transform: none;
   }
 
+    article {
+        display: block;
+    }
+
   /* FORM */
   form {
-    width: 90%;
+    width: 60vw;
     margin: 2rem auto;
   }
 
@@ -290,6 +299,30 @@ header:hover p {
     width: 100%;
     display: block;
     margin: 0.5rem 0;
+  }
+
+  .about_us .nav-link[href="about_us.html"] {
+    height: 5%;
+    width: 45%;
+    padding: 1%;
+    margin-top: 75%;
+  }
+
+  .searchClass {
+    margin-left: 0;
+    width: 30%;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .contact-div {
+    padding: 10%;
+  }
+
+  .Social_media_handles {
+    display:none;
   }
 
   /* FOOTER */
@@ -335,6 +368,7 @@ header:hover p {
     margin-left: 5%;
     padding-left: 2.3%;
   }
+}
 
 /* Mobile view end */
 @media only screen and (min-width:576px) and (max-width:768px) {
