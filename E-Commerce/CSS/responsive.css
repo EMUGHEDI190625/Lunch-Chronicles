@@ -331,6 +331,7 @@ header:hover p {
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
+    padding-right: 3rem;
   }
   
 
