@@ -1,566 +1,340 @@
 /* Mobile view start */
-@media only screen and (max-width:480px) {
-    body {
-        /* background-color: turquoise; */
-        overflow-x:auto;
-        position: relative;
-    }
+@media only screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
 
-    .nav_bar {
-        display: none;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: row;
-        width: 100%;
-        background-color: 
-        
-    }
-    
-    .navlinks.show {
-        display: flex;
-    }
-
-    .container_button {
-        background-color:#1e3a8a;
-        position: sticky;
-        padding-bottom: 1.5%;
-        top: 0;
-        width: 100%
-    }
-    
-    .container_button button {
-        position: absolute;
-        left: 30%;
-        top: 55%;
-    }
-    
-    .navbar {
-        position: sticky;
-        top: 0;
-    }
-
-    .nav {
-        background-color: #1e3a8a;
-        position: relative;
-        margin: 0;
-    }
-
-    .logo img {
-        display: none;
-    }
-
-    nav .logo span {
-        display: none;
-    }
-
-    header h1 {
-        font-size: large;
-        margin-bottom: 4%;
-        width: 60%;
-        margin-left: 13%;
-    }
-
-     header p {
-        margin-top: 5%;
-        margin-bottom: 6%;
-        width: 75%;
-        height: 10%;
-        margin-left: 5%;
-    }
-
-    header:hover #hover-message{
-        display: block;
-        position: sticky;
-        width: 80%;
-        height: 8%;
-        top: 46.5%;
-        left: 0;
-        padding-top: 2%;
-    }
-
-    header:hover h1 {
-        position: sticky;
-        top: 40%;
-        left: 20%;
-    }
-
-    header {
-        padding-bottom: 10%;
-    }
-
-    .container_button img {
-        display: block;
-        width: 18%;
-        margin: 1% auto;
-        padding-top: 2%;
-        margin-top: 0;
-        padding-bottom: 2%;
-    }
-
-    header {
-        position: sticky;
-        top: 18.5%;
-        width: 94%;
-        height: 10vh;
-    }
-
-    nav .top_navbar {
-        display: flex;
-        flex-direction: row;
-        padding-left: 5%;
-        background-color:#1e3a8a;  
-        position: relative;
-        top:15%;
-        flex-wrap: wrap;
-    }
-
-    nav .top_navbar li,nav .dropdown {
-        width: 35%;
-        /* background-color: red; */
-    }
-
-    nav .top_navbar li a {
-        display: inline-block;
-        width: 70%;
-        padding-top: 5%;
-        padding-left: 2%;
-        padding-right: 2%;
-        /* background-color: tan; */
-    } 
-
-    nav .top_navbar li:first-child {
-        margin-left: 1%;
-    }
-
-    nav .top_navbar li:last-child {
-        width: 35%;
-    }
-
-   nav #order_history a {
-        width: auto;
-        padding: 10%;
-        color: black;
-    }
-
-    .home .nav-link[href="index.html"], .Product .nav-link[href="product.html"], 
-    .order_history .nav-link[href="order_history.html"],  .cart_checkout .nav-link[href="cart_checkout.html"]
-     {
-        height: 40%;
-        padding: 15%;
-        width: auto;
-    }
-
-    .about_us .nav-link[href="about_us.html"] {
-        width: 80%;
-    }
-
-    nav .dropdown {
-    cursor: pointer;
-    margin-top: 7%;
-    /* background-color: red; */
-    padding: 1%;
-    width: 33%;
-    position: absolute;
-    bottom: 62%;
-    left: 39%;
-}
-
-nav .dropdown span {
-    display: block;
-    text-align: center;
-}
-
-nav .dropdown a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    padding: 5%;
-    width: 70%;
-    position: absolute;
-    bottom: 0.1%;
-    
-}
-
-nav .dropdown_content {
+  /* NAVIGATION */
+  .nav_bar,
+  .logo img,
+  nav .logo span {
     display: none;
-    position: absolute;
-    left: 0.1%;
-    width: 80%;
-    background-color: var(--color-white);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
-    margin: 1% auto;
-    margin-top: 15%;
-    z-index: 1;
-}
+  }
 
-nav .dropdown_content li:first-child {
-    position: relative;
-    right: 3%;
-}
-
-nav .dropdown_content li {
-    width: 65%;
-    display: block;
-    margin: 5% auto;
-    padding: 12%;
-    padding-bottom: 20%;
-    position: relative;
-    border-bottom: 4px solid var(--color-primary);
-}
-
-/* .dropdown_content li:last-child {
-    margin-top: 1%;
-} */
-
-nav .dropdown_content li a {
-    width: 82%;
-    position: absolute;
-    bottom: 80%;
-    display: block;
-    top: 5%;
-    right: 4%;
-    height: 50%;
+  .container_button {
+    background-color: #1e3a8a;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
     text-align: center;
-    padding-bottom: 8%;
-}
+  }
 
-nav .dropdown_content li:first-child {
+  .container_button button {
+    position: static;
+    width: 10%;
+    margin: 1rem auto;
+  }
+
+  .container_button img {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .nav {
+    background-color: #1e3a8a;
     margin: 0;
-    margin-left: 8%;
-}
+  }
 
-nav .dropdown_content li:last-child {
-    color: white;
-    width: 65%;
-    margin: 0;
-    margin-left: 5%;
-    margin-bottom: 3%;
-}
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
 
-nav .dropdown:hover .dropdown_content {
+  .navlinks.show {
+    display: flex;
+  }
+
+  nav .top_navbar {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,1),0 17px 50px 0 rgba(0,0,0,1); 
-}
+    padding: 1rem;
+  }
 
-.hero {
+  nav .top_navbar li:first-child {
+    margin-left: 0;
+  }
+
+  nav .top_navbar li,
+  nav .dropdown {
+    width: 50%;
+    margin: 0.5rem 0;
+  }
+
+  nav .top_navbar li:first-child a {
+    margin: 2% auto;
+  }
+
+  nav .top_navbar li a {
+    display: block;
+    width: 90%;
+    padding: 0.5rem;
     text-align: center;
+  }
+
+  nav .top_navbar li:last-child {
+    width: 50%;
+  }
+
+  nav .dropdown {
+    position: static;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 8%;
+  }
+
+  nav .dropdown_content {
+    display: none;
+    position: static;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+   nav .dropdown a[href="about_us.html"] {
+    width: 45%;
+    margin-left: 1%;
+   }
+
+  nav .dropdown:hover .dropdown_content {
+    display: block;
+  }
+
+  nav .dropdown_content li {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-primary);
+  }
+
+  nav .dropdown_content li a {
+    display: block;
+    width: 50%;
+    margin: 2% auto;
+    text-align: center;
+  }
+
+  /* HEADER */
+  header {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: height 2s ease-in;
+  }
+
+  header:hover {
+    height: 80vh;
+   }
+
+  header h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  header p {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  header:hover #hover-message {
+    display: block;
+  }
+
+  header:hover .default-text {
+    display: none;
+  }
+
+  header:hover h1 {
+    position: sticky;
+    top: 40%;
+    left: 10%;
+    width: 80%;
 }
 
-    .image h3 {
-        bottom: 70%;
-    }
+header:hover p {
+    margin-right: 10%;
+  }
 
-    .hero {
-        padding: 5%;
-    }
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
 
-    .hero a {
-        display: block;
-        margin: 1% auto;
-        width: 34%;
-        text-align: center;
-    }
+  .hero a {
+    display: inline-block;
+    width: 40%;
+    margin: 1rem 0;
+  }
 
-    .restaurants h2 {
-        text-align: center;
-        width: 58%;
-        margin: 5% auto;
-    }
+  /* RESTAURANTS */
+  .restaurants h2 {
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto;
+  }
 
-    .restaurants .restaurants_cards {
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 2%;
-        padding-bottom: 5%;
-    }
+  .restaurants .restaurants_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-    .restaurants .card .container {
-        width: 68%;
-    }
+  .restaurants .card,
+  .restaurants .card .container {
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    .restaurants .card {
-        position: relative;
-        left: 12%;
-    }
-
-    .restaurants button {
-        margin-top: 5%;
-    }
-
-    .btn {
-        display: block;
-        width: 45%;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        margin-right: 28%;
-    }
-
-    .btn button:first-child {
-        width: 105%;
-        padding: 2%;
-    }
-
-    .btn button {
-        margin: 4% 0;
-        width: 105%;
-    }
-    .meal_cards {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1%;
-        width: 100%;
-        margin-top: 25%;
-        margin-bottom: 1%;
-    }
-
-    .card {
-        margin-left: 2%;
-        min-width: 70%;
-    }
-
-    .card img {
-        width: 50vw;
-    }
-
-    .card img,.container {
-        display: block;
-        margin: 2% auto;
-    }
-
-    .card .container {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 25px;
-    }
-
-    .card:last-child .container {
-        width: 45vw;
-    }
-
-    .card:last-child img {
-        position: relative;
-        left:8%;
-        margin-left: 5%;
-    }
-
-    #testimonials h2 {
-        width: 80%;
-        margin: 2% auto;
-        padding: 5%;
-    }
-
-    .testimonial {
-        width: 54%;
-        margin-left: 3%;
-    }
-
-    .testimonial p {
-       padding: 0 25%;
-    }
-
-    .testimonial img {
-        width: 60%;
-        margin-right: 10%;
-    }
+  .restaurants .card:last-child {
+    margin-left: 25%;
+    width: 20vw;
+    padding: 1.5% 0 0 0;
+    padding-right: 31%;
     
-    .testimonial_control button {
-        position: absolute;
-        bottom: 30%;
-    }
-    
-    #prevButton {
-        position: absolute;
-        right: 76.5%;
-    }
-    
-    #nextButton {
-        position: absolute;
-        left: 68%;
-    }
+  }
 
-    article {
-        text-align: center; 
-         width: 100%;
-         padding: 1%;
-         display: block;
-    }
+  .restaurants .card:last-child img {
+    background-color: indianred;
+    width: 45vw;
+  }
 
-    article section {
-        margin: 3%;
-    }
+  .restaurants .container {
+    width: 120%;
+    padding: 25%;
+  }
 
-    .image img{
-        width: 100%;
-        display: block;
-        object-fit: contain;
-        margin-top: 2%;
-        position: relative;
-    }
+  .restaurants .card:last-child .container {
+    width: 38vw;
+  }
 
-    .image .center {
-        display: block;
-        width: 30%;
-        margin: 0 auto;
-        margin-top: 25%;
-    }
-    
-    .image img:hover {
-        transform: scale(3);
-        position: relative;
-        z-index: 10;
-        margin: 40% 0;
-    }
+  .restaurants .container a,.restaurants .container p {
+    display: block;
+    width: 40vw;
+    position: relative;
+    right: 33%;
+    bottom: 5%;
+  }
 
-    .checkbutton {
-        background-color:#1e3a8a;
-    }
+  .restaurants .card img {
+    width: 100%;
+  }
 
-    #orderform #btn {
-        display: block;
-        width: 20%;
-        margin-left: 32%;
-    }
+  .restaurants .card:last-child img {
+    width: 47vw;
+  }
 
-    #topform {
-        width: 95%;
-        padding: 7%;
-    }
+  .restaurants .card:last-child a, .restaurants .card:last-child p {
+    margin-left: 35%;
+  }
 
-    .searchClass {
-        margin-top: 13%;
-        margin-bottom: 5%;
-        padding-left: 4%;
-        width: 70%;
-        position: relative;
-        right: 15%;
-    }
+  .btn {
+    width: 50%;
+    margin: 1rem auto;
+  }
 
-    .Social_media_handles {
-        position: absolute;
-        left: 47%;
-        width: 30%;
-        bottom: 86.7%;
-        padding: 6% 0;
-        text-align: center;
-    }
+  .btn button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
 
-    form {
-        margin-top: 5%;
-        margin-bottom: 30%;
-        width: 100%;
-        padding: 5%;
-        padding-bottom: 20%;
-    }
+  /* TESTIMONIALS */
+  #testimonials h2 {
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
 
-    form input {
-        width: 100%;
-    }
+  .testimonial {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+  }
 
-    /* form textarea {
-        width: 205%;
-        margin-left:5%;
-        background-color:red;
-    } */
+  .testimonial img {
+    width: 50%;
+  }
 
-    form button {
-        position: absolute;
-        left: 18%;
-        width: 68.5%;
-    }
+  .testimonial p {
+    padding: 0 1rem;
+  }
 
-    #app {
-        position: relative;
-        top: 15%;
-        width: 100%;
-        right: 60%;
-        margin-bottom: 10%;
-        display: flex;
-    }
+  .testimonial_control button {
+    position: static;
+    margin: 1rem;
+  }
 
-    #app button {
-        width: auto;
-        padding: 0 25%;
-        margin-top: 35%;
-    }
+  /* IMAGE */
+  .image img {
+    width: 100%;
+    display: block;
+  }
 
-    #app button:last-child p a {
-        width: 50%;
-        margin-left: 100%;
-    }
-    
-    #app button p a {
-        display: block;
-        margin-top: 25%;
-        position: absolute;
-        left: 50%;
-    }
+  .image img:hover {
+    transform: none;
+  }
 
-    #app button:first-child p img {
-        position: absolute;
-        top: 71%;
-        left: 35%;
-        width: 10%;
-    }
+  /* FORM */
+  form {
+    width: 90%;
+    margin: 2rem auto;
+  }
 
-    #app button:last-child p img {
-        position: absolute;
-        top: 71%;
-        left: 100%;
-        width: 10%;
-        margin-left: 45%;
-    }
+  form input,
+  form button {
+    width: 100%;
+    display: block;
+    margin: 0.5rem 0;
+  }
 
+  /* FOOTER */
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
 
-    .copyright-inform  {
-        width: 30%;
-        margin: 2% 2%;
-        padding: 3%;
-    }
+  .copyright-inform,
+  .footer_section {
+    width: 100%;
+    text-align: center;
+    padding-left: 9%;
+    margin: 1rem 0;
+  }
 
-    .copyright-inform .social {
-        margin: 10% 0;
-        padding: 5% 2%;
-        text-align: center;
-    }
+  .footer_section ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 55%;
+    margin-left: 47%;
+  }
 
-    .footer_section .social {
-        display: none
-        /* position: absolute;
-        top: 5%;
-        height: 40%;
-        text-align: center; */
-    }
+  .footer_section ul li {
+    width: 80%;
+    text-align: center;
+  }
 
-    .footer_container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        background-color: red;
-    }
+  .footer_section .social {
+    width: 100%;
+  }
 
-    footer .logo span {
-        display: block;
-        position: absolute;
-        top: 7%;
-    }
+   footer .logo img {
+    display: block;
+    margin-top: 10%;
+   }
 
-    .footer_section {
-        width: 38%;
-        margin: 1%;
-        padding: 1% 0
-    }
-
-    .copyright-inform {
-        width: 70%;
-        padding: 1%;
-        color: black;
-        margin-left: 2%;
-        margin: 1% auto;
-    }
-}
+  footer .logo span {
+    display: block;
+    margin-left: 5%;
+    padding-left: 2.3%;
+  }
 
 /* Mobile view end */
 @media only screen and (min-width:576px) and (max-width:768px) {
