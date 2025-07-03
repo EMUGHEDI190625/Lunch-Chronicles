@@ -104,7 +104,8 @@
 
    nav .dropdown a[href="about_us.html"] {
     width: 45%;
-     backgroun-color:red
+     background-color:red;
+     margin-right: 10%;
    }
 
   nav .dropdown:hover .dropdown_content {
