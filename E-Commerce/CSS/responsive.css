@@ -32,12 +32,12 @@
     display: block;
     width: 15%;
     margin: 7% auto;
-    margin-top: 15%;
-    margin-right: 60%;
+    margin-top: 5%;
+    margin-right: 50%;
   }
 
    .container_button .logo span {
-    margin-left: 33%;
+    margin-left: 38%;
     position: fixed;
     background-color: red;
   }
