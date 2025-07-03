@@ -29,7 +29,17 @@
   }
 
   .container_button img {
-    display: none;
+    display: block;
+    width: 15%;
+    margin: 7% auto;
+    margin-top: 15%;
+    margin-right: 60%;
+  }
+
+   .container_button .logo span {
+    margin-left: 33%;
+    position: fixed;
+    background-color: red;
   }
 
   nav .logo span {
