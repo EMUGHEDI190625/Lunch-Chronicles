@@ -456,3 +456,19 @@ header:hover p {
 }
 
 //mobile view
+
+@media only screen and (min-width:998px) {
+
+    .container_button {
+        display: none;
+        overflow: hidden;
+    }
+
+    .container_button img {
+        display: none;
+    }
+
+    .footer_container .copyright-inform  .social {
+        display: none;
+    }
+}
