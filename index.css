@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-image: url('E-Commerce/Images/LC_background_image.jpg');
+    background-image: url('/E-Commerce/Images/LC_background_image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -487,6 +487,7 @@ nav .dropdown:hover .dropdown_content {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+  background-color: var(--color-primary);
 }
 
 .testimonial.active {
@@ -550,18 +551,20 @@ nav .dropdown:hover .dropdown_content {
   cursor: pointer;
 }
 
-.testimonial strong {
-  color: black;
-}
-
 .testimonial_control #prevButton {
     position: relative;
     right: 20%;
+    background-color: var(--color-primary);
 }
 
 .testimonial_control #nextButton {
       position: relative;
       left: 20%;
+      background-color: var(--color-primary);
+}
+
+.testimonial strong {
+  color: black;
 }
 
 .cta-button {
