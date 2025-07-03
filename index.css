@@ -554,12 +554,14 @@ nav .dropdown:hover .dropdown_content {
   color: black;
 }
 
-#prevButton {
-  background-color: var(--color-primary);
+.testimonial_control #prevButton {
+    position: relative;
+    right: 20%;
 }
 
-#nextButton {
-  background-color: var(--color-primary);
+.testimonial_control #nextButton {
+      position: relative;
+      left: 20%;
 }
 
 .cta-button {
