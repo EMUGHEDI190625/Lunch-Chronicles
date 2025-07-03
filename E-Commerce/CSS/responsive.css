@@ -91,6 +91,11 @@
     margin-bottom: 8%;
   }
 
+  nav .dropdown a {
+    padding-right: 20%
+    
+}
+  
   nav .dropdown_content {
     display: none;
     position: static;
