@@ -40,6 +40,9 @@
     position: fixed;
   }
 
+  nav .logo span {
+    display: none;
+
   .nav {
     background-color: #1e3a8a;
     margin: 0;
