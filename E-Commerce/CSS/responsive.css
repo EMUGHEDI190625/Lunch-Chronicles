@@ -29,16 +29,11 @@
   }
 
   .container_button img {
-    display: block;
-    width: 15%;
-    margin: 7% auto;
-    margin-top: 15%;
-    margin-right: 60%;
+    display: none;
   }
 
   nav .logo span {
-    margin-left: 33%;
-    position: fixed;
+   display: none;
   }
 
   .nav {
