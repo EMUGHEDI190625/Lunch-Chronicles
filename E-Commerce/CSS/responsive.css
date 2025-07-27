@@ -220,7 +220,7 @@ header:hover p {
   }
 
   main {
-    margin-top: 75%;
+    margin-top: 85%;
   }
 
   button[title="Scroll Up"] {
@@ -303,7 +303,7 @@ header:hover p {
   .btn {
     width: 50%;
     margin: 1rem 10rem;
-    margin-right: 20rem
+    margin-right: 30rem
   }
 
   .btn button {
