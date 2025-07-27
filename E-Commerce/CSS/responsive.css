@@ -91,6 +91,7 @@
   nav .dropdown {
     width: 50%;
     margin: 0.2rem 0;
+    margin-right: 5rem
   }
 
   nav .top_navbar li:first-child a {
@@ -1062,7 +1063,7 @@ header:hover p {
     padding: 0;
     margin: 0 auto;
     width: 55%;
-    margin-left: 54%;
+    margin-left: 65%;
   }
 
   .footer_section ul li {
