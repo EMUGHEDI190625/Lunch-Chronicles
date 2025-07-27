@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Custom Hover Circle with Default Cursor</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #eceff4;
+    }
+
+    nav {
+      background: #fff;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer; /* default pointer */
+    }
+
+    /* The custom circle */
+    .cursor-circle {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background: rgba(0,0,0,0.4);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease;
+      z-index: 9999;
+      opacity: 0; /* hidden by default */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="cursor-circle"></div>
+
+  <script>
+    const cursorCircle = document.querySelector('.cursor-circle');
+    const nav = document.querySelector('a');
+
+    window.addEventListener('mousemove', (e) => {
+      cursorCircle.style.left = `${e.clientX}px`;
+      cursorCircle.style.top = `${e.clientY}px`;
+    });
+
+    nav.addEventListener('mouseenter', () => {
+      cursorCircle.style.opacity = 1; // show
+    });
+
+    nav.addEventListener('mouseleave', () => {
+      cursorCircle.style.opacity = 0; // hide
+    });
+  </script>
+</body>
+</html>

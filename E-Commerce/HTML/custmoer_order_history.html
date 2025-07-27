@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Custmoer Order History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="../CSS/order_history.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+    <style> 
+
+        .customer_view_section {
+            cursor: pointer;
+            width: 70%;
+            margin: 1% auto;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            animation: subtlePulse 5s ease-in-out infinite
+        }
+
+        @keyframes subtlePulse {
+            0%, 100% {
+                box-shadow: 0 12px 16px 0 var(--color-primary);
+            }
+
+            50% {
+                box-shadow: 0 14px 20px 0 rgba(0,0,0,0.18),0 20px 70px 0 rgba(0,0,0,0.15);
+            }
+        }
+
+        header {
+            background-image: url("../Images/Customer_view.jpg");
+        }
+
+        .customer .nav-link[href="custmoer_order_history.html"] {
+            width: 100%;
+        }
+
+        header h1 {
+            display: block;
+            position: absolute;
+            left: 30%;
+        }
+
+        header p {
+            margin-top: 8%;
+        }
+
+        header:hover h1 {
+            position: absolute;
+            top: 27%;
+            left: 30%;
+            height: 5%;
+        }
+
+         header:hover p {
+            position: fixed;
+            margin-right: 30%;
+        }
+
+        footer .copyright-inform .inline {
+            display: inline;
+        }
+
+        .cursor-circle {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            background: radial-gradient(circle, rgba(59,130,246,1) 0%, rgba(30, 58,138,1)100%);
+            border: 2px solid #1e3a8a;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease;
+            z-index: 9999;
+            opacity: 0; /* hidden by default */
+        }
+
+    </style>
+</head>
+<body class="customer">
+
+    <div class="navbar">
+        <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+                <span>Lunch Chronicles</span>
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li class="home-link">
+                    <a href="../../index.html" class="nav-link home" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="./about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="./how_it_work.html">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="./frequently_asked_questions.html" class="nav-link checkout">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link order_history" style="color: white;">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="./product.html" class="nav-link product">Restaurants</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>                 -->
+                 <li>
+                    <a href="./checkout/index.html">Checkout</a>
+                </li>
+                <li>
+                    <a href="./custmoer_order_history.html" class="nav-link checkout" style="width:100%">Customer view</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div> -->
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle" />
+                        <span class="slider">
+                            <span class="icon sun">🌞</span>
+                            <span class="icon moon">🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1 class="text">Check Your Orders</h1>
+            <p class="default-text">Hover on this background image to see the full image</p>
+            <p id="hover-message">Move the cursor away from the image to return back to the norm state</p>
+            <!-- <button class="strong cta-button" 
+                title="Scroll down to the bottom of this page with is the footer and download our app ( Lunch Chronicles )">
+                <a href="#app">Get Our App</a>
+            </button> -->
+        </header>
+    </div>
+
+    <div class="cursor-circle"></div>
+
+    <button type="button" id="scroll-up" title="Scroll Up"></button>
+    <button type="button" id="scroll_up" title="Scroll Up"></button>
+    
+    <main>
+        <section class="customer_view_section">
+            <p class="text" style="margin-top: 8%; width:41%">Enter the email you use while filling the order checkout for you to check/view your 
+                orders history.
+        </p>
+
+        <form id=orderform>
+            <span style="margin-left: 18%;"> Email * </span>
+            <input type="text" id="email" required 
+            style="box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);">
+            <button type="button" id="btn" onclick="searchOrders()" style="cursor: pointer; padding: 2%" class="button">
+                View Your Orders
+            </button>
+        </form>
+
+            <i class="fa-solid fa-magnifying-glass search" style="margin-top:5%; margin-left:36%; position: absolute; 
+            left: 4.5%;"></i>
+            <span style="margin-left: 20%;" class="searchClass">Search your order details using the below field. </span>
+            <input type="search" id="inputSearch" style="width: 20%; overflow-x:auto; margin: 0.5% auto; display:block; 
+            padding: 1% 2%; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);" class="inputSearch">
+        
+            <div class="table-container" style="overflow-x: auto;">
+            <table id="orderTable" style="box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);">
+                <p id="noResults" style="text-align: center; width:30%; margin:1% auto; padding:2%">
+                    No orders found for this email
+                </p>
+                <thead>
+                    <tr>
+                            <th>Timestamp</th>
+                            <th>Customer Status</th>
+                            <!-- <th>(New Custormer) How do you come across this business?</th>
+                            <th>(Returning Customer) Please rate your previous delivery experience</th>
+                            <th>(Returning Customer) Would you like to leve any comment or suggestion bases on your previous 
+                                experience with out service
+                            </th> -->
+                            <th>First Name</th>
+                            <th>Surname</th>
+                            <th>Phone Number</th>
+                            <th>Address</th>
+                            <th>Items Order</th>
+                            <th>Order From</th>
+                            <th>Order Category</th>
+                            <th>Order Name</th>
+                            <th>Order Price</th>
+                            <th>Payment Method</th>
+                            <th>Email</th>
+                            <th>Order Reference</th>
+                    </tr>
+                <thead>
+                    <tbody id="orderTableBody"></tbody>
+            </table>
+        </div>
+        
+        <div id="messages" style="margin-top: 20px;"></div>
+
+        <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLtRmEyKrMr6RzTVLe364PPAXySkah_CEbTEnCbjgvPN42ZD7tf6NvIk_G_FXy3lHRcH73wXmA0NFv/pubhtml?widget=true&amp;headers=false"></iframe> -->
+        </section>
+    </main>
+
+    <div class="side-bubble left up"></div>
+    <div class="side-bubble left down"></div>
+    <div class="side-bubble right up"></div>
+    <div class="side-bubble right down"></div>
+
+    <footer>
+
+        <div class="logo">
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong quick-links">Quick Links</strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="./frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./customer_support.html">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="./careers.html">Careers</a>
+                    </li>
+                    <li class="size">
+                        <a href="./term_conditions.html">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="./privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section" id="footer_section_contact">
+                <strong class="contact">Contact Us</strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="tel:08102764355">08102764355</a>
+                    <a href="mailto:kitoyeikata@gmail.com">Lunch_Chronicles@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Follow Us On</strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="App Store">
+                    <button type="button" class="app ">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </button> 
+                </section>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                    <button type="button" class="app">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </button>
+                </section>
+            </div> -->
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span class="inline">&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+        <a href="#scroll-up">Scroll Up</a>
+        <a href="#scroll_up">Scroll Up</a>
+
+    </footer>
+
+    <script src="../JS/index.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/order_history.js"></script>
+     <!-- import {initializeApp} from ""
+        import {getDatabase, ref, get, chikld} from "" -->
+
+    <!-- <script type="module">
+        import { initializeApp } from "firebase/app";
+        import { getDatabase, ref, push, get, child } from "firebase/database";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCL_dNTo4N9SnNuDQYH5aA7JXEIH4mWDPM",
+            authDomain: "paystackorders.firebaseapp.com",
+            databaseURL: "https://paystackorders-default-rtdb.firebaseio.com",
+            projectId: "paystackorders",
+            storageBucket: "paystackorders.firebasestorage.app",
+            messagingSenderId: "772974877440",
+            appId: "1:772974877440:web:1ee1b70162eaeeff5cb1e5",
+            measurementId: "G-VV82SSZTL0"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+        const analytics = getAnalytics(app);
+
+        window.searchOrders = async function () {
+            const email = document.getElementById("email").value.trim().toLowerCase();
+            const snapshot = await get(ref(db, "orders"));
+            const data = snapshot.val();
+
+            const tableBody = document.getElementById("orderTableBody");
+            const table = document.getElementById("orderTable");
+            const noResults = document.getElementById("noResults");
+            
+            tableBody.innerHTML = "";
+
+            let found = false;
+            for(let key in data) {
+                if (data[key].email.toLowerCase() === email) {
+                    const order = data[key];
+                    const row = `<tr>
+                        <td>${order.date}</td>
+                        <td>${order.amount}</td>
+                        <td>${order.items}</td>
+                        <td>${order.reference}</td>
+                    </tr>`;
+                    tableBody.innerHTML += row;
+                    found = true;
+                }
+            }
+
+            if(found) {
+                tableBody.style.display = "table";
+                noResults.style.display = "none";
+            }
+            else {
+                table.style.display = "none";
+                noResults.style.display = "block";
+            }
+        }
+    </script> -->
+
+    <!-- <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCL_dNTo4N9SnNuDQYH5aA7JXEIH4mWDPM",
+            authDomain: "paystackorders.firebaseapp.com",
+            databaseURL: "https://paystackorders-default-rtdb.firebaseio.com",
+            projectId: "paystackorders",
+            storageBucket: "paystackorders.appspot.com",
+            messagingSenderId: "772974877440",
+            appId: "1:772974877440:web:1ee1b70162eaeeff5cb1e5",
+            measurementId: "G-VV82SSZTL0"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        window.searchOrders = async function () {
+            const email = document.getElementById("email").value.trim().toLowerCase();
+            const snapshot = await get(ref(db, "orders"));
+            const data = snapshot.val();
+
+            const tableBody = document.getElementById("orderTableBody");
+            const table = document.getElementById("orderTable");
+            const noResults = document.getElementById("noResults");
+
+            tableBody.innerHTML = "";
+
+            let found = false;
+            for (let key in data) {
+            if (data[key].email.toLowerCase() === email) {
+                const order = data[key];
+                const row = `<tr>
+                <td>${order.timeStamp || ""}</td>
+                <td>${order.customerStatus || ""}</td>
+                <td>${order.firstName || ""}</td>
+                <td>${order.surname || ""}</td>
+                <td>${order.phoneNumber || ""}</td>
+                <td>${order.address || ""}</td>
+                <td>${order.orderFrom || ""}</td>
+                <td>${order.orderName || ""}</td>
+                <td>₦${order.amount || ""}</td>
+                <td>${order.items || ""}</td>
+                <td>${order.paymentMethod || ""}</td>
+                <td>${order.reference || ""}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+                found = true;
+            }
+            }
+
+            if (found) {
+            table.style.display = "table";
+            noResults.style.display = "none";
+            } else {
+            table.style.display = "none";
+            noResults.style.display = "block";
+            }
+  };
+</script> -->
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyCL_dNTo4N9SnNuDQYH5aA7JXEIH4mWDPM",
+        authDomain: "paystackorders.firebaseapp.com",
+        databaseURL: "https://paystackorders-default-rtdb.firebaseio.com",
+        projectId: "paystackorders",
+        storageBucket: "paystackorders.appspot.com",
+        messagingSenderId: "772974877440",
+        appId: "1:772974877440:web:1ee1b70162eaeeff5cb1e5",
+        measurementId: "G-VV82SSZTL0"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    window.searchOrders = async function () {
+        const email = document.getElementById("email").value.trim().toLowerCase();
+        const snapshot = await get(ref(db, "orders"));
+        const data = snapshot.val();
+
+        const tableBody = document.getElementById("orderTableBody");
+        const table = document.getElementById("orderTable");
+        const noResults = document.getElementById("noResults");
+
+        tableBody.innerHTML = "";
+
+        let found = false;
+        for (let key in data) {
+            if (data[key].email.toLowerCase() === email) {
+                const order = data[key];
+                const row = `<tr>
+                    <td>${order.readable}</td>
+                    <td>${order.customer_status}</td>
+                    <td>${order.first_name}</td>
+                    <td>${order.surname}</td>
+                    <td>${order.phone}</td>
+                    <td>${order.address}</td>
+                    <td>${order.items}</td>
+                    <td>${order.order_from}</td>
+                    <td>${order.order_category}</td>
+                    <td>${order.order_name}</td>
+                    <td>₦${order.order_price}</td>
+                    <td>${order.paymentmenthod}</td>
+                    <td>${order.email}</td>
+                    <td>${order.reference}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+                found = true;
+            }
+        }
+
+        if (found) {
+            table.style.display = "table";
+            noResults.style.display = "none";
+        } else {
+            table.style.display = "none";
+            noResults.style.display = "block";
+        }
+    };
+</script>
+
+
+
+<!-- <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCL_dNTo4N9SnNuDQYH5aA7JXEIH4mWDPM",
+    authDomain: "paystackorders.firebaseapp.com",
+    databaseURL: "https://paystackorders-default-rtdb.firebaseio.com",
+    projectId: "paystackorders",
+    storageBucket: "paystackorders.appspot.com",
+    messagingSenderId: "772974877440",
+    appId: "1:772974877440:web:1ee1b70162eaeeff5cb1e5",
+    measurementId: "G-VV82SSZTL0"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  window.searchOrders = async function () {
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value.trim().toLowerCase();
+    const snapshot = await get(ref(db, "orders"));
+    const data = snapshot.val();
+
+    const table = document.getElementById("orderTable");
+    const tableBody = document.getElementById("orderTableBody");
+    const noResults = document.getElementById("noResults");
+
+    tableBody.innerHTML = "";
+
+    let found = false;
+
+    if (data) {
+      for (let key in data) {
+        const order = data[key];
+        if (order.email && order.email.toLowerCase() === email) {
+          const row = `
+            <tr>
+              <td>${order.timeStamp || ""}</td>
+              <td>${order.customerStatus || ""}</td>
+              <td>${order.firstName || ""}</td>
+              <td>${order.surname || ""}</td>
+              <td>${order.phoneNumber || ""}</td>
+              <td>${order.address || ""}</td>
+              <td>${order.orderFrom || ""}</td>
+              <td>${order.orderName || ""}</td>
+              <td>₦${order.amount || ""}</td>
+              <td>${order.items || ""}</td>
+              <td>${order.paymentMethod || ""}</td>
+              <td>${order.reference || ""}</td>
+            </tr>
+          `;
+          tableBody.innerHTML += row;
+          found = true;
+        }
+      }
+    }
+
+    if (found) {
+      table.style.display = "table";
+      noResults.style.display = "none";
+    } else {
+      table.style.display = "none";
+      noResults.style.display = "block";
+    }
+  };
+</script> -->
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+.top_navbar,header {
+    margin-bottom: 5%;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.image img{
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    margin-top: 45%;
+    position: relative;
+}
+
+.image .center {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.image img:hover {
+    transform: scale(1.4);
+    position: relative;
+    z-index: 10;
+}
+
+.image a {
+    display: block;
+    width: 25%;
+    height: 20%;
+    margin: 4% 2%;
+    text-align: center;
+}
+
+.image h3 {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 53%;
+    z-index: 999;
+    font-size: x-large;
+    padding-bottom: 5%;
+    background-color: #f3f3f3;
+}
+
+.meal_cards {
+    display: flex;
+    margin-top: 8%;
+    padding: 1%;
+    width: auto;
+    margin-bottom: 1%;
+}
+
+.card img {
+    width: 60%;
+    height: 60%;
+}
+
+.card .container {
+    width: 43%;
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.one .link[href="product.html"], .two .link[href="paprimz.html"], .three .link[href="maubbys.html"], .four .link[href="bole.html"]
+,.five .link[href="tulip.html"] {
+    font-weight: bold;
+    border-bottom: 5px solid #ccc;
+}
+
+.pagination {
+    text-align: center;
+    margin-top:  2%;
+    padding: 2%;
+}
+
+.pagination a {
+    text-decoration: none;
+    width: 10%;
+    padding: 1%;
+    margin: 0 1%;
+}

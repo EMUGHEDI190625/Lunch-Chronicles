@@ -1,0 +1,20 @@
+main {
+    margin: 5% 0;
+}
+
+article {
+    text-align: center;
+     display: flex; 
+     width: 80%;
+     margin: 0 auto;
+}
+
+article section {
+    margin: 3%;
+    padding: 5%;
+}
+
+article .image {
+    margin: 3%;
+    padding: 5%;
+}

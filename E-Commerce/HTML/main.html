@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lunch Chronicles E-Commerce Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+    <div class="navbar">
+        <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="/E-Commerce site/Images/Lunch Chronicles.jpg" alt="">
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+                <span>Lunch Chronicles</span>
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li class="home-link">
+                    <a href="../../index.html" class="nav-link home" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="./about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="./how_it_work.html">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="./frequently_asked_questions.html" class="nav-link checkout">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link order_history" style="color: white;">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="./product.html" class="nav-link product">Restaurants</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>                 -->
+                <li>
+                    <a href="./checkout/index.html">Checkout</a>
+                </li>
+                <li>
+                    <a href="custmoer_order_history.html" class="nav-link checkout">Customer view</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div> -->
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1>Welcome to Lunch Chronicles</h1>
+            <p class="default-text">Hover on this background image to see the full image</p>
+            <p id="hover-message">Move the cursor away from the image to return back to the norm state</p>
+            <!-- <button class="strong cta-button"><a href="#app">Get Our App</a></button> -->
+        </header>
+    </div>
+
+    <main id="home">
+        <div id="celebration_message" style="text-align: center; margin-top: 40px; font-weight: bold; color: green;"></div>
+        <section class="hero">
+            <h1 style="padding-top: 2%; color: white;">Delicious Meals delivered To You</h1>
+            <p>Pick a restaurant, place your orders and enjoy fresh at your doorstep</p>
+            <a href="product.html" class="link visited active button cta-button">Browse Restaurants</a>
+        </section>
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants_cards">
+                <div class="card">
+                    <img src="../HTML/Product/Spaghettiexpress/Images/Spaghettiexpress_restaurant.jpg" 
+                    alt="Spaghettiexpress restaurant">
+                    <div class="container">
+                        <h3>
+                            <a href="product.html" class="link visited active call_to_action_link">Spaghettiexpress</a>
+                        </h3>
+                        <p>Hot Pasta, fast delivery.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../HTML/Product/Paparimz's/images/Paprimz Pizza.jpg" alt="Paparimz pizza restaurant" width="250" 
+                    height="190">
+                    <div class="container">
+                        <h3>
+                            <a href="paprimz.html" class="link visited active">Paprimz Pizza</a>
+                        </h3>
+                        <p>Crusty, cheesy goodness.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../HTML/Product/Maubbys/Image/Maubbys Salad Bar.jpg" alt="Maubby's salad restaurant">
+                    <div class="container">
+                        <h3>
+                            <a href="maubbys.html" class="link visited active">Maubbys Salad Bar</a>
+                        </h3>
+                        <p>Health salads, tasty.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/E-Commerce/HTML/Product/Bole/Images/Screenshot_2025-04-24-12-15-19-01_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                    alt="Bole Abuja restaurant" width="250" height="195">
+                    <div class="container">
+                        <h3>
+                            <a href="product.html" class="link visited active">Bole Abuja</a>
+                        </h3>
+                        <p>From Our Kitchen to your heart</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 21%;">
+                    <img src="/E-Commerce/HTML/Product/Tulip Bistro/Images/Screenshot_2025-04-24-11-01-50-54_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                    alt="Tulip Bistro restaurant" width="265" style="display:block; margin-left: 1%">
+                    <div class="container" style="width: 85%;">
+                        <h3>
+                            <a href="product.html" class="link visited active">Tulip Bistro</a>
+                        </h3>
+                        <p>Made with love and the freshest ingredients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button" class="button cta-button">
+                    <a href="/E-Commerce/HTML/checkout/index.html" target="_blank" class="link visited active"
+                        title="Note: Before clicking the checkout button explore other restaurants on this site." 
+                        aria-label="Checkout">
+                        View Cart and Checkout
+                    </a>
+                </button>
+                <button type="button" id="toggleBtn" class="button cta-button">Show More</button>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Custmoers Say About Us</h2>
+            <div class="testimonial_slider">
+                <div class="testimonial active">
+                    <p>
+                        <strong>"A brilliant bussinesses solution!"</strong>
+                    </p>
+                    <p>I Love how seamless 
+                        <strong>Lunch Chronicles</strong>
+                         makes ordering luch
+                    </p>
+                    <img src="/images/my-picture.jpg" alt="Tolu A" class=".resize_image">
+                    <p> 
+                        <em>Tolu A.</em>
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        <strong>"Top-notch Custmoer experience!"</strong>
+                    </p>
+                    <p>This isn't just about food- it's about convenience and care</p>
+                    <img src="../Images/Customers (2).jpg" alt="Grace E">
+                    <p> 
+                        <em>Grace E.</em>
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <p><strong>"Perfect for busy workdays!"</strong></p>
+                    <p> 
+                        <em>
+                                The 
+                            <strong>Lunch Chronicles</strong> 
+                            takes the stress out of deciding where to eat
+                        </em>
+                    </p>
+                    <img src="../Images/Customers.jpg" alt="Kenny O">
+                    <p> 
+                        <em>Kenny O.</em>
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <p>
+                        <strong>Lunch planning has never been easier</strong>
+                    </p>
+                    <p>From browsing menus to placing and order, everything is just a few click</p>
+                    <img src="../Images/miracle.jpg" alt="Chiamaka U" class=".resize_image">
+                    <p> 
+                        <em>Chiamaka U.</em>
+                    </p>
+                </div>
+                <div class="testimonial_control">
+                    <button onclick="prevTestimonial()" class="left" id="prevButton"><</button>
+                    <button onclick="nextTestimonial()" class="right" id="nextButton">></button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <div class="side-bubble left up"></div>
+    <div class="side-bubble left down"></div>
+    <div class="side-bubble right up"></div>
+    <div class="side-bubble right down"></div>
+
+    <footer>
+
+        <div class="logo">
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong quick-links">Quick Links</strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="./frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./customer_support.html">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="./careers.html">Careers</a>
+                    </li>
+                    <li class="size">
+                        <a href="./term_conditions.html">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="./privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section" id="footer_section_contact">
+                <strong class="contact">Contact Us</strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="">08102764355</a>
+                    <a href="">kenoyeikata@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Stay in Touch with us</strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="App Store">
+                    <button type="button" class="app ">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </button> 
+                </section>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                    <button type="button" class="app">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </button>
+                </section>
+            </div> -->
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span>&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+    </footer>
+    <script src="/E-Commerce/JS/main.js"></script>
+    <script src="/E-Commerce/JS/index.js"></script>
+    <!-- <script src="/E-Commerce/JS/order_history.js"></script> -->
+</body>
+</html>

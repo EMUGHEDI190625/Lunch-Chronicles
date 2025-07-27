@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Careers- Join Our Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        #home section {
+            width: 80%;
+            padding: 20px;
+            margin: 2% auto;
+        }
+
+        main .section div {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #0057b7;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: subtlePulse 5s ease-in-out infinite
+        }
+
+         @keyframes subtlePulse {
+            0%, 100% {
+                box-shadow: 0 12px 16px 0 var(--color-primary);
+            }
+
+            50% {
+                box-shadow: 0 14px 20px 0 rgba(0,0,0,0.18),0 20px 70px 0 rgba(0,0,0,0.15);
+            }
+        }
+
+        section strong {
+            color: black;
+        }
+
+        header:hover {
+            position: fixed;
+        }
+
+        header button {
+            position: relative;
+            bottom: 10%;
+        } 
+        
+        header:hover h1 {
+            position: fixed;
+            top: 35%;
+        }
+
+        header h2 {
+            width: 55%;
+            margin-left: 22%;
+            position: relative;
+            bottom: 10%;
+        }
+
+        header p {
+            position: relative;
+            bottom: 20%;
+            padding: 0.2%;
+        }
+
+        header:hover h2 {
+            position: absolute;
+            top: 37%;
+            right: 22%;
+            padding: 0;
+            height: 5%;
+        }
+
+         header:hover p {
+            position: absolute;
+            margin-top: 20%;
+        }
+
+        form input,select {
+            width: 45%;
+            background-color: white;
+        }
+
+        form select {
+            height: 0;
+            padding: 3.5%;
+            margin-left: 2%;
+            margin-top: 3%;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+        <nav class="nav">
+            <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+                <span>Lunch Chronicles</span>
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li class="home-link">
+                    <a href="../../index.html" class="nav-link home" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="./about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="./how_it_work.html">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="./frequently_asked_questions.html" class="nav-link checkout">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link order_history" style="color: white;">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="./product.html" class="nav-link product">Restaurants</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>                 -->
+                <li>
+                    <a href="./checkout/index.html">Checkout</a>
+                </li>
+                <li>
+                    <a href="./custmoer_order_history.html" class="nav-link checkout">Customer view</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div> -->
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle" />
+                        <span class="slider">
+                            <span class="icon sun">🌞</span>
+                            <span class="icon moon">🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1>Careers at Lunch Chronicles</h1>
+            <h2 style="text-align: center;">Join us redefining food delivery and service excellence!</h2>
+            <p class="default-text">Hover on this background image to see the full image</p>
+            <p id="hover-message">Move the cursor away from the image to return back to the norm state</p>
+            <!-- <button class="strong cta-button"><a href="#app">Get Our App</a></button> -->
+        </header>
+    </div>
+
+    <div class="cursor-circle"></div>
+
+    <main id="home">
+
+        <button type="button" id="scroll-up" title="Scroll Up"></button>
+        <button type="button" id="scroll_up" title="Scroll Up"></button>
+        <section class="section">
+            <h2 style="color:white; text-align:center">Why join Us?</h2>
+            <p>At
+                <strong>Luch Chronicles,</strong>
+                we believe in teamwork, creativity, and delivering outstanding Service. Whether you are passionate about tech, customer service, 
+                logistics or design-there is a place for you on our growing team.
+            </p>
+
+            <div>
+                <h3>Custmoer Support officer</h3>
+                <p>
+                    <strong>Location:</strong>
+                    Romte
+                </p>
+                <p>Type:
+                    <strong>Full-Time</strong>
+                </p>
+                <p>We are looking for friendly and organized individuals to support our customers through phone, email and other social media.</p>
+            </div>
+            <div>
+                <h3>Forntend or Backend Web Developmer</h3>
+                <p>
+                    <strong>Location:</strong>
+                    Romte
+                </p>
+                <p>Type:
+                    <strong>Full-Time</strong>
+                </p>
+                <p>Help us build and improve our wbsite. Basic knowledge of forntend or backend web developmenr is required.</p>
+            </div>
+            <div>
+                <h3>logistics and Delivery coordinator</h3>
+                <p>
+                    <strong>Location:</strong>
+                    Romte
+                </p>
+                <p>coordinate with parter restaurants and delivery agent to ensure timely and accurate food deliveries</p>
+            </div>
+        </section>
+        <section>
+            <h2 style="text-align:center; color:white">Apply Now</h2>
+            <form action="https://formsubmit.co/kitoyeikata@gmail.com">
+                <label for="first_name" class="first"> First Name </label>
+                    <span>*</span>
+                    <label for="surname" class="second" style="margin-left: 35%;">Surname</label>
+                    <span>*</span>
+                    <div class="row">
+                        <input type="text" name="firstname" id="first_name" required>
+                        <input type="text" name="surname" id="surname" required>
+                    </div>
+                    <label for="phone_number" class="first">Phone Number</label>
+                    <span>*</span>
+                    <label for="e-mail" class="second" style="margin-left: 35%;">E-mail</label>
+                    <span>*</span>
+                    <div class="row">
+                            <input type="tel" name="mobile_number" class="contact_form" required 
+                            pattern="[0-9\s\-\(\) {6, 15}]" title="Format: 123-45-678">
+                            <input type="email" name="e-mail" class="contact_form" id="e-mail" required 
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\[a-zA-Z]{2, }" 
+                            title="Enter a vaild email (e.g., example@gmail.com)">
+                    </div>
+                <label for="role" class="label">Role You are Applying For
+                    <span>*</span>
+                </label>
+                <label for="first_message" class="second" style="margin-left: 55%;">Cover Letter / Short Message</label>
+                <span>*</span>
+                <div class="row">
+                    <select name="role" name="role" id="" required>
+                        <option value=""></option>
+                    </select>
+                    <input type="file" name="file upload" id="" style="cursor: pointer;">
+                </div><br>
+                <label for="message" class="first">Tell Us why you are a great fit..</label>
+                <span>*</span><br><br>
+                <textarea name="message" id="message" required></textarea>
+                <button type="submit" class="cta-button">Send Application</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="side-bubble left up"></div>
+    <div class="side-bubble left down"></div>
+    <div class="side-bubble right up"></div>
+    <div class="side-bubble right down"></div>
+
+    <footer>
+
+        <div class="logo">
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong quick-links">Quick Links</strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="./frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./customer_support.html">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="./careers.html">Careers</a>
+                    </li>
+                    <li class="size">
+                        <a href="./term_conditions.html">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="./privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section" id="footer_section_contact">
+                <strong class="contact">Contact Us</strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="tel:08102764355">08102764355</a>
+                    <a href="mailto:kitoyeikata@gmail.com">Lunch_Chronicles@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Follow Us Using</strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="App Store">
+                    <button type="button" class="app ">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </button> 
+                </section>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                    <button type="button" class="app">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </button>
+                </section>
+            </div> -->
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span>&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+        <a href="#scroll-up">Scroll Up</a>
+        <a href="#scroll_up">Scroll Up</a>
+
+    </footer>
+
+    <script src="../JS/index.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/order_history.js"></script>
+
+    <script>
+        const cursorCircle = document.querySelector('.cursor-circle');
+        const links = document.querySelectorAll('a'); // select only a tags
+        
+
+        window.addEventListener('mousemove', (e) => {
+            cursorCircle.style.left = `${e.clientX}px`;
+            cursorCircle.style.top = `${e.clientY}px`;
+            });
+
+            links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursorCircle.style.opacity = 1; // show only when over <a>
+            });
+            link.addEventListener('mouseleave', () => {
+                cursorCircle.style.opacity = 0; // hide when leaving <a>
+            });
+        });
+  </script>
+</body>
+</html>

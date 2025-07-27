@@ -1,0 +1,94 @@
+main {
+    margin: 5% 0;
+    margin-top: 10%;
+}
+
+header {
+    background-image: url("../Images/LC_Background_image_2.jpg");
+}
+
+.logo span {
+    display: inline-block;
+    position: absolute;
+    bottom: 90%;
+    font-size: large
+}
+
+.about_us .nav-link[href="about_us.html"] {
+    display: block;
+    position: absolute;
+    top: 0.5%;
+    padding: 5%;
+    height: 50%;
+}
+
+article {
+     width: 80%;
+     text-align: center;
+     cursor: pointer;
+      display: flex; 
+      width: 80%;
+      margin: 10% auto;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      animation: subtlePulse 5s ease-in-out infinite
+}
+
+@keyframes subtlePulse {
+    0%, 100% {
+        box-shadow: 0 12px 16px 0 var(--color-primary);
+    }
+
+     50% {
+        box-shadow: 0 14px 20px 0 rgba(0,0,0,0.18),0 20px 70px 0 rgba(0,0,0,0.15);
+    }
+}
+
+article h2 {
+    color: white;
+}
+
+article section {
+    margin: 3%;
+    padding: 5%;
+}
+
+article .image {
+    margin: 3%;
+    padding: 5%;
+}
+
+article .image img {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,1),0 17px 50px 0 rgba(0,0,0,1); 
+}
+
+article strong {
+    color: black;
+}
+
+article ul {
+    margin: 2% auto;
+    width: 85%;
+}
+
+article ul li {
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 45%;
+}
+
+article ul li a {
+    display: block;
+    width: 70%;
+    padding: 2%;
+    text-decoration: none;
+    color: black;
+    margin: 2% auto;
+    text-align: center;
+}
+
+.testimonial h3 {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: white;
+}

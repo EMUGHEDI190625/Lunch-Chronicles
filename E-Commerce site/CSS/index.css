@@ -1,0 +1,379 @@
+:root {
+    --color-primary: #1e3a8a;
+    --color-bg: #eceff4;
+    --color-text: #1f2937;
+    --color-white: #ffffff;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fdf6ee;
+    color: #333;
+    overflow-x: hidden;
+    font-family: Arial sans-serif;
+}
+
+header {
+    background-color: #f3f3f3;
+    position: fixed;
+    bottom: 60%;
+    width: 100%;
+    padding: 1% 3% 0 3%;
+}
+
+header h1 {
+    text-align: center;
+    color: #333333;
+}
+
+#home {
+    margin-top: 7%;
+    width: 94%;
+}
+
+main {
+    padding: 0 3%;
+    margin-bottom: 5%;
+}
+
+#main {
+    padding: 5% 0;
+}
+
+.top_navbar img {
+    width: 10%;
+    margin-left: 5%;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.top_navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.top_navbar li {
+    display: inline-block;
+    text-align: center;
+    height: 50%;
+    width: 10%;
+    margin: 3% 0 2% 2%;
+}
+
+.top_navbar li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10%;
+    margin-top: 4%;
+}
+
+#order_history a {
+    width: auto;
+    overflow: hidden;
+    padding: 10%;
+    position: relative;
+}
+
+.nav-link[href="index.html"] {
+    color: #333;
+}
+
+.nav-link[href="order_history.html"] {
+    color: #333;
+}
+
+.nav-link[href="checkout.html"] {
+    color: #333;
+}
+
+.nav-link[href="contact.html"] {
+    color: #333;
+}
+
+.home .nav-link[href="index.html"], .about_us .nav-link[href="about_us.html"], .Product .nav-link[href="product.html"], .order_history .nav-link[href="order_history.html"],  
+.cart_checkout .nav-link[href="cart_checkout.html"], .contact .nav-link[href="contact.html"] {
+    color: white;
+    background-color: #b0b0b0;
+    border-radius: 5px;
+    height: 20%;
+    width: auto;
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+.restaurants h2 {
+    text-align: center;
+}
+
+.restaurants .restaurants_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+.restaurants_cards .card {
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card a {
+    text-decoration: none
+}
+
+.card .container {
+    width: inherit;
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.container {
+    padding: 10px 20px;
+}
+
+.btn {
+    display: flex;
+    width: 86%;
+    height: auto;
+    justify-content: center;
+    padding: 2%;
+    margin-left: 3.5%;
+}
+
+.btn button:first-child a {
+    text-decoration: none;
+    color: black;
+}
+
+#toggleBtn {
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-left: 2%;
+}
+
+#testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    z-index: -1;
+}
+
+.testimonial img {
+    width: 40%;
+    height: 190px;
+    border-radius: 50%;
+}
+
+.testimonial_slider {
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial.active {
+    display: block;
+}
+
+#testimonials h2 {
+    width: 45%;
+    margin: 1% auto;
+}
+
+.testimonial p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial_control {
+    margin-top: 15px;
+    width: 50%;
+}
+
+.testimonial_control button {
+    position: absolute;
+    bottom: 40%;
+}
+
+#prevButton {
+    right: 67%;
+}
+
+#nextButton {
+    left: 67%;
+}
+
+.testimonial_control button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    font-size: x-large;
+}
+
+footer {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+footer section:last-child {
+    padding: 2% 2% 1% 2%;
+    
+    margin: 0 1%;
+    width: 50%;
+}
+
+footer .display_flex {
+    /* background-color: brown; */
+    width: 10%;
+}
+
+footer .inline {
+    display: inline;
+}
+
+footer .top_navbar {
+    width: 100%;
+    margin-left: 18%;
+    padding: 10%;
+    /* background-color: indigo; */
+}
+
+footer .top_navbar li {
+    padding: 5%;
+    width: 50%;
+    /* background-color: khaki; */
+    height: 45%;
+    position: relative;
+}
+
+footer .top_navbar li a {
+    display: inline-block;
+    padding: 10%;
+    
+}
+
+footer #order_history {
+    padding: 0 25%;
+    height: 65%;
+}
+
+footer #order_history a {
+    width: auto;
+    height: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;    
+    color: black;
+}
+
+#footer_section a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer_section mark {
+    text-decoration: none;
+    background-color: inherit;
+    color: green;
+}
+
+.display_flex {
+    width: 50%;
+    display:flex;
+}
+
+.app {
+    border: none;
+    width: 100%;
+    height: 75%;
+    background-color: inherit;
+}
+
+#app {
+    display: flex;
+}
+
+#app button {
+    margin: 5%;
+    padding: 25%;
+}
+
+#app .app p {
+    padding-bottom: 60%;
+    width: 100%;
+}
+
+.app:first-child a {
+    right: 56%;
+}
+
+.app a {
+    text-decoration: none;
+    position: absolute;
+    margin-top: 2.3%;
+    right: 46%;
+    margin-bottom: 5%;
+    color: black;
+}
+
+.app:first-child img {
+    right: 60.5%;
+    width: 2%;
+}
+
+.app img {
+    width: 2%;
+    position: absolute;
+    right: 51.5%;
+    margin-top: 2%;
+}
+
+.space {
+    margin: inherit;
+}
+
+.icon {
+    display: block;
+    font-size:xx-large;
+}
+
+#icon {
+    margin: 1%;
+    padding: 2%;
+}
+
+.copyright-inform {
+    width: 26%;
+    margin: 2% 0;
+    padding: 2% 2% 1% 2%;
+    margin: 0 1%;
+}
