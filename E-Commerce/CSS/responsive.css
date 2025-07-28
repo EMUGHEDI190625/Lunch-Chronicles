@@ -26,7 +26,7 @@
 
   .container_button {
     background-color: #1e3a8a;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     padding: 1rem;
