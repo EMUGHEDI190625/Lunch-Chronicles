@@ -30,7 +30,7 @@
     top: 0;
     width: 100%;
     padding: 1rem;
-    
+    padding-top: 10%;
     text-align: center;
     background-color: red;
   }
@@ -93,7 +93,7 @@
   nav .dropdown {
     width: 50%;
     margin: 0.2rem 0;
-    margin-right: 5rem
+    margin-right: 10rem
   }
 
   nav .top_navbar li:first-child a {
@@ -113,7 +113,7 @@
     margin-top: 34%;
     top: 1%;
     left: 0;
-    margin-right: 5rem
+    margin-right: 15rem
   }
 
   .nav .top_navbar li a[href="./index.html"] {
