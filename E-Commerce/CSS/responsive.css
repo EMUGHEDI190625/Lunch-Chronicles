@@ -32,7 +32,6 @@
     padding: 1rem;
     padding-top: 25%;
     text-align: center;
-    background-color: red;
   }
 
   .container_button button {
@@ -53,7 +52,7 @@
 
    .container_button span {
      margin-left: 30%;
-     margin-top: 10%;
+     margin-top: 12.5%;
      padding: 1%;
    }
 
@@ -93,7 +92,7 @@
   nav .dropdown {
     width: 50%;
     margin: 0.2rem 0;
-    margin-right: 3.5rem
+    margin-right: 4rem
   }
 
   nav .top_navbar li:first-child a {
@@ -111,9 +110,9 @@
   .nav .top_navbar .home-link {
     position: absolute;
     margin-top: 34%;
-    top: 1%;
+    top: 15%;
     left: 0;
-    margin-right: 20rem
+    margin-right: 30rem
   }
 
   .nav .top_navbar li a[href="./index.html"] {
