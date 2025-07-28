@@ -25,6 +25,7 @@
   }
 
   .container_button {
+    overflow-x: hidden
     background-color: #1e3a8a;
     position: sticky;
     top: 0;
@@ -67,6 +68,7 @@
   }
 
   .nav {
+    overflow-x: hidden
     background-color: #1e3a8a;
     margin: 0;
   }
@@ -303,7 +305,7 @@ header:hover p {
   .btn {
     width: 50%;
     margin: 1rem 10rem;
-    margin-right: 45rem
+    margin-right: 60rem
   }
 
   .btn button {
