@@ -52,7 +52,7 @@
 
    .container_button span {
      margin-left: 30%;
-     margin-top: 25%;
+     margin-top: 30%;
      padding: 1%;
    }
 
@@ -92,7 +92,7 @@
   nav .dropdown {
     width: 50%;
     margin: 0.2rem 0;
-    margin-right: 5rem
+    margin-right: 6rem
   }
 
   nav .top_navbar li:first-child a {
@@ -112,7 +112,7 @@
     margin-top: 34%;
     top: 15%;
     left: 0;
-    margin-right: 35rem
+    margin-right: 45rem
   }
 
   .nav .top_navbar li a[href="./index.html"] {
