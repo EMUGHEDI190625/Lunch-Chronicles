@@ -370,6 +370,8 @@ header:hover p {
     }
 
   article,.work,.faq {
+    position: relative;
+    top: 10;
     margin-top: 55%;
   }
 
