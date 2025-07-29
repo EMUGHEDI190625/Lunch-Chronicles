@@ -114,7 +114,8 @@
     margin-top: 34%;
     top: 15%;
     left: 0;
-    margin-right: 55rem
+    margin-right: 55rem;
+    background-color: red;
   }
 
   .nav .top_navbar li a[href="./index.html"] {
