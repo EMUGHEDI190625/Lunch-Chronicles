@@ -307,9 +307,10 @@ header:hover p {
   }
 
   .btn {
+    display: block;
     width: 50%;
-    margin: 1rem 10rem;
-    margin-right: 80%;
+    margin: 1rem auto;
+    
     background-color: red;
   }
 
