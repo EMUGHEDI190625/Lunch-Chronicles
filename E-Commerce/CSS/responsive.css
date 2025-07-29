@@ -227,6 +227,8 @@ header:hover p {
   }
 
   main {
+    position: relative;
+    top: 10;
     margin-top: 93.5%;
   }
 
