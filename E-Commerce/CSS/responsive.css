@@ -438,7 +438,7 @@ header:hover p {
     padding: 0;
     margin: 0 auto;
     width: 55%;
-    margin-left: 63%;
+    margin-left: 55.5%;
     background-color: red;
   }
 
@@ -450,7 +450,7 @@ header:hover p {
 
   .footer_section ul li a {
     margin-left: 0;
-     background-color: indigo;
+    background-color: indigo;
   }
 
   .footer_section_undlinks .quick-links {
@@ -479,10 +479,10 @@ header:hover p {
     position: absolute;
     bottom: 75%;
     padding-bottom: 3%;
-    width: 55%;
+    width: 50%;
     height: 10%;
     margin-left: 3%;
-    background-color:red;
+    background-color: red;
   }
 
    footer .logo img {
@@ -493,8 +493,8 @@ header:hover p {
   footer .logo span {
     display: block;
     margin-top: 5%;
-    margin-left: 17%;
-    width: 80%;
+    margin-left: 15%;
+    width: 60%;
     text-align: center;
     background-color: indianred;
   }
@@ -514,14 +514,14 @@ header:hover p {
   #footer_section .contact,.footer_section_contact {
     position: relative;
     display: block;
-    right: 180%;
+    right: 25%;
     width: 80%;
     bottom: 80%;
   }
 
   #footer_section_contact .contact {
     position: relative;
-    right: 180%;
+    right: 20%;
     background-color: indianred;
   }
 
@@ -529,6 +529,7 @@ header:hover p {
     width: 40%;
     position: absolute;
     right: 88%;
+    left: 3%;
     padding-bottom: 5%;
     background-color: red;
   }
@@ -536,8 +537,8 @@ header:hover p {
   .footer_section_contact a {
     width: 210%;
     margin: 5%;
-    background-color: indianred;
     color: white;
+    background-color: indianred;
   }
 
   #footer_section #contact {
@@ -579,11 +580,11 @@ footer  a[href="#scroll_up"] {
 
 .meals_containter h3 {
   display: block;
-  background-color: red;
   position: absolute;
   height: 2%;
   top: 0;
 }
+
 }
 
 /* mobile viwe end*/
