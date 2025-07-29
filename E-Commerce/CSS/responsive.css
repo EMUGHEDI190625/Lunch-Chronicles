@@ -309,7 +309,7 @@ header:hover p {
   .btn {
     width: 50%;
     margin: 1rem 10rem;
-    margin-right: 60rem
+    margin-right: 20%
   }
 
   .btn button {
@@ -433,7 +433,7 @@ header:hover p {
     padding: 0;
     margin: 0 auto;
     width: 55%;
-    margin-left: 54%;
+    margin-left: 60%;
   }
 
   .footer_section ul li {
