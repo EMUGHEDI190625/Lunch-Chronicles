@@ -107,15 +107,16 @@
     display: block;
     width: 90%;
     padding: 0.5rem;
+    padding-right: 5%
     text-align: center;
   }
 
   .nav .top_navbar .home-link {
     position: absolute;
     margin-top: 34%;
-    top: 15%;
+    top: 20%;
     left: 0;
-    right: 15%;
+    right: 30%;
     background-color: red;
   }
 
