@@ -94,7 +94,7 @@
   nav .dropdown {
     width: 50%;
     margin: 0.2rem 0;
-    margin-right: 6rem;
+    margin-right: 4.5rem;
     background-color: red;
   }
 
@@ -310,8 +310,6 @@ header:hover p {
     display: block;
     width: 50%;
     margin: 1rem auto;
-    
-    background-color: red;
   }
 
   .btn button {
