@@ -406,6 +406,9 @@ header:hover p {
   .Social_media_handles {
     display:none;
   }
+  footer {
+    width: 100;
+  }
 
   /* FOOTER */
   .footer_container {
