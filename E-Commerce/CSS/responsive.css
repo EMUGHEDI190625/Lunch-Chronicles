@@ -528,10 +528,11 @@ header:hover p {
   #footer_section_contact {
     width: 40%;
     position: absolute;
-    right: 97%;
+    right: 88%;
     left: 3%;
     padding-bottom: 5%;
-    background-color: red;
+    margin-right: 50%;
+    background-color: navy;
   }
 
   .footer_section_contact a {
