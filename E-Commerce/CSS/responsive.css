@@ -460,7 +460,7 @@ header:hover p {
   .footer_section .quick-links {
     display: block;
     position: absolute;
-    right: 10%;
+    right: 5%;
     bottom: 93%;
   }
 
@@ -486,7 +486,7 @@ header:hover p {
   footer .logo {
     position: absolute;
     bottom: 75%;
-    padding-bottom: 3%;
+    padding-bottom: 4.5%;
     width: 55%;
     height: 10%;
     margin-left: 3%;
