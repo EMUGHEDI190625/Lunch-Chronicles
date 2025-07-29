@@ -355,6 +355,10 @@ header:hover p {
       left: 20%;
   }
 
+  article,.work,.faq {
+    margin-top: 20%;
+  }
+
   /* IMAGE */
   .image img {
     width: 100%;
