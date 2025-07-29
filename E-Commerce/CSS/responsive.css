@@ -195,13 +195,13 @@
     font-size: 1.5rem;
     width: 100%;
     margin: 0.5rem 0;
-    margin-top: 3%
+    margin-left: 3%
   }
 
   header p {
     width: 90%;
     margin: 0.5rem auto;
-    margin-top: 3%
+    margin-left: 3%
   }
 
   header:hover #hover-message {
