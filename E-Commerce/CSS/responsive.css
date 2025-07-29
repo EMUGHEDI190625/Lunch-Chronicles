@@ -230,6 +230,7 @@ header:hover p {
     position: relative;
     top: 10;
     margin-top: 93.5%;
+    background-color: red;
   }
 
   button[title="Scroll Up"] {
