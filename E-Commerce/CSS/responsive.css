@@ -407,8 +407,6 @@ header:hover p {
     display:none;
   }
   footer {
-    position: sticky;
-    top: 100%;
     width: 100;
   }
 
