@@ -438,17 +438,19 @@ header:hover p {
     padding: 0;
     margin: 0 auto;
     width: 55%;
-    margin-left: 67%;
+    margin-left: 63%;
     background-color: red;
   }
 
   .footer_section ul li {
     width: 80%;
     text-align: center;
+    background-color: indianred;
   }
 
   .footer_section ul li a {
     margin-left: 0;
+     background-color: indigo;
   }
 
   .footer_section_undlinks .quick-links {
@@ -477,7 +479,7 @@ header:hover p {
     position: absolute;
     bottom: 75%;
     padding-bottom: 3%;
-    width: 50%;
+    width: 55%;
     height: 10%;
     margin-left: 3%;
     background-color:red;
@@ -520,6 +522,7 @@ header:hover p {
   #footer_section_contact .contact {
     position: relative;
     right: 180%;
+    background-color: indianred;
   }
 
   #footer_section_contact {
@@ -533,7 +536,7 @@ header:hover p {
   .footer_section_contact a {
     width: 210%;
     margin: 5%;
-    
+    background-color: indianred;
     color: white;
   }
 
