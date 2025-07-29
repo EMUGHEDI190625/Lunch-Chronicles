@@ -94,7 +94,8 @@
   nav .dropdown {
     width: 50%;
     margin: 0.2rem 0;
-    margin-right: 6rem
+    margin-right: 6rem;
+    background-color: red;
   }
 
   nav .top_navbar li:first-child a {
@@ -114,7 +115,7 @@
     margin-top: 34%;
     top: 15%;
     left: 0;
-    margin-right: 15%;
+    right: 15%;
     background-color: red;
   }
 
