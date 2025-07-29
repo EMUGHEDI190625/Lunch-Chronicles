@@ -355,10 +355,6 @@ header:hover p {
       left: 20%;
   }
 
-  article,.work,.faq {
-    margin-top: 40%;
-  }
-
   /* IMAGE */
   .image img {
     width: 100%;
@@ -372,6 +368,10 @@ header:hover p {
     article {
         display: block;
     }
+
+  article,.work,.faq {
+    margin-top: 40%;
+  }
 
   /* FORM */
   form {
