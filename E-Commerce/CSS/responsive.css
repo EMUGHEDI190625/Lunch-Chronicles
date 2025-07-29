@@ -309,7 +309,7 @@ header:hover p {
   .btn {
     width: 50%;
     margin: 1rem 10rem;
-    margin-right: 50%;
+    margin-right: 80%;
     background-color: red;
   }
 
@@ -407,6 +407,7 @@ header:hover p {
     display:none;
   }
   footer {
+    overflow-x: hidden;
     width: 100;
   }
 
