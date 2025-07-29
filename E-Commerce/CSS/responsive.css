@@ -1106,10 +1106,10 @@ header:hover p {
     margin-left: 0;
   }
 
-  .footer_section_undlinks .quick-links {
+  .footer_section .quick-links {
     display: block;
     position: absolute;
-    right: 25%;
+    right: 15%;
     bottom: 93%;
   }
 
