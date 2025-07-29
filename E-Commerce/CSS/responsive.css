@@ -438,7 +438,7 @@ header:hover p {
     padding: 0;
     margin: 0 auto;
     width: 55%;
-    margin-left: 60%;
+    margin-left: 70%;
     background-color: red;
   }
 
@@ -526,10 +526,10 @@ header:hover p {
   }
 
   #footer_section_contact {
-    width: 40%;
+    width: 55%;
     position: absolute;
     right: 88%;
-    left: 3%;
+    left: 1.5%;
     padding-bottom: 5%;
     margin-right: 50%;
     background-color: navy;
