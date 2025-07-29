@@ -480,6 +480,7 @@ header:hover p {
     width: 50%;
     height: 10%;
     margin-left: 3%;
+    background-color:red;
   }
 
    footer .logo img {
@@ -493,6 +494,7 @@ header:hover p {
     margin-left: 17%;
     width: 80%;
     text-align: center;
+    background-color: indianred;
   }
 
   #footer_section {
@@ -523,8 +525,9 @@ header:hover p {
   #footer_section_contact {
     width: 40%;
     position: absolute;
-    right: 48%;
+    right: 88%;
     padding-bottom: 5%;
+    background-color: red;
   }
 
   .footer_section_contact a {
