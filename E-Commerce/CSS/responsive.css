@@ -194,13 +194,13 @@
     font-size: 1.5rem;
     width: 100%;
     margin: 0.5rem 0;
-    margin-left: 0.5%
+    margin-left: 0.1%
   }
 
   header p {
     width: 90%;
     margin: 0.5rem auto;
-    margin-left: 0.5%
+    margin-left: 0.1%
   }
 
   header:hover #hover-message {
@@ -443,24 +443,21 @@ header:hover p {
     margin: 0 auto;
     width: 55%;
     margin-left: 70%;
-    background-color: red;
   }
 
   .footer_section ul li {
     width: 80%;
     text-align: center;
-    background-color: indianred;
   }
 
   .footer_section ul li a {
     margin-left: 0;
-    background-color: indigo;
   }
 
   .footer_section .quick-links {
     display: block;
     position: absolute;
-    right: 5%;
+    right: 2%;
     bottom: 93%;
   }
 
@@ -490,7 +487,6 @@ header:hover p {
     width: 55%;
     height: 10%;
     margin-left: 3%;
-    background-color: red;
   }
 
    footer .logo img {
@@ -504,7 +500,6 @@ header:hover p {
     margin-left: 15%;
     width: 60%;
     text-align: center;
-    background-color: indianred;
   }
 
   #footer_section {
@@ -530,7 +525,6 @@ header:hover p {
   #footer_section_contact .contact {
     position: relative;
     right: 20%;
-    background-color: indianred;
   }
 
   #footer_section_contact {
@@ -540,14 +534,12 @@ header:hover p {
     left: 1.5%;
     padding-bottom: 5%;
     margin-right: 50%;
-    background-color: navy;
   }
 
   .footer_section_contact a {
     width: 210%;
     margin: 5%;
     color: white;
-    background-color: indianred;
   }
 
   #footer_section #contact {
