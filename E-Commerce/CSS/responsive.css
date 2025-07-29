@@ -453,11 +453,15 @@ header:hover p {
     background-color: indigo;
   }
 
-  .footer_section_undlinks .quick-links {
+  .footer_section .quick-links {
     display: block;
     position: absolute;
-    right: 25%;
+    right: 35%;
     bottom: 93%;
+  }
+
+  .footer_section ul .link-size {
+    font-size: medium;
   }
 
   footer .social {
@@ -479,7 +483,7 @@ header:hover p {
     position: absolute;
     bottom: 75%;
     padding-bottom: 3%;
-    width: 50%;
+    width: 55%;
     height: 10%;
     margin-left: 3%;
     background-color: red;
@@ -526,7 +530,7 @@ header:hover p {
   }
 
   #footer_section_contact {
-    width: 55%;
+    width: 50%;
     position: absolute;
     right: 88%;
     left: 1.5%;
