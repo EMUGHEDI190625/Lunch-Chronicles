@@ -309,7 +309,8 @@ header:hover p {
   .btn {
     width: 50%;
     margin: 1rem 10rem;
-    margin-right: 20%
+    margin-right: 50%;
+    background-color: red;
   }
 
   .btn button {
