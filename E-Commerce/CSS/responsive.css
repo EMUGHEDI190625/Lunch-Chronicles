@@ -53,13 +53,13 @@
 
    .container_button span {
      margin-left: 30%;
-     margin-top: 27%;
+     margin-top: 24%;
      padding: 1%;
    }
 
    .theme-switch {
     position: fixed;
-    bottom: 82.5%;
+    bottom: 84.5%;
     left: 48%;
    }
 
