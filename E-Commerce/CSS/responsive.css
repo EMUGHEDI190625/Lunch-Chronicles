@@ -31,7 +31,7 @@
     top: 0;
     width: 100%;
     padding: 1rem;
-    padding-top: 10%;
+    padding-top: 7.5%;
     text-align: center;
   }
 
@@ -59,7 +59,7 @@
 
    .theme-switch {
     position: fixed;
-    bottom: 84.5%;
+    bottom: 85.5%;
     left: 48%;
    }
 
