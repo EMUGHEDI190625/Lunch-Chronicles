@@ -375,8 +375,8 @@ header:hover p {
 
   article,.work,.faq {
     position: relative;
-    top: 2.5%;
-    margin-top: 3%;
+    top: 0.5%;
+    margin-top: 0.5%;
   }
 
   /* FORM */
