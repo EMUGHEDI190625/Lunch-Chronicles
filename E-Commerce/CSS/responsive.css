@@ -352,12 +352,24 @@ header:hover p {
   .testimonial_control #prevButton {
     position: relative;
     right: 30%;
+    animation: subtlePulse 5s ease-in-out infinite;
   }
 
   .testimonial_control #nextButton {
       position: relative;
       left: 20%;
+    animation: subtlePulse 5s ease-in-out infinite;
   }
+
+@keyframes subtlePulse {
+            0%, 100% {
+                box-shadow: 0 12px 16px 0 var(--color-primary);
+            }
+
+            50% {
+                box-shadow: 0 14px 20px 0 rgba(0,0,0,0.18),0 20px 70px 0 rgba(0,0,0,0.15);
+            }
+}
 
   /* IMAGE */
   .image img {
