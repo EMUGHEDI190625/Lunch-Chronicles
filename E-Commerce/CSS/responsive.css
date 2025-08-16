@@ -59,7 +59,7 @@
 
    .theme-switch {
     position: fixed;
-    bottom: 88.5%;
+    bottom: 91%;
     left: 48%;
    }
 
@@ -95,7 +95,6 @@
     width: 50%;
     margin: 0.2rem 0;
     margin-right: 2.5rem;
-    background-color: red;
   }
 
   nav .top_navbar li:first-child a {
@@ -133,6 +132,7 @@
     text-align: center;
     width: 50%;
     margin-top: 0.5%;
+    background-color: red;
   }
 
   nav .dropdown_content {
@@ -181,7 +181,7 @@
     top: 15%;
     width: 100%;
     height: auto;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
     transition: height 2s ease-in;
   }
@@ -431,6 +431,8 @@ header:hover p {
   footer {
     overflow-x: hidden;
     width: 100;
+    padding-left: 1%;
+    padding-right: 5%;
   }
 
   /* FOOTER */
