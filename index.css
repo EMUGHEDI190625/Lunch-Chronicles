@@ -26,6 +26,7 @@
   background-color: #ccc;
   border-radius: 30px;
   transition: 0.4s;
+  background-color: inherit;
 }
 
 /* Circle toggle */
