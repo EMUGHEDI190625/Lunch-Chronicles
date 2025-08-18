@@ -360,6 +360,14 @@
         <div class="bubble"></div>
     </div>
 
+    
+    <script>
+       if ("serviceWorker" in navigator) {
+              navigator.serviceWorker.register("/service-worker.js")
+                 .then(() => console.log("Service Worker Registered"));
+       }
+    </script>
+
     <script>
         const cursorCircle = document.querySelector('.cursor-circle');
         const links = document.querySelectorAll('a'); // select only a tags
