@@ -95,7 +95,6 @@
     width: 50%;
     margin: 0.2rem 0;
     margin-right: 2.5rem;
-    background-color: red;
   }
 
   nav .top_navbar li:first-child a {
@@ -116,7 +115,6 @@
     margin-top: 34%;
     top: 8%;
     right: 25%;
-    background-color: red;
   }
 
   .nav .top_navbar li a[href="./index.html"] {
@@ -133,7 +131,6 @@
     text-align: center;
     width: 50%;
     margin-top: 0.5%;
-    background-color: red;
   }
 
   nav .dropdown_content {
