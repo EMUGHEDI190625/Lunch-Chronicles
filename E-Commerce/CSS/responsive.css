@@ -408,7 +408,7 @@ header:hover p {
     margin-top: 3%;
   }
 
-  #orderform {
+  #orderform input {
     background-color: red;
     margin-bottom: 3.5%;
     margin-right: 5%
