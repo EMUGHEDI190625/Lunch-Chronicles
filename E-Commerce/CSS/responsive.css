@@ -408,13 +408,17 @@ header:hover p {
     margin-top: 3%;
   }
 
-  .searchClass {
-    position: relative;
-    left: 3%;
+  #orderform {
+    background-color: red;
     margin-bottom: 3.5%;
     margin-right: 5%
+  }
+
+  .searchClass {
+    position: relative;
+    left: 8%;
     width: 30%;
-    background-color: red;
+    
   }
 
   .search {
