@@ -40,6 +40,7 @@
     width: 10%;
     margin: 1rem auto;
     margin-right: 35%
+    animation: pulse 2s infinite;
   }
 
   .container_button img {
@@ -61,7 +62,6 @@
     position: fixed;
     bottom: 91%;
     left: 48%;
-    animation: pulse 2s infinite;
    }
 
 @keyframes pulse {
@@ -83,7 +83,7 @@
 }
 
   nav .logo span {
-    display:none;
+    dislay:none;
   }
   
   .nav {
