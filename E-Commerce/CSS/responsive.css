@@ -39,7 +39,7 @@
     position: static;
     width: 10%;
     margin: 1rem auto;
-    margin-right: 50%;
+    margin-right: 45%;
     animation: pulse 2s infinite;
   }
 
@@ -421,6 +421,9 @@ header:hover p {
     margin: 0.5rem 0;
   }
 
+  #topform {
+    margin-top: 10%;
+  }
   .dropdown .nav-link[href="./about_us.html"] {
     height: 5%;
     width: 45%;
