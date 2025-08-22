@@ -20,7 +20,7 @@
 
   /* NAVIGATION */
   .nav_bar,
-  .logo img {
+  .logo img, .nav_bar.logo span {
     display: none;
   }
 
