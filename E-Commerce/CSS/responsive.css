@@ -400,6 +400,7 @@ header:hover p {
     display: flex;
     flex-wrap: wrap;
     padding-left: 20%;
+    background-color: red;
   }
   .image img:hover {
     transform: none;
