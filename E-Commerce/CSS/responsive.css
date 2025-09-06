@@ -396,6 +396,10 @@ header:hover p {
     display: block;
   }
 
+  .section_meal {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .image img:hover {
     transform: none;
   }
