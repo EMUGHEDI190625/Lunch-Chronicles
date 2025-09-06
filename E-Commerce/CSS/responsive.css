@@ -399,7 +399,7 @@ header:hover p {
   .section_meal {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 20%;
+    padding-left: 25%;
     background-color: red;
   }
   .image img:hover {
