@@ -401,6 +401,11 @@ header:hover p {
     flex-wrap: wrap;
     padding-left: 30%;
   }
+
+  .meals_container {
+    border: none;
+  }
+  
   .image img:hover {
     transform: none;
   }
