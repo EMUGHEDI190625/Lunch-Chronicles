@@ -546,9 +546,7 @@ nav .dropdown:hover .dropdown_content {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,1), 0 17px 50px 0 rgba(0,0,0,1); 
 }
 
-nav {
-  margin-bottom: 3.5%;
-}
+
 .cursor-circle {
       position: fixed;
       top: 0;
