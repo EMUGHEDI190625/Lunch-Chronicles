@@ -206,6 +206,7 @@
                 </p>
                 <thead>
                     <tr>
+                            <th>S/N</th>
                             <th>Timestamp</th>
                             <th>Customer Status</th>
                             <!-- <th>(New Custormer) How do you come across this business?</th>
@@ -502,6 +503,7 @@
                 const order = data[key];
                 const row = `<tr>
                     <td>${order.readable}</td>
+                    <td>${order.S/N}</td>
                     <td>${order.customer_status}</td>
                     <td>${order.first_name}</td>
                     <td>${order.surname}</td>
