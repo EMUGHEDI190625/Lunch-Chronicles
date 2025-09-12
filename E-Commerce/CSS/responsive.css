@@ -621,7 +621,7 @@ header:hover p {
   height: 5%;
   padding: 1.5% 1.5%;
   padding-right: 2%;
-  bottom: 1%;
+  bottom: 3%;
   left: 4%;
   background-color: #1e3a8a;
 }
@@ -632,7 +632,7 @@ footer  a[href="#scroll_up"] {
   height: 5%;
   padding: 1.5% 1.5%;
   padding-right: 2%;
-  bottom: 1%;
+  bottom: 3%;
   left: 80%;
   background-color: #1e3a8a;
 }
