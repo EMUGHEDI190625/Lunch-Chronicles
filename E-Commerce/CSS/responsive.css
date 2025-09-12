@@ -620,8 +620,9 @@ header:hover p {
   width: 10%;
   height: 5%;
   padding: 1.5% 1.5%;
-  bottom: 0.5%;
-  left: 3%;
+  padding-right: 2%;
+  bottom: 1%;
+  left: 4%;
   background-color: #1e3a8a;
 }
 
@@ -630,8 +631,9 @@ footer  a[href="#scroll_up"] {
   width: 10%;
   height: 5%;
   padding: 1.5% 1.5%;
-  bottom: 0.5%;
-  left: 85%;
+  padding-right: 2%;
+  bottom: 1%;
+  left: 80%;
   background-color: #1e3a8a;
 }
 
