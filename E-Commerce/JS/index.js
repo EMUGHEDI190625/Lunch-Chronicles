@@ -96,6 +96,39 @@ setInterval(nextTestimonial, 5000);
 document.getElementById("nextButton").addEventListener("click", nextTestimonial);
 document.getElementById("prevButton").addEventListener("click", prevTestimonial);
 
+const scrollLeft = document.getElementById("scroll-left");
+const scrollRight = document.getElementById("scroll-right");
+
+function updateButtons() {
+  const atBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+
+  if (atBottom) {
+    // At bottom → change to Scroll Up
+    scrollLeft.textContent = "Scroll Up";
+    scrollRight.textContent = "Scroll Up";
+    scrollLeft.onclick = scrollUp;
+    scrollRight.onclick = scrollUp;
+  } else {
+    // Else → show Scroll Down
+    scrollLeft.textContent = "Scroll Down";
+    scrollRight.textContent = "Scroll Down";
+    scrollLeft.onclick = scrollDown;
+    scrollRight.onclick = scrollDown;
+  }
+}
+
+function scrollDown() {
+  window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+}
+
+function scrollUp() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// Run on page load + when scrolling
+window.addEventListener("scroll", updateButtons);
+window.addEventListener("load", updateButtons);
+
 // const colors =["color-bule", "color-darkbule", "color-gray"];
 // const heading = document.getElementById("multicolor_heading");
 // const text = heading.innerText;
