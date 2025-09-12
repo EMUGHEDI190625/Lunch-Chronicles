@@ -616,6 +616,7 @@ header:hover p {
   }
 
   footer  a[href="#scroll-up"] {
+  position: fixed;
   width: 10%;
   height: 6%;
   padding: 1% 0.8%;
@@ -624,6 +625,7 @@ header:hover p {
 }
 
 footer  a[href="#scroll_up"] {
+  position: fixed;
   width: 10%;
   height: 6%;
   padding: 1% 0.8%;
