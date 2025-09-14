@@ -618,6 +618,7 @@ header:hover p {
 
   footer  a[href="#scroll-up"] {
   position: fixed;
+  z-index:1;
   width: 10%;
   height: 5%;
   padding: 1.5% 1.5%;
