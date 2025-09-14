@@ -625,7 +625,7 @@ header:hover p {
   bottom: 3%;
   left: 4%;
   background-color: #1e3a8a;
-  pointer-events: none;
+  opacity: 0.4;
 }
 
 footer  a[href="#scroll_up"] {
@@ -637,7 +637,7 @@ footer  a[href="#scroll_up"] {
   bottom: 3%;
   left: 80%;
   background-color: #1e3a8a;
-  pointer-events: none;
+  opacity: 0.4;
 }
 
 .meals_containter  {
