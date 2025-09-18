@@ -407,6 +407,10 @@ header:hover p {
   .meals_containter {
     border: none;
   }
+
+  .meals_containter h3.category {
+    background-color: red;
+  }
   
   .image img:hover {
     transform: none;
