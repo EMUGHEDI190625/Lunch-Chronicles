@@ -440,6 +440,7 @@ header:hover p {
     margin-left: 0%;
     margin-right: 15%;
   }
+  
   .dropdown .nav-link[href="./about_us.html"] {
     height: 5%;
     width: 45%;
@@ -472,6 +473,7 @@ header:hover p {
   .Social_media_handles {
     display:none;
   }
+  
   footer {
     overflow-x: hidden;
     width: 100;
