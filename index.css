@@ -94,6 +94,7 @@ body {
     color: var(--color-text);
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    font-style: italic;
 }
 
 .container_button {
@@ -670,17 +671,23 @@ button[title="Scroll Up"] {
   width: 20.8%;
   min-width: 100px;
   padding: 1%;
+  font-style: italic;
 }
 
 .btn button a {
   display: block;
   width: auto;
   padding: 5%;
+  font-style: italic;
 }
 
 .btn button:first-child a {
   text-decoration: none;
   color: var(--color-white);
+}
+
+button {
+  font-style: italic;
 }
 
 #toggleBtn {
