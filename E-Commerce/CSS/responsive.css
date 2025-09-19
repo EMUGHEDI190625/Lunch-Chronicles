@@ -518,6 +518,7 @@ header:hover p {
     margin: 0 auto;
     width: 55%;
     margin-left: 70%;
+    background-color: red;
   }
 
   .footer_section ul li {
