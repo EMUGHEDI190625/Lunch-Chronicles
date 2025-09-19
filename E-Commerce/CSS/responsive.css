@@ -611,6 +611,7 @@ header:hover p {
     left: 1.5%;
     padding-bottom: 5%;
     margin-right: 50%;
+    border-right: none;
     background-color: black;
   }
 
