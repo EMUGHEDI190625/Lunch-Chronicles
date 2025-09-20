@@ -563,6 +563,7 @@ header:hover p {
     width: 55%;
     height: 10%;
     margin-left: 3%;
+    background-color: black;
   }
 
    footer .logo img {
