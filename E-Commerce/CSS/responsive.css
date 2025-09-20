@@ -537,7 +537,7 @@ header:hover p {
     bottom: 93%;
   }
 
-  .footer_section ul .link-size {
+  .footer_section ul .link-size, footer .logo span {
     font-size: medium;
   }
 
