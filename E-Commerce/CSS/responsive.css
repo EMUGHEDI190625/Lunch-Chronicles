@@ -518,7 +518,6 @@ header:hover p {
     margin: 0 auto;
     width: 55%;
     margin-left: 70%;
-    background-color: red;
   }
 
   .footer_section ul li {
@@ -563,7 +562,6 @@ header:hover p {
     width: 55%;
     height: 10%;
     margin-left: 0.5%;
-    background-color: black;
   }
 
    footer .logo img {
@@ -577,7 +575,6 @@ header:hover p {
     margin-left: 15%;
     width: 60%;
     text-align: center;
-    background-color: red;
   }
 
   #footer_section {
