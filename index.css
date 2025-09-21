@@ -363,6 +363,7 @@ main {
     padding: 0;
     padding-bottom: 4.2%;
     background-color: var(--color-primary);
+    border-top: none;
     width: 100%;
     display: flex;
     flex-wrap: wrap; /* ✅ allow wrapping on small screens */
@@ -485,7 +486,6 @@ nav .dropdown_content {
     left: 0.1%;
     width: 140%;
     background-color: var(--color-white);
-    border-top: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
     margin: 1% auto;
     margin-top: 20%;
