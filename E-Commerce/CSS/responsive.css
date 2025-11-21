@@ -230,7 +230,8 @@
   header:hover #hover-message {
     display: block;
     margin-top: 3%;
-    margin-left: 1.5%
+    margin-left: 1.5%;
+    background-color:red;
   }
 
   header:hover .default-text {
