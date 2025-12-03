@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>How This Bussiness Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+    <style>
+
+        #home section {
+            width: 80%;
+            margin: 10% auto;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            animation: subtlePulse 5s ease-in-out infinite
+        }
+
+        @keyframes subtlePulse {
+            0%, 100% {
+                box-shadow: 0 12px 16px 0 var(--color-primary);
+            }
+
+            50% {
+                box-shadow: 0 14px 20px 0 rgba(0,0,0,0.18),0 20px 70px 0 rgba(0,0,0,0.15);
+            }
+        }
+
+        section strong {
+            color: black;
+        }
+
+        header {
+            background-image: url(../Images/how_it_work.jpg);
+        }
+    </style>
+</head>
+<body class="bussiness_work">
+
+    <div class="navbar">
+        <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+                <span>Lunch Chronicles</span>
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li class="home-link">
+                    <a href="../../index.html" class="nav-link home" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="./about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="./how_it_work.html">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="./frequently_asked_questions.html" class="nav-link checkout">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link order_history" style="color: white;">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="./product.html" class="nav-link product">Restaurants</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>                 -->
+                <li>
+                    <a href="./checkout/index.html">Checkout</a>
+                </li>
+                <li>
+                    <a href="./custmoer_order_history.html" class="nav-link checkout">Customer view</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div> -->
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle" />
+                        <span class="slider">
+                            <span class="icon sun">🌞</span>
+                            <span class="icon moon">🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1>How This Bussiness Work</h1>
+            <p class="default-text">Hover on this background image to see the full image</p>
+            <p id="hover-message">Move the cursor away from the image to return back to the norm state</p>
+            <!-- <button class="strong cta-button" 
+                title="Scroll down to the bottom of this page with is the footer and download our app ( Lunch Chronicles )">
+                <a href="#app">Get Our App</a>
+            </button> -->
+        </header>
+    </div>
+
+    <div class="cursor-circle"></div>
+
+    <button type="button" id="scroll-up" title="Scroll Up"></button>
+    <button type="button" id="scroll_up" title="Scroll Up"></button>
+    
+    <main id="home">
+
+        <section class="work">
+            <h2 style="padding-left: 2.3%; text-align: center; color: white">Step-by-Step: How Our Platform Works</h2>
+            <ol>
+                <li>
+                    <h3>Discover Our Platform</h3>
+                    <p>Where you are looking for services to request, or simply exploring what we offer- Our website is 
+                        designed to make browsing easy and enjoyable.
+                    </p>
+                </li>
+                <li>
+                    <h3>Choose What You Need</h3>
+                    <p>
+                        You can explore other restaurants that customers order through our site or service options and pick 
+                        what fits your need every item or service has clear description and visuals to guide your decisions.
+                    </p>
+                </li>
+                <li>
+                    <h3>Easy Ordering Process</h3>
+                    <p>Click on what you want in our
+                        <strong>Restaurants Page</strong> 
+                        that shows other restaurants, enter your detail in our 
+                        <strong>Checkout Page</strong>
+                        and confirm your order-usually through a simple form. You do not need to create an account to place 
+                        your order.
+                    </p>
+                </li>
+                <li>
+                    <h3>We Handle The Rest</h3>
+                    <p>Once we receive your request, our 
+                        <strong>Operation Teams</strong>
+                        take over-preparing your dishes or scheduling your service. Our system is fast and responsive.
+                    </p>
+                </li>
+                <li>
+                    <h3>Delivery Or Service Fulfillment</h3>
+                    <p>Your order is delivery to your location  base on part of your details we receive for you or your 
+                        service is completed as scheduled. You can reach out anytime.
+                    </p>
+                </li>
+                <li>
+                    <h3>Support and Feedback</h3>
+                    <p>Our customer support team is available if you need help, want to give Feedback or have a special 
+                        request. We believe every customer matters.
+                    </p>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <div class="side-bubble left up"></div>
+    <div class="side-bubble left down"></div>
+    <div class="side-bubble right up"></div>
+    <div class="side-bubble right down"></div>
+
+    <footer>
+
+        <div class="logo">
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong quick-links">Quick Links</strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="./frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./customer_support.html" class="link-size">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="./careers.html">Careers</a>
+                    </li>
+                    <li class="size">
+                        <a href="./term_conditions.html">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="./privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section" id="footer_section_contact">
+                <strong class="contact">Contact Us</strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="tel:08102764355">08102764355</a>
+                    <a href="mailto:kitoyeikata@gmail.com">Lunch_Chronicles@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Follow Us Using</strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="App Store">
+                    <button type="button" class="app ">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </button> 
+                </section>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                    <button type="button" class="app">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </button>
+                </section>
+            </div> -->
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span>&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | <br> All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+        <a href="#scroll-up" id="scroll-left">Scroll Up</a>
+        <a href="#scroll_up" id="scroll-right">Scroll Up</a>
+
+    </footer>
+
+    <script src="../JS/index.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/order_history.js"></script>
+    
+    <script>
+        const cursorCircle = document.querySelector('.cursor-circle');
+        const links = document.querySelectorAll('a'); // select only a tags
+        
+
+        window.addEventListener('mousemove', (e) => {
+            cursorCircle.style.left = `${e.clientX}px`;
+            cursorCircle.style.top = `${e.clientY}px`;
+            });
+
+            links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursorCircle.style.opacity = 1; // show only when over <a>
+            });
+            link.addEventListener('mouseleave', () => {
+                cursorCircle.style.opacity = 0; // hide when leaving <a>
+            });
+        });
+  </script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lunch Chronicles E-Commerce Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1976d2">
+    <link rel="icon" href="E-Commerce/Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="E-Commerce/CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+</head>
+<body class="home dark-mode">
+    <div class="navbar">
+        <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="E-Commerce site/Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="E-Commerce/Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+                <span>Lunch Chronicles</span>
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li class="home-link">
+                    <a href="./index.html" class="nav-link home cursor_circle" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="E-Commerce/HTML/about_us.html" class="nav-link checkout cursor_circle">About Us 
+                        <i class="fa-solid fa-caret-down"></i> 
+                    </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="E-Commerce/HTML/how_it_work.html " class="cursor_circle">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="E-Commerce/HTML/frequently_asked_questions.html" class="nav-link checkout cursor_circle">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="E-Commerce/HTML/contact.html" class="nav-link order_history cursor_circle" 
+                                style="color: white;">Contact Us
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="E-Commerce/HTML/product.html" class="nav-link product cursor_circle">Restaurants</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>                 -->
+                <li>
+                    <a href="E-Commerce/HTML/checkout/index.html" class="cursor_circle">Checkout</a>
+                </li>
+                <li>
+                    <a href="E-Commerce/HTML/custmoer_order_history.html" class="nav-link checkout cursor_circle">
+                        Customer view
+                    </a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div> -->
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle" />
+                        <span class="slider"  
+                            title="click on these icons (SUN) or (MOON) to switch them to their active and state">
+                            <span class="icon sun" 
+                                title="click on this (SUN) icon to switch the Dark or Night Mode which is the (MOON) icon">🌞
+                            </span>
+                            <span class="icon moon" 
+                                title="click on this (MOON) icon to switch back to Day or Light which is the (SUN) icon">🌙
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1>Welcome 
+                <i class="fa-solid fa-handshake"></i> to Lunch 
+                <br> 
+                Chronicles Where Every Meal <br> Tells a Story.</h1>
+            <p class="default-text">Hover on this background image to see the full image</p>
+            <p id="hover-message">Move the cursor away from the image to return back to the norm state</p>
+            <!-- <button class="strong cta-button" 
+                title="Scroll down to the bottom of this page with is the footer and download our app ( Lunch Chronicles )">
+                <a href="#app">Get Our App</a>
+            </button> -->
+        </header>
+    </div>
+
+    <div class="cursor-circle"></div>
+
+    <main id="home">
+        <button type="button" id="scroll-up" title="Scroll Up"></button>
+        <button type="button" id="scroll_up" title="Scroll Up"></button>
+        <!-- <div class="page-wrapper"> -->
+            <div id="celebration_message" style="text-align: center; margin-top: 40px; font-weight: bold; color: green;">
+            </div>
+            <section class="hero">
+                <h1 style="padding: 1%; color: white; width:50%; margin:1% auto; text-align:center;">Delicious Meals 
+                    delivered To You 
+                    <i class="fa-solid fa-moped"></i> 
+                </h1>
+                <p style="width:50%; margin:1% auto; text-align:center;">From local favorites to gourmet dishes, we connect you
+                    with meals that make your day better—fresh, fast, and full of love. Pick a restaurant or restaurants, place
+                    your orders and enjoy fresh at your doorstep</p>
+                <a href="E-Commerce/HTML/product.html" class="link visited active button cta-button">Browse Restaurants and 
+                    Start Ordering <i class="fa-solid fa-store"></i>
+                </a>
+            </section>
+            <section class="restaurants">
+                <h2>Restaurants <i class="fa-solid fa-shop"></i> </h2>
+                <div class="restaurants_cards">
+                    <div class="card">
+                        <img src="E-Commerce/HTML/Product/Spaghettiexpress/Images/Spaghettiexpress_restaurant.jpg" 
+                        alt="Spaghettiexpress restaurant">
+                        <div class="container">
+                            <h3>
+                                <a href="E-Commerce/HTML/product.html" class="link visited active call_to_action_link">
+                                    Spaghettiexpress
+                                </a>
+                            </h3>
+                            <p>Hot Pasta, fast delivery.</p>
+                        </div>
+                    </div>
+                    <div class="card resize">
+                        <img src="E-Commerce/HTML/Product/Paparimz's/images/Paprimz Pizza.jpg" alt="Paparimz pizza restaurant">
+                        <div class="container">
+                            <h3>
+                                <a href="E-Commerce/HTML/paprimz.html" class="link visited active">Paprimz Pizza</a>
+                            </h3>
+                            <p>Crusty, cheesy goodness.</p>
+                        </div>
+                    </div>
+                    <div class="card fist_card">
+                        <img src="E-Commerce/HTML/Product/Maubbys/Image/Maubbys Salad Bar.jpg" alt="Maubby's salad restaurant">
+                        <div class="container">
+                            <h3>
+                                <a href="maubbys.html" class="link visited active">Maubbys Salad Bar</a>
+                            </h3>
+                            <p>Health salads, tasty.</p>
+                        </div>
+                    </div>
+                    <div class="card resize">
+                        <img src="E-Commerce/HTML/Product/Bole/Images/Screenshot_2025-04-24-12-15-19-01_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="Bole Abuja restaurant">
+                        <div class="container">
+                            <h3>
+                                <a href="E-Commerce/HTML/bole.html" class="link visited active">Bole Abuja</a>
+                            </h3>
+                            <p>From Our Kitchen to your heart</p>
+                        </div>
+                    </div>
+                    <div class="card last-child-card resize" style="width: 21%;">
+                        <img src="E-Commerce/HTML/Product/Tulip Bistro/Images/Screenshot_2025-04-24-11-01-50-54_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="Tulip Bistro restaurant" style="display:block; margin-left: 1%" >
+                        <div class="container">
+                            <h3>
+                                <a href="E-Commerce/HTML/tulip.html" class="link visited active">Tulip Bistro</a>
+                            </h3>
+                            <p>Made with love and the freshest ingredients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="button" class="button cta-button">
+                        <a href="E-Commerce/HTML/checkout/index.html" target="_blank" class="link visited active"
+                            title="Note: Before clicking the checkout button explore other restaurants on this site." 
+                            aria-label="Checkout">
+                            View Cart and Checkout 🛒
+                        </a>
+                    </button>
+                    <button type="button" id="toggleBtn" class="button cta-button">Show More ⬇️</button>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h2>What Our Custmoers Say About Us <i class="fa-solid fa-comments"></i> </h2>
+                <div class="testimonial_slider">
+                    <div class="testimonial active">
+                        <p>
+                            <strong>"A brilliant bussinesses solution!"</strong>
+                        </p>
+                        <p>I Love how seamless 
+                            <strong>Lunch Chronicles</strong>
+                            makes ordering luch
+                        </p>
+                        <img src="E-Commerce/Images/my-picture.jpg" alt="Tolu A" class="resize_image">
+                        <p> 
+                            <em>Tolu A.</em>
+                            <br>
+                            <span style="font-size:300%;color:yellow;">★★★★★</span>
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <p>
+                            <strong>"Top-notch Custmoer experience!"</strong>
+                        </p>
+                        <p>This isn't just about food it's about convenience and care</p>
+                        <img src="E-Commerce/Images/Customers (2).jpg" alt="Grace E">
+                        <p> 
+                            <em>Grace E.</em>
+                            <br>
+                            <span style="font-size:300%;color:yellow;">★★★★</span>
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <p><strong>"Perfect for busy workdays!"</strong></p>
+                        <p> 
+                            <em>
+                                The 
+                                <strong>Lunch Chronicles</strong> 
+                                takes the stress out of deciding where to eat
+                            </em>
+                        </p>
+                        <img src="E-Commerce/Images/Customers.jpg" alt="Kenny O">
+                        <p> 
+                            <em>Kenny O.</em>
+                            <br>
+                            <span style="font-size:300%;color:yellow;">★★★★★</span>
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <p>
+                            <strong>Lunch planning has never been easier</strong>
+                        </p>
+                        <p>From browsing menus to placing and order, everything is just a few click</p>
+                        <img src="E-Commerce/Images/miracle.jpg" alt="Chiamaka U" class="resize_image">
+                        <p> 
+                            <em>Chiamaka U.</em>
+                            <br>
+                            <span style="font-size:300%;color:yellow;">★★★★</span>
+                        </p>
+                    </div>
+                    <div class="testimonial_control">
+                        <button onclick="prevTestimonial()" class="left" id="prevButton"><</button>
+                        <button onclick="nextTestimonial()" class="right" id="nextButton">></button>
+                    </div>
+                </div>
+
+            </section>  
+
+        <!-- </div> -->
+        
+    </main>
+
+    <div class="side-bubble left up"></div>
+    <div class="side-bubble left down"></div>
+    <div class="side-bubble right up"></div>
+    <div class="side-bubble right down"></div>
+
+    <footer>
+
+        <div class="logo">
+            <img src="E-Commerce/Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span class="link-size">Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong quick-links">Quick Links 🔗 </strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="E-Commerce/HTML/about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="E-Commerce/HTML/how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="E-Commerce/HTML/frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="E-Commerce/HTML/customer_support.html" class="link-size">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="E-Commerce/HTML/careers.html">Careers</a>
+                    </li>
+                    <li>
+                        <a href="E-Commerce/HTML/term_conditions.html" class="link-size">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="E-Commerce/HTML/privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section" id="footer_section_contact">
+                <strong class="contact">Contact Us 📞 </strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="tel:08102764355">08102764355</a>
+                    <a href="mailto:kitoyeikata@gmail.com">Lunch_Chronicles@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Follow Us Using 📱 </strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <div>
+                    <section>
+                        <p class="download">Download on</p>
+                        <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                            alt="App Store">
+                        <button type="button" class="app ">
+                            <a href="https://www.apple.com/app-store/">App Store</a>
+                        </button> 
+                    </section>
+                    <section>
+                        <p class="download">Download on</p>
+                        <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                        <button type="button" class="app">
+                            <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                        </button>
+                    </section>
+                </div>
+            </div> -->
+
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span>&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | <br> All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+        <a href="#scroll-up" id="scroll-left">Scroll Up</a>
+        <a href="#scroll_up" id="scroll-right">Scroll Up</a>
+
+    </footer>
+
+    <script src="/E-Commerce/JS/index.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="E-Commerce/JS/index.js"></script>
+    <!-- <script src="/E-Commerce/JS/order_history.js"></script> -->
+     <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    
+    <script>
+       if ("serviceWorker" in navigator) {
+              navigator.serviceWorker.register("/service-worker.js")
+                 .then(() => console.log("Service Worker Registered"));
+       }
+    </script>
+
+    <script>
+        const cursorCircle = document.querySelector('.cursor-circle');
+        const links = document.querySelectorAll('a'); // select only a tags
+        
+
+        window.addEventListener('mousemove', (e) => {
+            cursorCircle.style.left = `${e.clientX}px`;
+            cursorCircle.style.top = `${e.clientY}px`;
+            });
+
+            links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursorCircle.style.opacity = 1; // show only when over <a>
+            });
+            link.addEventListener('mouseleave', () => {
+                cursorCircle.style.opacity = 0; // hide when leaving <a>
+            });
+        });
+  </script>
+  
+</body>
+</html>

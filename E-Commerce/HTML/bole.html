@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Commerce product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../CSS/product.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+    <style>
+       
+        header {
+            background-image: url("/E-Commerce/HTML/Product/Bole/Images/Screenshot_2025-04-24-12-15-19-01_680d03679600f7af0b4c700c6b270fe7.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body class="Product four">
+
+<div class="navbar">
+        <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+                <span>Lunch Chronicles</span>
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li class="home-link">
+                    <a href="../../index.html" class="nav-link home" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="./about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="./how_it_work.html">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="./frequently_asked_questions.html" class="nav-link checkout">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link order_history" style="color: white;">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="./product.html" class="nav-link product">Restaurants</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>                 -->
+                <li>
+                    <a href="../checkout/index.html">Checkout</a>
+                </li>
+                <li>
+                    <a href="./custmoer_order_history.html" class="nav-link checkout">Customer view</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div> -->
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle" />
+                        <span class="slider">
+                            <span class="icon sun">🌞</span>
+                            <span class="icon moon">🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1 id="multicolor_heading">Bole Abuja</h1>
+            <p class="default-text">Hover on this background image to see the full image</p>
+            <p id="hover-message">Move the cursor away from the image to return back to the norm state</p>
+            <!-- <button class="strong cta-button" 
+                title="Scroll down to the bottom of this page with is the footer and download our app ( Lunch Chronicles )">
+                <a href="#app">Get Our App</a>
+            </button> -->
+        </header>
+    </div>
+
+    <div class="cursor-circle"></div>
+
+    <button type="button" id="scroll-up" title="Scroll Up"></button>
+    <button type="button" id="scroll_up" title="Scroll Up"></button>
+
+    <main>
+
+        <section class="meal">
+            
+            <strong>Our Menu</strong>
+
+            <div class="image">
+                <section></section>
+                <a href="../HTML/Product/Bole/Images/Bole.jpg" class="center">
+                    <img src="../HTML/Product/Bole/Images/Bole.jpg" alt="" 
+                    title="Click this menu to view"></a>
+            </div>
+            
+            <strong class="text" style="box-shadow: none; color:black">Please go through the above menus to see more dishes 
+                also calm down while through both the menus and the dishes below before selecting and clicking View Cart and 
+                Checkout. Thank you.
+            </strong>
+
+            <br>
+        
+             <strong class="text">
+                 See what is inside those pagination numbers below by clicking on either of them 
+             </strong>
+
+            <div class="pagination">
+            <a href="#">&raquo</a>
+            <a href="product.html" class="link one">1</a>
+            <a href="paprimz.html" class="link two">2</a>
+            <a href="maubbys.html" class="link three">3</a>
+            <a href="bole.html" class="link four">4</a>
+            <a href="tulip.html" class="link five">5</a>
+            <a href="#">&laquo</a>
+            </div>
+            
+            <section class="section_meal">
+                
+                <div class="meals_containter">
+                    <h3 class="frist_meal_heading">SPAGHETTI</h3> 
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-38-39-58_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> Chicken/pania fish <br>
+                            ₦6,500
+                            <button type="button" class="add-to-cart"data-restaurant="Spaghettiexpress"
+                                    data-name="Spaghetti - N' Chicken/pania fish" data-price="6500"
+                                    data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-38-39-58_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to Checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> asun/croaker fish <br>
+                            ₦7,500
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress"
+                            data-name="Spaghetti - N' asun/croaker fish" data-price="₦7500"
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                            Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> turkey <br>
+                            <br>
+                            ₦8,000
+                            <button type="button"  class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti - N' turkey" data-price="₦8000"
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                            Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="meals_containter">
+                    <h3 class="second_meal_heading">SPECIALS SPAGHETTI</h3>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text  container">
+                            N' <br> Chicken/pania fish <br>
+                            ₦7,500
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti - N' Chicken/pania fish" data-price="₦7500"
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-32-45-55_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> croaker <br> fish <br>
+                            ₦8,500
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti - N' croaker fish" data-price="₦8500"
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-32-45-55_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> turkey <br>
+                            <br>
+                            ₦9,500
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti - N' turkey" data-price="₦9500" data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section_meal">
+                
+                <div class="meals_containter">
+                    <h3 class="frist_meal_heading">FRIED RICE</h3> 
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-39-02-91_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> Chicken/pania fish <br>
+                            ₦7,500
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti -  N' Chicken/pania fish" data-price="₦7500" 
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-39-02-91_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> asun/croaker fish <br>
+                            ₦8,300
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti -  N' asun/croaker fish" data-price="₦8300" 
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> turkey <br>
+                            <br>
+                            ₦9,500
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti -  N' turkey" data-price=" ₦9500" 
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="meals_containter">
+                    <h3 class="second_meal_heading">SPECIALS FRIED RICE</h3>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-32-14-60_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> Chicken/pania fish <br>
+                            ₦8,000
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti -  N' Chicken/pania fish" data-price=" ₦800" 
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-32-14-60_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> ansun/croker fish <br>
+                            ₦9,000
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti - N' ansun/croker fish" data-price=" ₦9000" 
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meals_children">
+                        <img src="../HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="">
+                        <div class="text container">
+                            N' <br> turkey <br>
+                            <br>
+                            ₦10,500
+                            <button type="button" class="add-to-cart" data-restaurant="Spaghettiexpress" 
+                            data-name="Spaghetti - N' turkey" data-price=" ₦10500" 
+                            data-image="/E-Commerce/HTML/Product/Spaghettiexpress/Images/Screenshot_2025-04-15-16-31-43-43_40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+                                Add to checkout Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+                    <div id="moreContent" style="display: none;">
+                    
+                        <div class="meal_cards imgs">
+                            
+                            <div class="card">
+                                <img src="../HTML/Product/Bole/Images/Screenshot_2025-04-24-10-27-54-22_08626e35eb99698b0717ca70323a2481.jpg" alt="">
+                                <div class="container"><p></p></div>
+                            </div>
+                            <div class="card">
+                                <img src="../HTML/Product/Bole/Images/Screenshot_2025-04-24-10-28-32-48_08626e35eb99698b0717ca70323a2481.jpg" alt="">
+                                <div class="container"><p></p></div>
+                            </div>
+                            <div class="card">
+                            <img src="../HTML/Product/Bole/Images/Screenshot_2025-04-24-10-31-34-57_08626e35eb99698b0717ca70323a2481.jpg" 
+                            alt="">
+                                <div class="container"><p></p></div>
+                            </div>
+                            <div class="card">
+                                <img src="../HTML/Product/Bole/Images/Screenshot_2025-04-24-10-32-58-33_08626e35eb99698b0717ca70323a2481.jpg" alt="">
+                                <div class="container"><p></p></div>
+                            </div>
+                            <div class="card">
+                                <img src="../HTML/Product/Bole/Images/Screenshot_2025-04-24-10-33-33-69_08626e35eb99698b0717ca70323a2481.jpg" alt="">
+                                <div class="container"><p></p></div>
+                            </div>
+                            <!-- <div class="card">
+                                <img src="../HTML/Product/Bole/Images/Screenshot_2025-04-24-10-17-52-46_08626e35eb99698b0717ca70323a2481.jpg" alt="">
+                                <div class="container"><p></p></div>
+                            </div> -->
+                        </div>
+                    </div>
+           
+                </section>
+
+       <div class="btn">
+            <button type="button" class="button cta-button">
+                <a href="../HTML/checkout/index.html">View Cart and Checkout</a>
+            </button>
+            <button type="button" id="toggleBtn" class="button cta-button">Show More</button>
+        </div>
+        <div class="pagination">
+            <a href="#">&raquo</a>
+            <a href="product.html" class="link one">1</a>
+            <a href="paprimz.html" class="link two">2</a>
+            <a href="maubbys.html" class="link three">3</a>
+            <a href="bole.html" class="link four">4</a>
+            <a href="tulip.html" class="link five">5</a>
+            <a href="#">&laquo</a>
+        </div>
+
+    </main>
+
+    <div class="side-bubble left up"></div>
+    <div class="side-bubble left down"></div>
+    <div class="side-bubble right up"></div>
+    <div class="side-bubble right down"></div>
+
+    <footer>
+
+        <div class="logo">
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong quick-links">Quick Links</strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="./frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./customer_support.html" class="link-size">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="./careers.html">Careers</a>
+                    </li>
+                    <li class="size">
+                        <a href="./term_conditions.html">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="./privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section" id="footer_section_contact">
+                <strong class="contact">Contact Us</strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="tel:08102764355">08102764355</a>
+                    <a href="mailto:kitoyeikata@gmail.com">Lunch_Chronicles@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Follow Us Using</strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="App Store">
+                    <button type="button" class="app ">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </button> 
+                </section>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                    <button type="button" class="app">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </button>
+                </section>
+            </div> -->
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span>&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | <br> All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+        <a href="#scroll-up" id="scroll-left">Scroll Up</a>
+        <a href="#scroll_up" id="scroll-right">Scroll Up</a>
+
+    </footer>
+
+     <script src="../JS/index.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/order_history.js"></script>
+    
+    <!-- <script>
+        const restaurants = [
+          {
+            items: {
+              "SPAGHETTI": [
+                {
+                  name: "Spaghetti (Chicken/Panla Fish)",
+                  price: 6500,
+                  image: "https://via.placeholder.com/80?text=Spaghetti"
+                },
+                {
+                    name: "Spaghetti (asun/croaker Fish)",
+                    price: 7500,
+                    image: "https://via.placeholder.com/80?text=Turkey"
+                },
+                {
+                  name: "Spaghetti (Turkey)",
+                  price: 8000,
+                  image: "https://via.placeholder.com/80?text=Turkey"
+                }
+              ],
+              "SPECIAL SPAGHETTI": [
+                {
+                  name: "Special Spaghetti (Chicken/Panla Fish)",
+                  price: 7500,
+                  image: "https://via.placeholder.com/80?text=Spaghetti"
+                },
+                {
+                    name: "Special Spaghetti (asun/croaker Fish)",
+                    price: 8500,
+                    image: "https://via.placeholder.com/80?text=Turkey"
+                },
+                {
+                  name: "Special Spaghetti (Turkey)",
+                  price: 9500,
+                  image: "https://via.placeholder.com/80?text=Turkey"
+                }
+              ],
+              "Fried Rice": [
+                {
+                    name: "Fried Rice (Chichen/panla Fish)",
+                    price: 7500,
+                    image: "https://via.placeholder.com/80?text=FriedRice"
+                },
+                {
+                  name: "Fried Rice (Asun/Croaker Fish)",
+                  price: 8300,
+                  image: "https://via.placeholder.com/80?text=FriedRice"
+                },
+                {
+                    name: "Fried Rice (Turkey)",
+                    price: 9500,
+                    image: "https://via.placeholder.com/80?text=FriedRice"
+                  }
+              ],
+              "SPECIAL FRIED RICE": [
+                {
+                    name: "Special Fried Rice (Chichen/panla Fish)",
+                    price: 8000,
+                    image: "https://via.placeholder.com/80?text=FriedRice"
+                },
+                {
+                  name: "Special Fried Rice (Asun/Croaker Fish)",
+                  price: 9000,
+                  image: "https://via.placeholder.com/80?text=FriedRice"
+                },
+                {
+                    name: "Special Fried Rice (Turkey)",
+                    price: 10500,
+                    image: "https://via.placeholder.com/80?text=FriedRice"
+                  }
+              ],
+              "YAM PLATTER": [
+                {
+                    name: "Yam Platter (Chichen/panla Fish)",
+                    price: 7000,
+                    image: "https://via.placeholder.com/80?text=FriedRice"
+                },
+                {
+                  name: "Yam Platter (Asun/Croaker Fish)",
+                  price: 8000,
+                  image: "https://via.placeholder.com/80?text=FriedRice"
+                },
+                {
+                    name: "Yam Platter (Turkey)",
+                    price: 9000,
+                    image: "https://via.placeholder.com/80?text=FriedRice"
+                  }
+              ],
+              "YAM PORRIDGE": [
+                {
+                    name: "Yam Porridge (Chichen/panla Fish)",
+                    price: 7500,
+                    image: "https://via.placeholder.com/80?text=FriedRice"
+                },
+                {
+                  name: "Yam Porridge (Asun/Croaker Fish)",
+                  price: 8500,
+                  image: "https://via.placeholder.com/80?text=FriedRice"
+                },
+                {
+                    name: "Yam Porridge (Turkey)",
+                    price: 9500,
+                    image: "https://via.placeholder.com/80?text=FriedRice"
+                  }
+              ],
+              "Drinks": [
+                {
+                  name: "Zobo Drink",
+                  price: 1000,
+                  image: "https://via.placeholder.com/80?text=Zobo"
+                },
+                {
+                  name: "Water",
+                  price: 500,
+                  image: "https://via.placeholder.com/80?text=Water"
+                }
+              ]
+            }
+          },
+          
+        ];
+        
+        let cart = {};
+        
+        function renderMenu() {
+          const menuDiv = document.getElementById('menu');
+          menuDiv.innerHTML = '';
+        
+          restaurants.forEach(restaurant => {
+            const section = document.createElement('div');
+           
+        
+            for (const category in restaurant.items) {
+              section.innerHTML += `<h3 class="category-title">${category}</h3>`;
+              restaurant.items[category].forEach(item => {
+                const itemHTML = `
+                  <div class="food-card">
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="food-info">
+                      <strong>${item.name}</strong><br>
+                      <strong>₦${item.price}</strong>
+                    </div>
+                    <button onclick="addToCart('${restaurant.name}', ${JSON.stringify(item).replace(/"/g, '&quot;')})">Add to Checkout</button>
+                  </div>
+                `;
+                section.innerHTML += itemHTML;
+              });
+            }
+        
+            menuDiv.appendChild(section);
+          });
+        }
+        
+        function addToCart(restaurantName, item) {
+          if (!cart[restaurantName]) cart[restaurantName] = [];
+          cart[restaurantName].push(item);
+          updateCartDisplay();
+        }
+        
+        function updateCartDisplay() {
+          const cartDiv = document.getElementById('cartDisplay');
+          cartDiv.innerHTML = '';
+          let total = 0;
+        
+          for (const restaurant in cart) {
+            cartDiv.innerHTML += `<h3>📌 ${restaurant}</h3>`;
+            cart[restaurant].forEach(item => {
+              total += item.price;
+              cartDiv.innerHTML += `
+                <div class="cart-item">
+                  <strong>${item.name}</strong> - ₦${item.price}<br>
+                  ${item.description}<br>
+                  <img src="${item.image}" style="width:50px;height:50px;margin-top:5px;"><br><br>
+                </div>
+              `;
+            });
+          }
+        
+          if (total > 0) {
+            cartDiv.innerHTML += `<h3>Total: ₦${total}</h3>`;
+          } else {
+            cartDiv.innerHTML = "<p>Your cart is empty.</p>";
+          }
+        }
+        
+        renderMenu();
+    </script> -->
+
+    <script>
+        const cursorCircle = document.querySelector('.cursor-circle');
+        const links = document.querySelectorAll('a'); // select only a tags
+        
+
+        window.addEventListener('mousemove', (e) => {
+            cursorCircle.style.left = `${e.clientX}px`;
+            cursorCircle.style.top = `${e.clientY}px`;
+            });
+
+            links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursorCircle.style.opacity = 1; // show only when over <a>
+            });
+            link.addEventListener('mouseleave', () => {
+                cursorCircle.style.opacity = 0; // hide when leaving <a>
+            });
+        });
+  </script>
+    
+</body>
+</html>

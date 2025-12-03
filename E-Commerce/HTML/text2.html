@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #222;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .cart-item img {
+            width: 120px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .cart-details {
+            flex: 1;
+        }
+        .cart-details strong {
+            font-size: 17px;
+        }
+        .total {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-top: 30px;
+            border-top: 2px solid #000;
+            padding-top: 10px;
+        }
+        .clear-cart {
+            margin-top: 20px;
+            background-color: #e53935;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        h1 {
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Order Details</h1>
+    <div id="cart-container"></div>
+    <div class="total" id="total-price"></div>
+    <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+    <button type="button" class="cta-button">Clear Cart</button>
+
+    <script>
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const container = document.getElementById('cart-container');
+            const totalDisplay = document.getElementById('total-price');
+            container.innerHTML = '';
+
+            if (cart.length === 0) {
+                container.innerHTML = '<p>Your cart is empty.</p>';
+                totalDisplay.textContent = '';
+                return;
+            }
+
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                const subtotal = item.price * item.quantity;
+                total += subtotal;
+
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="cart-details">
+                        <strong>${index + 1}. ${item.name}</strong><br>
+                        ₦${item.price.toLocaleString()} x ${item.quantity} = <strong>₦${subtotal.toLocaleString()}</strong><br>
+                        <small>From: ${item.restaurant}</small>
+                    </div>
+                `;
+                container.appendChild(cartItem);
+            });
+
+            totalDisplay.textContent = `Total Amount: ₦${total.toLocaleString()}`;
+        }
+
+        function clearCart() {
+            localStorage.removeItem('cart');
+            loadCart();
+        }
+
+        loadCart();
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.main div {
+    width: 30%;
+    padding-left: 5%;
+}
+
+form {
+    margin-top: 2%;
+    padding: 5%;
+    width: 25%;
+}
+
+form input {
+    width: 79%;
+}
+
+form .contact_form {
+    margin: 10px 0 10px 0;
+    display: block;
+}
+
+form textarea {
+    width: 200px;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    width: 16%;
+    position: absolute;
+    right: 74%;
+}
+
+form span {
+    color: red;
+}
+
+mark {
+    background-color: white;
+    color: green;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.Social_media_handles {
+    position: absolute;
+    right: 35%;
+}

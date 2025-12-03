@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../CSS/about_us.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+</head>
+<body class="about_us">
+
+    <div class="navbar">
+        <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+                <span>Lunch Chronicles</span>
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li class="home-link">
+                    <a href="../../index.html" class="nav-link home" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="./about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="./how_it_work.html">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="./frequently_asked_questions.html" class="nav-link checkout">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link order_history" style="color: white;">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="./product.html" class="nav-link product">Restaurants</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>                 -->
+                <li>
+                    <a href="./checkout/index.html">Checkout</a>
+                </li>
+                <li>
+                    <a href="./custmoer_order_history.html" class="nav-link checkout">Customer view</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div> -->
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle" />
+                        <span class="slider">
+                            <span class="icon sun">🌞</span>
+                            <span class="icon moon">🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1>About Lunch Chronicles</h1>
+            <p class="default-text">Hover on this background image to see the full image</p>
+            <p id="hover-message">Move the cursor away from the image to return back to the norm state</p>
+            <!-- <button class="strong cta-button" 
+                title="Scroll down to the bottom of this page with is the footer and download our app ( Lunch Chronicles )">
+                <a href="#app">Get Our App</a>
+            </button> -->
+        </header>
+    </div>
+
+    <div class="cursor-circle"></div>
+
+    <main id="home">
+        <button type="button" id="scroll-up" title="Scroll Up"></button>
+        <button type="button" id="scroll_up" title="Scroll Up"></button>
+        <article>
+            <section>
+                <h2>Lunch Chronicles</h2>
+                <p style="text-align: left;">
+                    At 
+                    <strong>Lunch Chronicles</strong>, 
+                    we redefine the way you experience lunch. We act as a bridge between hungry customers and local food 
+                    vendors,taking the hassle out of mealtime decisions and delivery logistics. 
+                    <br>
+                    <strong>Our mission</strong> 
+                    is simple: to connect you with delicious meals-fast, easy and exactly how you want it.
+                </p>
+                <p style="text-align: left;">Whether you are busy at the office, at home, or on the go, we take the burden off 
+                    your plate. We reach out to food vendors on your behalf, place your order with precision and ensure it is 
+                    delivered right to your doorstep. No more jggling menus, wasiting on hold or tracking down delivery 
+                    drivers-just great food, delivered smoothly.
+                </p>
+                <p style="text-align: left;">
+                    <strong>Let Lunch Chronicles</strong> 
+                    handles the details, so you can focus on what matter most-your day
+                </p>
+                <p style="text-align: left;">To find more about us use the following links:</p>
+                <ul>
+                    <li>
+                        <a href="./how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="./frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </section>
+            <div class="image" id="imageContainer">
+                <h2>Part Of Our Team Members</h2>
+                <img src="../Images/Lunch Chronicles Staffs.jpg" 
+                alt="Lunch Chronicles Staffs" width="300">
+            </div>
+        </article>
+
+
+
+        <!-- <section class="teams">
+            <section id="testimonials">
+                <h2>Meet our teams and their testimonial</h2>
+                <div class="testimonial_slider">
+                    <div class="testimonial active">
+                        <h3>Operations</h3>
+                        <img src="/E-Commerce/Images/operation_teams.jpg" alt="Operation Teams">
+                        <p> 
+                            <em>"The
+                                <strong>Operations Team</strong>
+                                ensure everything runs like clockwork. Form order processing to smooth delivery coordination, 
+                                their attention to detail keeps our bussiness engine running efficienttly every single day."
+                            </em>
+                            
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <h3>Tech and Web Development</h3>
+                        <img src="/E-Commerce/Images/Tech and web development teams.jpg" alt="Tech and Web Development Teams">
+                        <p> 
+                            <em>"Thank to the 
+                                <strong>Tech Team,</strong>
+                                our platform is fast, secure and alway evolving. They don't just build feacture-they build 
+                                solutions that enhance the entrie customer experience."
+                            </em>
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <h3>Product Management and Service Design</h3>
+                        <img src="/E-Commerce/Images/product managent and service deaign teams.jpg" 
+                        alt="Product Management and Service Design">
+                        <p> 
+                            <em>
+                                "The 
+                                <strong>Product team</strong>
+                                understand what our custmoer want- often befor they ask. Their smart planning and seamless 
+                                service design have truly elevated how people interact with our platform."
+                            </em>
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <h3>Finace and account</h3>
+                        <img src="/E-Commerce/Images/finance and accounting teams.jpg" alt="Finace and account">
+                        <p> 
+                            <em>
+                                "With 
+                                <strong>Finace Team</strong>
+                                managing our number, we have alway confident in our finance health. They have precise, 
+                                professional, and help us make us smarter"
+                            </em>
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <h3>Marketing</h3>
+                        <img src="/E-Commerce/Images/marketing team.jpg" alt="Marketing">
+                        <p> 
+                            <em>
+                                "The 
+                                <strong>Marketing Team</strong> brings our brand to life. From creative campaign to enaging 
+                                social content, they have played a key role in growing our reach and building customer loyalty."
+                            </em>
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <h3>Custmoer Service and Support</h3>
+                        <img src="/E-Commerce/Images/customer service and support teams.jpg" 
+                        alt="Custmoer Service and Support">
+                        <p> 
+                            <em>
+                                "The 
+                                <strong>Support Team</strong>
+                                treats every custmoer with care and urgency. They resolve issues quick and kindly, making sure every experience feels 
+                                personal and professional"
+                            </em>
+                        </p>
+                    </div>
+                    <div class="testimonial_control">
+                        <button onclick="prevTestimonial()" class="left" id="prevButton"><</button>
+                        <button onclick="nextTestimonial()" class="right" id="nextButton">></button>
+                    </div>
+                </div>
+            </section>
+        </section> -->
+    
+    </main>
+    
+
+    <div class="side-bubble left up"></div>
+    <div class="side-bubble left down"></div>
+    <div class="side-bubble right up"></div>
+    <div class="side-bubble right down"></div>
+
+    <footer>
+
+        <div class="logo">
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong quick-links">Quick Links</strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="./frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./customer_support.html" class="link-size">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="./careers.html">Careers</a>
+                    </li>
+                    <li class="size">
+                        <a href="./term_conditions.html">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="./privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section" id="footer_section_contact">
+                <strong class="contact">Contact Us</strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="tel:08102764355">08102764355</a>
+                    <a href="mailto:kitoyeikata@gmail.com">Lunch_Chronicles@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Follow Us Using</strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="App Store">
+                    <button type="button" class="app ">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </button> 
+                </section>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                    <button type="button" class="app">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </button>
+                </section>
+            </div> -->
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span>&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | <br> All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+        <a href="#scroll-up" id="scroll-left">Scroll Up</a>
+        <a href="#scroll_up" id="scroll-right">Scroll Up</a>
+
+    </footer>
+
+    <script src="../JS/index.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/about.js"></script>
+    <script src="../JS/order_history.js"></script>
+
+    <script>
+        const cursorCircle = document.querySelector('.cursor-circle');
+        const links = document.querySelectorAll('a'); // select only a tags
+        
+
+        window.addEventListener('mousemove', (e) => {
+            cursorCircle.style.left = `${e.clientX}px`;
+            cursorCircle.style.top = `${e.clientY}px`;
+            });
+
+            links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursorCircle.style.opacity = 1; // show only when over <a>
+            });
+            link.addEventListener('mouseleave', () => {
+                cursorCircle.style.opacity = 0; // hide when leaving <a>
+            });
+        });
+  </script>
+</body>
+</html>

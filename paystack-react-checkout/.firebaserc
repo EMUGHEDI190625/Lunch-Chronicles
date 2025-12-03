@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "paystackorders"
+  },
+  "hosting": {
+    "public": "public",
+    "rewites": [
+      {
+        "source": "",
+        "function": "verifyPayment"
+      }
+    ]
+  }
+}

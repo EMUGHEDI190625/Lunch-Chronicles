@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LC-Lunch Chronicles">
+    <meta name="description" content="LC-Lunch Chronicles">
+    <meta name="author" content="LC-Lunch Chronicles">
+    <link rel="icon" href="../Images/Lunch Chronicles.jpg">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="icon" type="fulllink/x-icon" href="">
+    <script src="https://kit.fontawesome.com/fe8011c95e.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="contact">
+
+    <div class="navbar">
+        <div class="container_button logo">
+            <button class="button-toggle" onclick="togglenavbar()" title="togle nav bar">&#9776</button>
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+                <span>Lunch Chronicles</span>
+            </div>
+            <ul class="top_navbar nav-links" id="navlinks">
+                <li class="home-link">
+                    <a href="../../index.html" class="nav-link home" style="color: white;">Home</a>
+                </li>
+                <div class="dropdown">
+                    <a href="./about_us.html" class="nav-link checkout">About Us <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="./how_it_work.html">How It Work</a>
+                        </li>
+                        <li>
+                            <a href="./frequently_asked_questions.html" class="nav-link checkout">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="nav-link order_history" style="color: white;">Contact Us</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="./product.html" class="nav-link product">Restaurants</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <a href="our_service.html" class="nav-link checkout">Services <i class="fa-solid fa-caret-down"></i> </a>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="product.html" class="nav-link product">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link order_history">Order</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link checkout">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link order_history">Contact Us</a>
+                        </li>
+                    </div>
+                </div>                 -->
+                <li>
+                    <a href="../checkout/index.html">Checkout</a>
+                </li>
+                <li>
+                    <a href="./custmoer_order_history.html" class="nav-link checkout">Customer view</a>
+                </li>
+                <!-- <div class="dropdown">
+                    <span>Dropdown Order <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown_content">
+                        <li>
+                            <a href="custmoer_order_history.html" class="nav-link checkout">Custmoer view</a>
+                        </li>
+                        <li>
+                            <a href="order_history.html" class="nav-link order_history">Admin view</a>
+                        </li>
+                    </div> -->
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeToggle" />
+                        <span class="slider">
+                            <span class="icon sun">🌞</span>
+                            <span class="icon moon">🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1>Stay in Touch with us</h1>
+            <p class="default-text">Hover on this background image to see the full image</p>
+            <p id="hover-message">Move the cursor away from the image to return back to the norm state</p>
+           <!-- <button class="strong cta-button" 
+                title="Scroll down to the bottom of this page with is the footer and download our app ( Lunch Chronicles )">
+                <a href="#app">Get Our App</a>
+            </button> -->
+        </header>
+    </div>
+
+    <main id="main">
+
+        <button type="button" id="scroll-up" title="Scroll Up"></button>
+        <button type="button" id="scroll_up" title="Scroll Up"></button>
+        <div style="display: flex; width:70%; margin: 0 auto; padding-bottom: 8%">
+            <section class="main" id="form">
+                <div id="topform">
+                    <strong>The form below is for you to reach out to us.</strong>
+                    <span>
+                        <br>
+                        <b>Note:</b>
+                        The red * asterisk shows that these below fields are mandating and there are patterns that you must 
+                        follow in the phone number and E-mail fields once hover on them.
+                    </span>
+                </div>
+                
+                <form action="https://formsubmit.co/kitoyeikata@gmail.com" method="post">
+
+                    <h2 style="color: white;">Stay in Touch with us</h2>
+                    <label for="first_name" class="first"> First Name </label>
+                    <span>*</span>
+                    <label for="surname" class="second">Surname</label>
+                    <span>*</span>
+                    <div class="row">
+                        <input type="text" name="text" id="first_name" required>
+                        <input type="text" name="surname" id="surname" required>
+                    </div>
+                    <label for="phone_number" class="first">Phone Number</label>
+                    <span>*</span>
+                    <label for="e-mail" class="second">E-mail</label>
+                    <span>*</span>
+                    <div class="row">
+                            <input type="tel" name="mobile_number" class="contact_form" required 
+                            pattern="[0-9\s\-\(\) {6, 15}]" title="Format: 123-45-678">
+                            <input type="email" name="e-mail" class="contact_form" id="e-mail" required 
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\[a-zA-Z]{2, }" 
+                            title="Enter a vaild email (e.g., example@gmail.com)">
+                    </div>
+                    <label for="subject" class="first">
+                        Subject
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="subject" required class="subject" style="width: 95%;">
+                    <label for="message" class="first">
+                        Message
+                        <span>*</span><br>
+                    </label>
+                    <textarea name="message" id="meassage" class="contact_form message" required 
+                    title="Please include the country from where you are reaching out to us to eanable to us serve you better and let us work/communicate in different timezones." 
+                    placeholder="E.g. I love what you are doing and I am reaching out to you from USA">
+                </textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+    
+            <section class="main Social_media_handles">
+                <h3>Follow Us Using:</h3>
+                    <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message.">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a class=" m-2" href="https://github.com/190625">
+                        <i class="fab fa-github"></i>
+                    </a>
+            </section>
+        </div>
+        
+    </main>
+
+    <p id="length"></p>
+    
+    <footer>
+
+        <div class="logo">
+            <img src="../Images/Lunch Chronicles.jpg" alt="Lunch Chronicles business logo">
+            <span>Lunch Chronicles</span>
+        </div>
+
+        <div class="footer_container">
+            <!-- <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/+2348102764355" title="Click on this link to direct you to my WhatsApp page" id="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+            
+            <div class="footer_section">
+                <strong class="strong">Quick Links</strong>
+                <ul class="top_navbar">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./how_it_work.html">How It Work</a>
+                    </li>
+                    <li>
+                        <a href="./frequently_asked_questions.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./customer_support.html" class="link-size">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="./careers.html">Careers</a>
+                    </li>
+                    <li class="size">
+                        <a href="./term_conditions.html">Terms & Conditions</a>
+                    </li>
+                     <li id="size">
+                         <a href="./privacy_policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_section" id="footer_section_contact">
+                <strong class="contact">Contact Us</strong>
+                <div class="footer_section_contact" id="contact">
+                    <a href="tel:08102764355">08102764355</a>
+                    <a href="mailto:kitoyeikata@gmail.com">Lunch_Chronicles@gmail.com</a>
+                </div>
+            </div>
+            <div class="social">
+                <strong>Follow Us Using</strong><br>
+                <a href="https://wa.me/+2348102764355?text=Good%20day" target="_blank" 
+                    title="Click on this link to direct you to my WhatsApp page. Note: Do not delete the defualt message." 
+                    id="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class=" m-2" href="https://github.com/190625">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- <div class="footer_section button" id="app">
+                <strong class="strong">Get Our App</strong>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/E-Commerce/Images/Screenshot_2025-04-24-15-28-59-97_680d03679600f7af0b4c700c6b270fe7.jpg" 
+                        alt="App Store">
+                    <button type="button" class="app ">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                    </button> 
+                </section>
+                <section>
+                    <p class="download">Download on</p>
+                    <img src="/images/Google Icons & Symbols_files/732208.png" alt="Google Play">
+                    <button type="button" class="app">
+                        <a href="https://play.google.com/store/games?device=windows">Google Play</a>
+                    </button>
+                </section>
+            </div> -->
+        </div>
+        <hr>
+        <section class="copyright-inform">
+
+            <div>
+                <p class="inline">
+                    <span>&#169</span>
+                    <span id="year" class="inline">2025</span>
+                    <strong class="inline">Lunch Chronicles</strong>
+                    | <br> All Rights Reserved
+                </p>
+            </div>
+
+        </section>
+
+        <a href="#scroll-up" id="scroll-left">Scroll Up</a>
+        <a href="#scroll_up" id="scroll-right">Scroll Up</a>
+
+
+    </footer>
+
+
+    <script src="../JS/index.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/order_history.js"></script>
+
+</body>
+</html>
